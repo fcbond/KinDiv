@@ -1,7 +1,7 @@
 # KinDiv
 Database of Lexical Diversity in Kinship Domain
 
-This resource currently contains 198 concepts, 1911 words in 168 languages, and 37370 gaps in 699 languages. 
+This resource currently contains 200 concepts, 1911 words in 168 languages, and 37370 gaps in 699 languages. 
 
 ## Interlingual conceptual layer of sibling domain
 ![image](https://user-images.githubusercontent.com/50955407/162619469-5badd65e-389f-4046-bcc0-585d87fdf69e.png)

@@ -159,6 +159,8 @@ cousins	son of parent's brother	Pa;Br;So	Wiktionary
 cousins	daughter of parent's brother	Pa;Br;Da	Wiktionary
 cousins	son of parent's sister	Pa;Ss;So	Wiktionary
 cousins	daughter of parent's sister	Pa;Ss;Da	Wiktionary
+cousins	son of father's sibling	Fa;Sb;So	Wiktionary
+cousins	daughter of father's sibling	Fa;Sb;Da	Wiktionary
 cousins	son of mother's sibling	Mo;Sb;So	Wiktionary
 cousins	daughter of mother's sibling	Mo;Sb;Da	Wiktionary
 cousins	son of father's brother	Fa;Br;So	Wiktionary
