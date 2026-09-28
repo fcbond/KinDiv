@@ -471,6 +471,9 @@ def attrs(pairs: list[tuple[str, str]]) -> str:
 
 
 BASE = "kindiv"
+#: kin terms share OEWN's noun.person with every other kind of person; WN-LMF's
+#: lexfile attribute is free text, so they get a file of their own
+LEXFILE = "noun.kin"
 
 
 def synset_id(code: str) -> str:
@@ -524,7 +527,7 @@ def write_base(
             )
         lines.append(
             f'    <Synset id="{synset_id(code)}" ili="{ili}" partOfSpeech="n"'
-            ' lexicalized="false"'
+            f' lexicalized="false" lexfile="{LEXFILE}"'
             + attrs(
                 [
                     ("dc:identifier", f"KinDiv:{code}"),
@@ -601,6 +604,7 @@ def write_language(
         gap = code in gaps
         lines.append(
             f'    <Synset id="{local_id(code)}" ili="{concept.ili}" partOfSpeech="n"'
+            f' lexfile="{LEXFILE}"'
             + ("" if code in attested else ' lexicalized="false"')
             + attrs(
                 [

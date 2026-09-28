@@ -177,10 +177,10 @@ def test_phrases_are_unlexicalized_senses_on_unlexicalized_synsets(data) -> None
     build.write_language(lines, languages["English"], concepts)
     text = "\n".join(lines)
     assert 'synset="kindiv-en-Fa-Ss-Hu" lexicalized="false"/>' in text
-    assert (
-        '<Synset id="kindiv-en-Fa-Ss-Hu" ili="" partOfSpeech="n" lexicalized="false"'
-        in text
-    )
+    synset = next(line for line in lines if '<Synset id="kindiv-en-Fa-Ss-Hu"' in line)
+    assert 'ili=""' in synset
+    assert 'lexicalized="false"' in synset
+    assert 'lexfile="noun.kin"' in synset
 
 
 def test_languages_from_later_sources_keep_their_kindiv_gaps(data) -> None:
