@@ -1,0 +1,523 @@
+tufs_cid	tufs_gloss	tufs_lang	tufs_wid	tag	form	concept	method	confidence	note
+		ar	491	ar	عم	Fa;Br	kindiv	high	
+		de	1024	de	Schwester	Ss	kindiv	high	
+		ru	909	ru	старший брат	El;Br	curated	high	
+		ru	910	ru	старшая сестра	El;Ss	curated	high	
+		vi	492	vi	anh	El;Br	kindiv	high	
+		vi	501	vi	chú	Fa;Yn;Br	kindiv	high	
+		vi	506	vi	chị	El;Ss	kindiv	high	
+		vi	508	vi	cô	Fa;Ss	kindiv	high	
+		vi	509	vi	anh	El;Br	kindiv	high	
+		vi	510	vi	chị	El;Ss	kindiv	high	
+		zh	309	cmn	表妹	Yn;Fa;Ss;Da	kindiv	high	
+		zh	309	cmn	表妹	Yn;Mo;Sb;Da	kindiv	high	
+		zh	319	cmn	姐姐	El;Ss	kindiv	high	
+		zh	321	cmn	姑姑	Fa;Ss	curated	high	
+		zh	322	cmn	哥哥	El;Br	kindiv	high	
+15524		vi	424	vi	anh	El;Br	kindiv	high	
+15524		vi	425	vi	chị	El;Ss	kindiv	high	
+15524		vi	428	vi	cô	Fa;Ss	kindiv	high	
+15524		vi	429	vi	chú	Fa;Yn;Br	kindiv	high	
+16190	おじさん	ja	1571	ja	おじさん	Pa;Br	kindiv	high	
+16190	おじさん	ja	1571	ja	おじさん	Unc	curated	high	affinal as well as consanguineal: matches OEWN uncle
+16190	おじさん	ms	1571	ms	pak cik	Unc	curated	medium	also an older man
+16190	おじさん	my	1571	my	ဦးလေး	Pa;Yn;Br	curated	medium	also a younger aunt's husband
+16190	おじさん	my	1571	my	ဦးဦး	Unc	curated	low	familiar term of address
+16192	おばさん	ja	1580	ja	おばさん	Aun	curated	high	affinal as well as consanguineal: matches OEWN aunt
+16192	おばさん	ms	1580	ms	ibu saudara	Aun	curated	high	
+16192	おばさん	my	1580	my	ဒေါ်ဒေါ်	Aun	curated	low	familiar term of address
+16192	おばさん	my	1580	my	အဒေါ်	Aun	curated	medium	
+16223	おじいさん	ar	291	ar	جَدٌّ	Gr;Fa	kindiv	high	
+16223	おじいさん	as	472	apc	جدّ	Gr;Fa	curated	high	Syrian Arabic
+16223	おじいさん	de	1017	de	Großvater	Gr;Fa	kindiv	high	
+16223	おじいさん	en	1044	en	grandfather	Gr;Fa	kindiv	high	
+16223	おじいさん	es	994	es	abuelo	Gr;Fa	kindiv	high	
+16223	おじいさん	fr	1160	fr	grand-père	Gr;Fa	kindiv	high	
+16223	おじいさん	id	695	id	kakek	Gr;Fa	kindiv	high	
+16223	おじいさん	ja	1572	ja	おじいさん	Gr;Fa	kindiv	high	
+16223	おじいさん	km	290	km	តា	Gr;Fa	kindiv	high	
+16223	おじいさん	ko	799	ko	할아버지	Gr;Fa	kindiv	high	
+16223	おじいさん	lo	297	lo	ພໍ່ເຖົ້າ	Gr;Fa	curated	low	literally 'old father'; also father-in-law
+16223	おじいさん	mn	277	mn	өвгөн	Gr;Fa	curated	low	primarily 'old man'
+16223	おじいさん	ms	1572	ms	datuk	Gr;Fa	kindiv	high	
+16223	おじいさん	my	1572	my	ဖိုးဖိုး	Gr;Fa	curated	high	familiar
+16223	おじいさん	my	1572	my	အဖိုး	Gr;Fa	curated	high	
+16223	おじいさん	pb	1075	pt	avô	Gr;Fa	kindiv	high	
+16223	おじいさん	pt	291	pt	avô	Gr;Fa	kindiv	high	
+16223	おじいさん	ru	900	ru	дедушка	Gr;Fa	curated	high	
+16223	おじいさん	th	294	th	ตา	Mo;Fa	kindiv	high	
+16223	おじいさん	th	294	th	ปู่	Fa;Fa	kindiv	high	
+16223	おじいさん	tl	1014	tl	lolo	Gr;Fa	kindiv	high	
+16223	おじいさん	tr	1788	tr	dede	Gr;Fa	kindiv	high	
+16223	おじいさん	ur	342	ur	دادا	Fa;Fa	curated	high	
+16223	おじいさん	vi	496	vi	ông ngoại	Mo;Fa	curated	high	
+16223	おじいさん	vi	497	vi	ông nội	Fa;Fa	curated	high	
+16223	おじいさん	zh	313	cmn	爷爷	Fa;Fa	curated	high	
+16229	おばあさん	ar	290	ar	جَدَّةٌ	Gr;Mo	kindiv	high	
+16229	おばあさん	as	471	apc	ستّ	Gr;Mo	curated	high	Syrian Arabic
+16229	おばあさん	de	1016	de	Großmutter	Gr;Mo	kindiv	high	
+16229	おばあさん	en	1043	en	grandmother	Gr;Mo	kindiv	high	
+16229	おばあさん	es	993	es	abuela	Gr;Mo	kindiv	high	
+16229	おばあさん	fr	1812	fr	grand-mère	Gr;Mo	kindiv	high	
+16229	おばあさん	id	160	id	nenek	Gr;Mo	kindiv	high	
+16229	おばあさん	ja	1581	ja	おばあさん	Gr;Mo	curated	high	
+16229	おばあさん	km	289	km	យាយ	Gr;Mo	kindiv	high	
+16229	おばあさん	ko	798	ko	할머니	Gr;Mo	kindiv	high	
+16229	おばあさん	lo	296	lo	ແມ່ເຖົ້າ	Gr;Mo	curated	low	literally 'old mother'; also mother-in-law
+16229	おばあさん	mn	276	mn	эмгэн	Gr;Mo	curated	low	primarily 'old woman'
+16229	おばあさん	ms	1581	ms	nénék	Gr;Mo	curated	high	
+16229	おばあさん	my	1581	my	ဖွားဖွား	Gr;Mo	curated	high	familiar
+16229	おばあさん	my	1581	my	အဖွား	Gr;Mo	curated	high	
+16229	おばあさん	pb	1074	pt	avó	Gr;Mo	kindiv	high	
+16229	おばあさん	pt	290	pt	avó	Gr;Mo	kindiv	high	
+16229	おばあさん	ru	899	ru	бабушка	Gr;Mo	curated	high	
+16229	おばあさん	th	293	th	ยาย	Mo;Mo	kindiv	high	
+16229	おばあさん	th	293	th	ย่า	Fa;Mo	kindiv	high	
+16229	おばあさん	tl	1013	tl	lola	Gr;Mo	kindiv	high	
+16229	おばあさん	tr	1787	tr	baba anne	Fa;Mo	curated	high	usually written babaanne
+16229	おばあさん	ur	343	ur	دادی	Fa;Mo	curated	high	
+16229	おばあさん	vi	494	vi	bà ngoại	Mo;Mo	curated	high	
+16229	おばあさん	vi	495	vi	bà nội	Fa;Mo	curated	high	
+16229	おばあさん	zh	312	cmn	奶奶	Fa;Mo	kindiv	high	
+16229	おばあさん	zh	523	cmn	姥姥	Mo;Mo	kindiv	high	
+16343	夫	ar	446	ar	زوج	Hu	curated	high	corrected from the TUFS typo زوح
+16343	夫	as	473	apc	جوز	Hu	curated	high	Syrian Arabic
+16343	夫	as	473	apc	زوج	Hu	curated	high	Syrian Arabic
+16343	夫	de	1198	de	Mann	Hu	curated	medium	primarily 'man'
+16343	夫	en	1225	en	husband	Hu	kindiv	high	
+16343	夫	es	1175	es	marido	Hu	default	high	
+16343	夫	fr	23	fr	mari	Hu	default	high	
+16343	夫	id	821	id	suami	Hu	default	high	
+16343	夫	km	442	km	ប្ដី	Hu	default	high	
+16343	夫	ko	980	ko	남편	Hu	default	high	
+16343	夫	lo	456	lo	ຜົວ	Hu	default	high	
+16343	夫	mn	423	mn	нөхөр	Hu	default	high	
+16343	夫	pb	1204	pt	marido	Hu	default	high	
+16343	夫	pt	454	pt	marido	Hu	default	high	
+16343	夫	ru	1081	ru	муж	Hu	default	high	
+16343	夫	th	446	th	สามี	Hu	default	high	
+16343	夫	tl	1195	tl	asawa	Sp	curated	high	spouse: not gendered
+16343	夫	tr	1969	tr	koca	Hu	default	high	
+16343	夫	ur	224	ur	شوہر	Hu	default	high	
+16343	夫	vi	688	vi	chồng	Hu	default	high	
+16343	夫	zh	538	cmn	丈夫	Hu	default	high	
+16351	ご主人	ja	1925	ja	ご主人	Hu	default	high	
+16351	ご主人	ms	1925	ms	suami	Hu	default	high	
+16351	ご主人	my	1925	my	ခင်ပွန်း	Hu	default	high	
+16351	ご主人	my	1925	my	ယောက်ျား	Hu	curated	medium	also 'man'
+16351	ご主人	my	1925	my	လင်ယောက်ျား	Hu	default	high	
+16351	ご主人	my	1925	my	အမျိုးသား	Hu	curated	medium	polite; also 'man'
+16364	妻	ar	440	ar	زوجة	Wi	default	high	
+16364	妻	as	475	apc	مرة	Wi	curated	medium	Syrian Arabic; primarily 'woman'
+16364	妻	de	1192	de	Frau	Wi	curated	medium	primarily 'woman'
+16364	妻	en	1219	en	wife	Wi	kindiv	high	
+16364	妻	es	995	es	mujer	Wi	curated	medium	primarily 'woman'
+16364	妻	fr	872	fr	femme	Wi	curated	medium	primarily 'woman'
+16364	妻	id	816	id	istri	Wi	default	high	
+16364	妻	km	291	km	ប្រពន្ធ	Wi	default	high	
+16364	妻	ko	974	ko	아내	Wi	default	high	
+16364	妻	lo	298	lo	ເມຍ	Wi	default	high	
+16364	妻	mn	278	mn	эхнэр	Wi	default	high	
+16364	妻	pb	1076	pt	esposa	Wi	default	high	
+16364	妻	pt	292	pt	esposa	Wi	default	high	
+16364	妻	ru	1075	ru	жена	Wi	default	high	
+16364	妻	th	295	th	ภรรยา	Wi	default	high	
+16364	妻	tl	1015	tl	asawa	Sp	curated	high	spouse: not gendered
+16364	妻	tr	1789	tr	eş	Sp	curated	high	spouse: not gendered
+16364	妻	ur	225	ur	بیوی	Wi	default	high	
+16364	妻	vi	498	vi	vợ	Wi	default	high	
+16364	妻	zh	488	cmn	妻子	Wi	default	high	
+16402	奥さん	as	474	apc	زوجة	Wi	default	high	
+16402	奥さん	de	1018	de	Frau	Wi	curated	medium	primarily 'woman'
+16402	奥さん	en	1045	en	wife	Wi	kindiv	high	
+16402	奥さん	es	995	es	mujer	Wi	curated	medium	primarily 'woman'
+16402	奥さん	fr	41	fr	madame		curated	high	'Mrs, madam': a title, not a kin term
+16402	奥さん	id	696	id	nyonya		curated	high	'Mrs, madam': a title, not a kin term
+16402	奥さん	ja	1570	ja	奥さん	Wi	default	high	
+16402	奥さん	km	291	km	ប្រពន្ធ	Wi	default	high	
+16402	奥さん	ko	800	ko	부인	Wi	default	high	
+16402	奥さん	lo	298	lo	ເມຍ	Wi	default	high	
+16402	奥さん	mn	498	mn	гэргий	Wi	default	high	
+16402	奥さん	ms	1570	ms	isteri	Wi	default	high	
+16402	奥さん	my	1570	my	ဇနီး	Wi	default	high	
+16402	奥さん	my	1570	my	မယား	Wi	default	high	
+16402	奥さん	my	1570	my	မိန်းမ	Wi	curated	medium	primarily 'woman'
+16402	奥さん	my	1570	my	အမျိုးသမီး	Wi	curated	medium	polite; also 'woman'
+16402	奥さん	pb	1076	pt	esposa	Wi	default	high	
+16402	奥さん	pt	292	pt	esposa	Wi	default	high	
+16402	奥さん	ru	1075	ru	жена	Wi	default	high	
+16402	奥さん	th	295	th	ภรรยา	Wi	default	high	
+16402	奥さん	tl	1015	tl	asawa	Sp	curated	high	spouse: not gendered
+16402	奥さん	tr	1789	tr	eş	Sp	curated	high	spouse: not gendered
+16402	奥さん	ur	344	ur	بیگم	Wi	curated	medium	also 'lady'
+16402	奥さん	vi	498	vi	vợ	Wi	default	high	
+16402	奥さん	zh	524	cmn	老婆	Wi	default	high	
+16488	両親	ar	294	ar	والدان	Pa	default	high	plural 'parents'
+16488	両親	de	1021	de	Eltern	Pa	default	high	plural 'parents'
+16488	両親	en	1048	en	parents	Pa	default	high	plural 'parents'
+16488	両親	es	998	es	padres	Pa	default	high	plural 'parents'
+16488	両親	fr	2052	fr	parents	Pa	default	high	plural 'parents'
+16488	両親	id	698	id	orang tua	Pa	default	high	plural 'parents'
+16488	両親	ja	1855	ja	両親	Pa	default	high	plural 'parents'
+16488	両親	km	294	km	ឪពុកម្ដាយ	Pa	default	high	plural 'parents'
+16488	両親	ko	803	ko	부모	Pa	default	high	plural 'parents'
+16488	両親	lo	301	lo	ພໍ່ແມ່	Pa	default	high	plural 'parents'
+16488	両親	mn	280	mn	аав ээж	Pa	default	high	plural 'parents'
+16488	両親	ms	1855	ms	ibu bapa	Pa	default	high	plural 'parents'
+16488	両親	my	1855	my	မိဘ	Pa	default	high	plural 'parents'
+16488	両親	pb	1079	pt	pais	Pa	default	high	plural 'parents'
+16488	両親	pt	295	pt	meus pais	Pa	curated	medium	'my parents': the form is a phrase
+16488	両親	ru	904	ru	родители	Pa	default	high	plural 'parents'
+16488	両親	th	298	th	พ่อแม่	Pa	default	high	plural 'parents'
+16488	両親	tl	1018	tl	magulang	Pa	default	high	plural 'parents'
+16488	両親	tr	1792	tr	anne baba	Pa	default	high	plural 'parents'
+16488	両親	tr	1792	tr	anne babası		curated	high	possessive form of anne baba ('his/her parents')
+16488	両親	ur	345	ur	والدین	Pa	default	high	plural 'parents'
+16488	両親	vi	502	vi	bố mẹ	Pa	default	high	plural 'parents'
+16488	両親	vi	503	vi	cha mẹ	Pa	default	high	plural 'parents'
+16488	両親	zh	317	cmn	父母	Pa	default	high	plural 'parents'
+16495	父	ar	295	ar	وَالِدٌ	Fa	default	high	
+16495	父	ar	520	ar	أَبَوِيٌّ		curated	high	adjective 'paternal, parental'
+16495	父	as	477	apc	أبّ	Fa	default	high	
+16495	父	de	1022	de	Vater	Fa	default	high	
+16495	父	en	1049	en	father	Fa	kindiv	high	
+16495	父	es	999	es	padre	Fa	default	high	
+16495	父	fr	1085	fr	père	Fa	default	high	
+16495	父	id	699	id	ayah	Fa	default	high	
+16495	父	ja	634	ja	父	Fa	default	high	
+16495	父	km	295	km	ឪពុក	Fa	default	high	
+16495	父	ko	804	ko	아버지	Fa	default	high	
+16495	父	lo	302	lo	ພໍ່	Fa	default	high	
+16495	父	mn	281	mn	аав	Fa	default	high	
+16495	父	ms	634	ms	bapa	Fa	default	high	
+16495	父	my	634	my	ဖေဖေ	Fa	default	high	
+16495	父	my	634	my	အဖေ	Fa	default	high	
+16495	父	pt	296	pt	pai	Fa	default	high	
+16495	父	ru	911	ru	отец	Fa	default	high	
+16495	父	th	299	th	พ่อ	Fa	default	high	
+16495	父	tl	1019	tl	tatay	Fa	default	high	
+16495	父	tr	1793	tr	baba	Fa	default	high	
+16495	父	ur	346	ur	والد	Fa	default	high	
+16495	父	vi	504	vi	bố	Fa	default	high	
+16495	父	vi	505	vi	cha	Fa	default	high	
+16495	父	zh	318	cmn	父亲	Fa	default	high	
+16496	母	ar	292	ar	والدة	Mo	default	high	
+16496	母	as	476	apc	إمّ	Mo	default	high	
+16496	母	de	1019	de	Mutter	Mo	default	high	
+16496	母	en	1046	en	mother	Mo	kindiv	high	
+16496	母	es	996	es	madre	Mo	default	high	
+16496	母	fr	1080	fr	mère	Mo	default	high	
+16496	母	id	47	id	ibu	Mo	default	high	
+16496	母	ja	617	ja	母	Mo	default	high	
+16496	母	km	292	km	ម្ដាយ	Mo	default	high	
+16496	母	ko	801	ko	어머니	Mo	default	high	
+16496	母	lo	299	lo	ແມ່	Mo	default	high	
+16496	母	mn	279	mn	ээж	Mo	default	high	
+16496	母	ms	617	ms	ibu	Mo	default	high	
+16496	母	my	617	my	မေမေ	Mo	default	high	
+16496	母	my	617	my	အမေ	Mo	default	high	
+16496	母	pt	293	pt	mãe	Mo	default	high	
+16496	母	ru	912	ru	мать	Mo	default	high	
+16496	母	th	296	th	แม่	Mo	default	high	
+16496	母	tl	1016	tl	nanay	Mo	default	high	
+16496	母	tr	1790	tr	anne	Mo	default	high	
+16496	母	ur	347	ur	والدہ	Mo	default	high	
+16496	母	vi	499	vi	mẹ	Mo	default	high	
+16496	母	zh	315	cmn	妈妈	Mo	default	high	
+16500	お父さん	ar	298	ar	أَبٌ	Fa	default	high	
+16500	お父さん	en	1055	en	dad	Fa	default	high	
+16500	お父さん	es	999	es	padre	Fa	default	high	
+16500	お父さん	fr	1085	fr	père	Fa	default	high	
+16500	お父さん	id	699	id	ayah	Fa	default	high	
+16500	お父さん	ja	829	ja	お父さん	Fa	default	high	
+16500	お父さん	km	295	km	ឪពុក	Fa	default	high	
+16500	お父さん	ko	810	ko	아빠	Fa	default	high	
+16500	お父さん	lo	302	lo	ພໍ່	Fa	default	high	
+16500	お父さん	mn	281	mn	аав	Fa	default	high	
+16500	お父さん	ms	829	ms	ayah	Fa	default	high	
+16500	お父さん	my	829	my	ဖေဖေ	Fa	default	high	
+16500	お父さん	my	829	my	အဖေ	Fa	default	high	
+16500	お父さん	pb	102	pt	pai	Fa	default	high	
+16500	お父さん	pt	300	pt	papá	Fa	default	high	
+16500	お父さん	ru	911	ru	отец	Fa	default	high	
+16500	お父さん	th	302	th	คุณพ่อ	Fa	default	high	
+16500	お父さん	tl	1019	tl	tatay	Fa	default	high	
+16500	お父さん	tr	1793	tr	baba	Fa	default	high	
+16500	お父さん	ur	348	ur	ابو	Fa	default	high	
+16500	お父さん	vi	504	vi	bố	Fa	default	high	
+16500	お父さん	vi	505	vi	cha	Fa	default	high	
+16500	お父さん	zh	324	cmn	爸爸	Fa	default	high	
+16507	お母さん	ar	299	ar	أُمٌّ	Mo	default	high	
+16507	お母さん	en	1056	en	mom	Mo	default	high	
+16507	お母さん	es	996	es	madre	Mo	default	high	
+16507	お母さん	fr	1080	fr	mère	Mo	default	high	
+16507	お母さん	id	47	id	ibu	Mo	default	high	
+16507	お母さん	ja	959	ja	お母さん	Mo	default	high	
+16507	お母さん	km	292	km	ម្ដាយ	Mo	default	high	
+16507	お母さん	ko	811	ko	엄마	Mo	default	high	
+16507	お母さん	lo	299	lo	ແມ່	Mo	default	high	
+16507	お母さん	mn	279	mn	ээж	Mo	default	high	
+16507	お母さん	ms	959	ms	emak	Mo	default	high	
+16507	お母さん	my	959	my	မေမေ	Mo	default	high	
+16507	お母さん	my	959	my	အမေ	Mo	default	high	
+16507	お母さん	pb	1077	pt	mãe	Mo	default	high	
+16507	お母さん	pt	301	pt	mamã	Mo	default	high	
+16507	お母さん	ru	912	ru	мать	Mo	default	high	
+16507	お母さん	th	303	th	คุณแม่	Mo	default	high	
+16507	お母さん	tl	1016	tl	nanay	Mo	default	high	
+16507	お母さん	tr	1790	tr	anne	Mo	default	high	
+16507	お母さん	ur	349	ur	امی	Mo	default	high	
+16507	お母さん	vi	499	vi	mẹ	Mo	default	high	
+16507	お母さん	zh	315	cmn	妈妈	Mo	default	high	
+16585	舅	ar	1256	ar	حَمٌ	Sp;Fa	curated	medium	classically the husband's father, or any of the husband's kin
+16592	祖母（母方）	tr	2001	tr	anneanne	Mo;Mo	curated	high	
+16593	祖父（母方）	zh	554	cmn	老爷	Mo;Fa	curated	medium	regional (northern); also 'master'
+16647	息子	ar	517	ar	اِبْنٌ	So	default	high	
+16647	息子	as	480	apc	إبن	So	default	high	
+16751	孫	ar	1240	ar	حَفِيدٌ	Gr;So	kindiv	high	
+16780	兄弟	ar	289	ar	أَخٌ	Br	kindiv	high	
+16780	兄弟	as	469	apc	أخّ	Br	curated	high	Syrian Arabic
+16780	兄弟	de	1015	de	Geschwister	Sb	curated	high	
+16780	兄弟	en	1042	en	brother	Br	kindiv	high	
+16780	兄弟	es	991	es	hermano	Br	kindiv	high	
+16780	兄弟	fr	895	fr	frère	Br	kindiv	high	
+16780	兄弟	id	694	id	saudara	Sb	curated	medium	also 'relative'
+16780	兄弟	ja	1627	ja	兄弟	Sb	curated	high	
+16780	兄弟	km	288	km	បងប្អូនប្រុស	Br	curated	high	
+16780	兄弟	ko	797	ko	형제	Br	curated	medium	brothers; also siblings
+16780	兄弟	lo	295	lo	ອ້າຍນ້ອງ	Sb	curated	medium	also 'relatives'
+16780	兄弟	mn	275	mn	ах дүү	Sb	curated	medium	also 'brothers'
+16780	兄弟	ms	1627	ms	adik-beradik	Sb	curated	high	
+16780	兄弟	my	1627	my	ညီအစ်ကိုမောင်နှမ	Sb	curated	high	
+16780	兄弟	pb	1073	pt	irmãos	Sb	curated	high	plural form
+16780	兄弟	pt	289	pt	irmão	Br	kindiv	high	
+16780	兄弟	ru	898	ru	брат	Br	kindiv	high	
+16780	兄弟	th	292	th	พี่น้อง	Sb	curated	high	
+16780	兄弟	tl	1012	tl	kapatid	Sb	curated	high	
+16780	兄弟	tr	1786	tr	kardeş	Sb	curated	high	
+16780	兄弟	ur	350	ur	بھائی	Br	kindiv	high	
+16780	兄弟	vi	493	vi	anh em	Sb	curated	medium	also 'brothers'
+16780	兄弟	zh	311	cmn	兄弟	Yn;Br	kindiv	high	
+16783	姉妹	ar	296	ar	أُخْتٌ	Ss	kindiv	high	
+16785	兄	de	1014	de	Bruder	Br	kindiv	high	
+16785	兄	en	1041	en	brother	Br	kindiv	high	
+16785	兄	es	991	es	hermano	Br	kindiv	high	
+16785	兄	fr	895	fr	frère	Br	kindiv	high	
+16785	兄	id	693	id	kakak laki-laki	El;Br	curated	high	
+16785	兄	ja	1287	ja	兄	El;Br	curated	high	
+16785	兄	km	287	km	បងប្រុស	El;Br	kindiv	high	
+16785	兄	ko	796	ko	형	x;El;Br	kindiv	high	
+16785	兄	lo	294	lo	ອ້າຍ	El;Br	curated	high	
+16785	兄	mn	274	mn	ах	El;Br	kindiv	high	
+16785	兄	ms	1287	ms	abang	El;Br	kindiv	high	
+16785	兄	my	1287	my	ကိုကို	El;Br	curated	high	familiar
+16785	兄	my	1287	my	အစ်ကို	El;Br	curated	high	
+16785	兄	pb	1072	pt	irmão	Br	kindiv	high	
+16785	兄	pt	288	pt	irmão mais velho	El;Br	curated	high	
+16785	兄	ru	897	ru	старший брат	El;Br	curated	high	
+16785	兄	th	291	th	พี่ชาย	El;Br	curated	high	
+16785	兄	tl	1011	tl	kuya	El;Br	curated	high	
+16785	兄	tr	1785	tr	ağabey	El;Br	curated	high	
+16785	兄	ur	351	ur	بڑا بھائی	El;Br	curated	high	
+16785	兄	vi	424	vi	anh	El;Br	kindiv	high	
+16785	兄	zh	310	cmn	哥哥	El;Br	kindiv	high	
+16797	お兄さん	de	1026	de	Bruder	Br	kindiv	high	
+16797	お兄さん	en	1053	en	brother	Br	kindiv	high	
+16797	お兄さん	es	991	es	hermano	Br	kindiv	high	
+16797	お兄さん	fr	895	fr	frère	Br	kindiv	high	
+16797	お兄さん	id	346	id	kakak	El;Sb	curated	high	
+16797	お兄さん	ja	1578	ja	お兄さん	El;Br	kindiv	high	
+16797	お兄さん	km	287	km	បងប្រុស	El;Br	kindiv	high	
+16797	お兄さん	ko	808	ko	형	x;El;Br	kindiv	high	
+16797	お兄さん	lo	294	lo	ອ້າຍ	El;Br	curated	high	
+16797	お兄さん	mn	274	mn	ах	El;Br	kindiv	high	
+16797	お兄さん	ms	1578	ms	abang	El;Br	kindiv	high	
+16797	お兄さん	my	1578	my	ကိုကို	El;Br	curated	high	familiar
+16797	お兄さん	my	1578	my	အစ်ကို	El;Br	curated	high	
+16797	お兄さん	pt	288	pt	irmão mais velho	El;Br	curated	high	
+16797	お兄さん	ru	897	ru	старший брат	El;Br	curated	high	
+16797	お兄さん	th	291	th	พี่ชาย	El;Br	curated	high	
+16797	お兄さん	tl	1011	tl	kuya	El;Br	curated	high	
+16797	お兄さん	tr	1797	tr	abi	El;Br	curated	high	colloquial
+16797	お兄さん	ur	352	ur	بڑے بھائی صاحب	El;Br	curated	medium	honorific
+16797	お兄さん	vi	424	vi	anh	El;Br	kindiv	high	
+16797	お兄さん	zh	310	cmn	哥哥	El;Br	kindiv	high	
+16799	姉	as	470	apc	إخت	Ss	curated	high	Syrian Arabic
+16799	姉	en	1050	en	sister	Ss	kindiv	high	
+16799	姉	en	1051	en	sister	Ss	kindiv	high	
+16799	姉	es	1000	es	hermana	Ss	kindiv	high	
+16799	姉	fr	894	fr	sœur	Ss	kindiv	high	
+16799	姉	id	694	id	saudara	Sb	curated	medium	also 'relative'
+16799	姉	id	700	id	kakak perempuan	El;Ss	curated	high	
+16799	姉	ja	1542	ja	姉	El;Ss	curated	high	
+16799	姉	km	296	km	បងស្រី	El;Ss	kindiv	high	
+16799	姉	km	297	km	បងប្អូនស្រី	Ss	curated	high	
+16799	姉	ko	805	ko	누나	x;El;Ss	kindiv	high	
+16799	姉	ko	806	ko	자매	Ss	curated	high	sisters
+16799	姉	lo	303	lo	ເອື້ອຍ	El;Ss	curated	high	
+16799	姉	lo	304	lo	ເອື້ອຍນ້ອງ	Ss	curated	medium	sisters
+16799	姉	mn	282	mn	эгч	El;Ss	kindiv	high	
+16799	姉	mn	283	mn	эгч дүүс	Ss	curated	medium	sisters
+16799	姉	ms	1542	ms	kakak	El;Ss	kindiv	high	
+16799	姉	my	1542	my	မမ	El;Ss	curated	high	familiar
+16799	姉	my	1542	my	အစ်မ	El;Ss	curated	high	
+16799	姉	pb	1080	pt	irmã	Ss	kindiv	high	
+16799	姉	pb	1081	pt	irmãs	Ss	curated	high	plural form
+16799	姉	pt	297	pt	irmã mais velha	El;Ss	curated	high	
+16799	姉	pt	298	pt	irmã	Ss	kindiv	high	
+16799	姉	ru	906	ru	старшая сестра	El;Ss	curated	high	
+16799	姉	ru	907	ru	сестра	Ss	curated	high	
+16799	姉	th	292	th	พี่น้อง	Sb	curated	high	
+16799	姉	th	300	th	พี่สาว	El;Ss	curated	high	
+16799	姉	tl	1020	tl	ate	El;Ss	curated	high	
+16799	姉	tl	1021	tl	kapatid na babae	Ss	curated	high	
+16799	姉	tr	1794	tr	abla	El;Ss	curated	high	
+16799	姉	tr	1795	tr	kız kardeş	Ss	curated	high	
+16799	姉	ur	353	ur	بڑی بہن	El;Ss	curated	high	
+16799	姉	vi	425	vi	chị	El;Ss	kindiv	high	
+16799	姉	vi	507	vi	chị em	Ss	curated	medium	sisters
+16799	姉	zh	320	cmn	姐妹	Ss	curated	high	sisters
+16806	お姉さん	de	1023	de	Schwester	Ss	kindiv	high	
+16806	お姉さん	en	1054	en	sister	Ss	kindiv	high	
+16806	お姉さん	es	1000	es	hermana	Ss	kindiv	high	
+16806	お姉さん	fr	894	fr	sœur	Ss	kindiv	high	
+16806	お姉さん	id	346	id	kakak	El;Sb	curated	high	
+16806	お姉さん	ja	1579	ja	お姉さん	El;Ss	curated	high	
+16806	お姉さん	km	296	km	បងស្រី	El;Ss	kindiv	high	
+16806	お姉さん	ko	809	ko	누나	x;El;Ss	kindiv	high	
+16806	お姉さん	lo	303	lo	ເອື້ອຍ	El;Ss	curated	high	
+16806	お姉さん	mn	282	mn	эгч	El;Ss	kindiv	high	
+16806	お姉さん	ms	1579	ms	kakak	El;Ss	kindiv	high	
+16806	お姉さん	my	1579	my	မမ	El;Ss	curated	high	familiar
+16806	お姉さん	my	1579	my	အစ်မ	El;Ss	curated	high	
+16806	お姉さん	pt	297	pt	irmã mais velha	El;Ss	curated	high	
+16806	お姉さん	ru	906	ru	старшая сестра	El;Ss	curated	high	
+16806	お姉さん	th	300	th	พี่สาว	El;Ss	curated	high	
+16806	お姉さん	tl	1020	tl	ate	El;Ss	curated	high	
+16806	お姉さん	tr	1794	tr	abla	El;Ss	curated	high	
+16806	お姉さん	ur	354	ur	آپا	El;Ss	curated	medium	
+16806	お姉さん	vi	425	vi	chị	El;Ss	kindiv	high	
+16806	お姉さん	zh	323	cmn	姐姐	El;Ss	kindiv	high	
+16809	弟	es	991	es	hermano	Br	kindiv	high	
+16809	弟	fr	895	fr	frère	Br	kindiv	high	
+16809	弟	ja	897	ja	弟	Yn;Br	curated	high	
+16809	弟	ms	897	ms	adik lelaki	Yn;Br	curated	high	
+16809	弟	my	897	my	ညီလေး	x;Yn;Br	curated	high	ညီ: a man's younger brother
+16809	弟	my	897	my	မောင်လေး	o;Yn;Br	curated	high	မောင်: a woman's younger brother
+16809	弟	ur	541	ur	چھوٹا بھائی	Yn;Br	curated	high	
+16810	弟さん	ja	1927	ja	弟さん	Yn;Br	curated	high	
+16810	弟さん	ms	1927	ms	adik lelaki	Yn;Br	curated	high	
+16810	弟さん	my	1927	my	ညီလေး	x;Yn;Br	curated	high	ညီ: a man's younger brother
+16810	弟さん	my	1927	my	မောင်လေး	o;Yn;Br	curated	high	မောင်: a woman's younger brother
+16811	妹	es	1000	es	hermana	Ss	kindiv	high	
+16811	妹	fr	894	fr	sœur	Ss	kindiv	high	
+16811	妹	ja	1139	ja	妹	Yn;Ss	curated	high	
+16811	妹	ms	1139	ms	adik perempuan	Yn;Ss	curated	high	
+16811	妹	my	1139	my	ညီမလေး	o;Yn;Ss	curated	high	ညီမ: a woman's younger sister
+16811	妹	my	1139	my	နှမလေး	x;Yn;Ss	curated	medium	နှမ: a man's (younger) sister
+16811	妹	ur	542	ur	چھوٹی بہن	Yn;Ss	curated	high	
+16812	妹さん	ja	1926	ja	妹さん	Yn;Ss	curated	high	
+16812	妹さん	ms	1926	ms	adik perempuan	Yn;Ss	curated	high	
+16812	妹さん	my	1926	my	ညီမ	o;Yn;Ss	curated	high	
+16812	妹さん	my	1926	my	နှမ	x;Yn;Ss	curated	medium	
+16863	おじ・おば（母方）	as	479	apc	خال	Mo;Br	curated	high	Syrian Arabic
+16863	おじ・おば（母方）	as	479	apc	خالة	Mo;Ss	curated	high	Syrian Arabic
+16866	叔父，伯父	ar	293	ar	عَمٌّ	Fa;Br	kindiv	high	
+16866	叔父，伯父	ar	480	ar	خَالٌ	Mo;Br	kindiv	high	
+16866	叔父，伯父	as	478	apc	عمّ	Fa;Br	curated	high	Syrian Arabic
+16866	叔父，伯父	as	478	apc	عمّة	Fa;Ss	curated	high	Syrian Arabic; an aunt, filed under TUFS uncle
+16866	叔父，伯父	de	1020	de	Onkel	Pa;Br	kindiv	high	
+16866	叔父，伯父	de	1020	de	Onkel	Unc	curated	high	affinal as well as consanguineal: matches OEWN uncle
+16866	叔父，伯父	en	1047	en	uncle	Pa;Br	kindiv	high	
+16866	叔父，伯父	en	1047	en	uncle	Unc	kindiv	high	
+16866	叔父，伯父	en	1047	en	uncle	Unc	curated	high	affinal as well as consanguineal: matches OEWN uncle
+16866	叔父，伯父	es	997	es	tío	Pa;Br	kindiv	high	
+16866	叔父，伯父	es	997	es	tío	Unc	curated	high	affinal as well as consanguineal: matches OEWN uncle
+16866	叔父，伯父	fr	857	fr	oncle	Pa;Br	kindiv	high	
+16866	叔父，伯父	fr	857	fr	oncle	Unc	curated	high	affinal as well as consanguineal: matches OEWN uncle
+16866	叔父，伯父	id	697	id	paman	Pa;Br	kindiv	high	
+16866	叔父，伯父	id	697	id	paman	Unc	curated	high	affinal as well as consanguineal: matches OEWN uncle
+16866	叔父，伯父	km	293	km	ពូ	Pa;Yn;Br	curated	medium	
+16866	叔父，伯父	ko	802	ko	삼촌	Pa;Br	kindiv	high	
+16866	叔父，伯父	lo	300	lo	ລຸງ	Pa;El;Br	curated	high	
+16866	叔父，伯父	mn	274	mn	ах	El;Br	kindiv	high	
+16866	叔父，伯父	mn	454	mn	авга ах	Fa;Br	kindiv	high	
+16866	叔父，伯父	mn	455	mn	нагац ах	Mo;Br	kindiv	high	
+16866	叔父，伯父	pb	1078	pt	tio	Pa;Br	kindiv	high	
+16866	叔父，伯父	pb	1078	pt	tio	Unc	curated	high	affinal as well as consanguineal: matches OEWN uncle
+16866	叔父，伯父	pt	294	pt	tio	Pa;Br	kindiv	high	
+16866	叔父，伯父	pt	294	pt	tio	Unc	curated	high	affinal as well as consanguineal: matches OEWN uncle
+16866	叔父，伯父	ru	903	ru	дядя	Unc	curated	high	affinal as well as consanguineal: matches OEWN uncle
+16866	叔父，伯父	th	297	th	ลุง	Pa;El;Br	kindiv	high	
+16866	叔父，伯父	th	297	th	อา	Fa;Yn;Sb	kindiv	high	
+16866	叔父，伯父	tl	1017	tl	tito	Pa;Br	kindiv	high	
+16866	叔父，伯父	tl	1017	tl	tito	Unc	curated	high	affinal as well as consanguineal: matches OEWN uncle
+16866	叔父，伯父	tr	1791	tr	amca	Fa;Br	kindiv	high	
+16866	叔父，伯父	tr	2002	tr	dayı	Mo;Br	kindiv	high	
+16866	叔父，伯父	ur	355	ur	تایا	Fa;El;Br	curated	high	
+16866	叔父，伯父	vi	429	vi	chú	Fa;Yn;Br	kindiv	high	
+16866	叔父，伯父	vi	500	vi	bác	Fa;El;Br	kindiv	high	
+16866	叔父，伯父	zh	316	cmn	伯父	Fa;El;Br	curated	high	
+16866	叔父，伯父	zh	541	cmn	叔父	Fa;Yn;Br	curated	high	
+16866	叔父，伯父	zh	542	cmn	姑夫	Fa;Ss;Hu	curated	high	
+16866	叔父，伯父	zh	543	cmn	舅父	Mo;Br	curated	high	
+16866	叔父，伯父	zh	544	cmn	姨夫	Mo;Ss;Hu	curated	high	
+16869	叔母，伯母	ar	297	ar	عمة	Fa;Ss	kindiv	high	
+16869	叔母，伯母	ar	481	ar	خَالَةٌ	Mo;Ss	kindiv	high	
+16869	叔母，伯母	de	1025	de	Tante	Pa;Ss	kindiv	high	
+16869	叔母，伯母	de	1025	de	Tante	Aun	curated	high	affinal as well as consanguineal: matches OEWN aunt
+16869	叔母，伯母	en	1052	en	aunt	Aun	kindiv	high	
+16869	叔母，伯母	en	1052	en	aunt	Pa;Ss	kindiv	high	
+16869	叔母，伯母	en	1052	en	aunt	Aun	curated	high	affinal as well as consanguineal: matches OEWN aunt
+16869	叔母，伯母	es	1002	es	tía	Pa;Ss	kindiv	high	
+16869	叔母，伯母	es	1002	es	tía	Aun	curated	high	affinal as well as consanguineal: matches OEWN aunt
+16869	叔母，伯母	fr	858	fr	tante	Pa;Ss	kindiv	high	
+16869	叔母，伯母	fr	858	fr	tante	Aun	curated	high	affinal as well as consanguineal: matches OEWN aunt
+16869	叔母，伯母	id	701	id	bibi	Pa;Ss	kindiv	high	
+16869	叔母，伯母	id	701	id	bibi	Aun	curated	high	affinal as well as consanguineal: matches OEWN aunt
+16869	叔母，伯母	km	298	km	មីង	Pa;Yn;Ss	curated	medium	
+16869	叔母，伯母	ko	1009	ko	이모	Mo;Ss	kindiv	high	
+16869	叔母，伯母	ko	807	ko	고모	Fa;Ss	kindiv	high	
+16869	叔母，伯母	lo	305	lo	ປ້າ	Pa;El;Ss	curated	high	
+16869	叔母，伯母	mn	282	mn	эгч	El;Ss	kindiv	high	
+16869	叔母，伯母	mn	496	mn	нагац эгч	Mo;Ss	kindiv	high	
+16869	叔母，伯母	mn	497	mn	авга эгч	Fa;Ss	kindiv	high	
+16869	叔母，伯母	pb	1082	pt	tia	Pa;Ss	kindiv	high	
+16869	叔母，伯母	pb	1082	pt	tia	Aun	curated	high	affinal as well as consanguineal: matches OEWN aunt
+16869	叔母，伯母	pt	299	pt	tia	Pa;Ss	kindiv	high	
+16869	叔母，伯母	pt	299	pt	tia	Aun	curated	high	affinal as well as consanguineal: matches OEWN aunt
+16869	叔母，伯母	ru	908	ru	тётя	Pa;Ss	kindiv	high	
+16869	叔母，伯母	ru	908	ru	тётя	Aun	curated	high	affinal as well as consanguineal: matches OEWN aunt
+16869	叔母，伯母	th	301	th	น้า	Mo;Yn;Sb	kindiv	high	
+16869	叔母，伯母	th	301	th	ป้า	Pa;El;Ss	kindiv	high	
+16869	叔母，伯母	tl	1022	tl	tita	Pa;Ss	kindiv	high	
+16869	叔母，伯母	tl	1022	tl	tita	Aun	curated	high	affinal as well as consanguineal: matches OEWN aunt
+16869	叔母，伯母	tr	1796	tr	teyze	Mo;Ss	kindiv	high	
+16869	叔母，伯母	ur	356	ur	پھوپھی	Fa;Ss	curated	high	
+16869	叔母，伯母	vi	428	vi	cô	Fa;Ss	kindiv	high	
+16869	叔母，伯母	zh	548	cmn	婶母	Fa;Yn;Br;Wi	curated	high	
+16869	叔母，伯母	zh	549	cmn	姨母	Mo;Ss	curated	high	
+16870	伯母（父の兄の妻）	zh	547	cmn	伯母	Fa;El;Br;Wi	curated	high	also a polite 'auntie' for a friend's mother
+16888	甥	ar	518	ar	اِبْنُ أَخٍ	Br;So	kindiv	high	
+16892	いとこ	ar	288	ar	اِبْنُ عَمٍّ	Fa;Br;So	kindiv	high	
+16892	いとこ	de	1013	de	Cousin	Pa;Sb;So	kindiv	high	
+16892	いとこ	en	1040	en	cousin	Pa;Sb;Ch	kindiv	high	
+16892	いとこ	es	990	es	primo	Pa;Sb;So	kindiv	high	
+16892	いとこ	fr	848	fr	cousin	Pa;Sb;So	kindiv	high	
+16892	いとこ	id	692	id	saudara sepupu	Pa;Sb;Ch	curated	high	
+16892	いとこ	km	286	km	បងប្អូនជីដូនមួយ	Pa;Sb;Ch	curated	high	
+16892	いとこ	ko	795	ko	사촌	Pa;Sb;Ch	curated	high	
+16892	いとこ	lo	293	lo	ລູກເອື້ອຍລູກນ້ອງ	Pa;Sb;Ch	curated	high	
+16892	いとこ	pb	1071	pt	primo	Pa;Sb;So	kindiv	high	
+16892	いとこ	pt	287	pt	primo	Pa;Sb;So	kindiv	high	
+16892	いとこ	ru	896	ru	двоюродный брат	Pa;Sb;So	curated	high	
+16892	いとこ	th	290	th	ลูกพี่ลูกน้อง	Pa;Sb;Ch	curated	high	
+16892	いとこ	tl	1010	tl	pinsan	Pa;Sb;Ch	curated	high	
+16892	いとこ	tr	1784	tr	kuzen	Pa;Sb;Ch	curated	high	
+16892	いとこ	ur	357	ur	چچازاد بھائی	Fa;Br;So	curated	high	
+16892	いとこ	vi	489	vi	anh họ	El;Pa;Sb;So	kindiv	high	
+16892	いとこ	vi	490	vi	chị ho	El;Pa;Sb;Da	curated	high	TUFS typo for chị họ
+16892	いとこ	vi	491	vi	em họ	Yn;Pa;Sb;Ch	kindiv	high	
+16893	従兄弟（母方）	ar	478	ar	اِبْنُ خَالٍ	Mo;Br;So	kindiv	high	
+16896	従姉妹	ar	477	ar	بنت عم	Fa;Br;Da	kindiv	high	
+16896	従姉妹	ar	479	ar	بنت خال	Mo;Br;Da	kindiv	high	

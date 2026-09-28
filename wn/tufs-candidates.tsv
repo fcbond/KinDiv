@@ -1,0 +1,502 @@
+tufs_cid	tufs_gloss	tufs_lang	tufs_wid	tag	form	auto
+		ar	491	ar	عم	Fa-Br
+		de	1024	de	Schwester	Ss
+		ru	909	ru	старший брат	
+		ru	910	ru	старшая сестра	
+		vi	492	vi	anh	El-Br
+		vi	501	vi	chú	Fa-Yn-Br
+		vi	506	vi	chị	El-Ss
+		vi	508	vi	cô	Fa-Ss
+		vi	509	vi	anh	El-Br
+		vi	510	vi	chị	El-Ss
+		zh	309	cmn	表妹	Yn-Fa-Ss-Da;Yn-Mo-Sb-Da
+		zh	319	cmn	姐姐	El-Ss
+		zh	321	cmn	姑姑	
+		zh	322	cmn	哥哥	El-Br
+15524		vi	424	vi	anh	El-Br
+15524		vi	425	vi	chị	El-Ss
+15524		vi	428	vi	cô	Fa-Ss
+15524		vi	429	vi	chú	Fa-Yn-Br
+16190	おじさん	ja	1571	ja	おじさん	Pa-Br
+16190	おじさん	ms	1571	ms	pak cik	
+16190	おじさん	my	1571	my	ဦးလေး	
+16190	おじさん	my	1571	my	ဦးဦး	
+16192	おばさん	ja	1580	ja	おばさん	
+16192	おばさん	ms	1580	ms	ibu saudara	
+16192	おばさん	my	1580	my	ဒေါ်ဒေါ်	
+16192	おばさん	my	1580	my	အဒေါ်	
+16223	おじいさん	ar	291	ar	جَدٌّ	Gr-Fa
+16223	おじいさん	as	472	apc	جدّ	
+16223	おじいさん	de	1017	de	Großvater	Gr-Fa
+16223	おじいさん	en	1044	en	grandfather	Gr-Fa
+16223	おじいさん	es	994	es	abuelo	Gr-Fa
+16223	おじいさん	fr	1160	fr	grand-père	Gr-Fa
+16223	おじいさん	id	695	id	kakek	Gr-Fa
+16223	おじいさん	ja	1572	ja	おじいさん	Gr-Fa
+16223	おじいさん	km	290	km	តា	Gr-Fa
+16223	おじいさん	ko	799	ko	할아버지	Gr-Fa
+16223	おじいさん	lo	297	lo	ພໍ່ເຖົ້າ	
+16223	おじいさん	mn	277	mn	өвгөн	
+16223	おじいさん	ms	1572	ms	datuk	Gr-Fa
+16223	おじいさん	my	1572	my	ဖိုးဖိုး	
+16223	おじいさん	my	1572	my	အဖိုး	
+16223	おじいさん	pb	1075	pt	avô	Gr-Fa
+16223	おじいさん	pt	291	pt	avô	Gr-Fa
+16223	おじいさん	ru	900	ru	дедушка	
+16223	おじいさん	th	294	th	ตา	Mo-Fa
+16223	おじいさん	th	294	th	ปู่	Fa-Fa
+16223	おじいさん	tl	1014	tl	lolo	Gr-Fa
+16223	おじいさん	tr	1788	tr	dede	Gr-Fa
+16223	おじいさん	ur	342	ur	دادا	
+16223	おじいさん	vi	496	vi	ông ngoại	
+16223	おじいさん	vi	497	vi	ông nội	
+16223	おじいさん	zh	313	cmn	爷爷	
+16229	おばあさん	ar	290	ar	جَدَّةٌ	Gr-Mo
+16229	おばあさん	as	471	apc	ستّ	
+16229	おばあさん	de	1016	de	Großmutter	Gr-Mo
+16229	おばあさん	en	1043	en	grandmother	Gr-Mo
+16229	おばあさん	es	993	es	abuela	Gr-Mo
+16229	おばあさん	fr	1812	fr	grand-mère	Gr-Mo
+16229	おばあさん	id	160	id	nenek	Gr-Mo
+16229	おばあさん	ja	1581	ja	おばあさん	
+16229	おばあさん	km	289	km	យាយ	Gr-Mo
+16229	おばあさん	ko	798	ko	할머니	Gr-Mo
+16229	おばあさん	lo	296	lo	ແມ່ເຖົ້າ	
+16229	おばあさん	mn	276	mn	эмгэн	
+16229	おばあさん	ms	1581	ms	nénék	
+16229	おばあさん	my	1581	my	ဖွားဖွား	
+16229	おばあさん	my	1581	my	အဖွား	
+16229	おばあさん	pb	1074	pt	avó	Gr-Mo
+16229	おばあさん	pt	290	pt	avó	Gr-Mo
+16229	おばあさん	ru	899	ru	бабушка	
+16229	おばあさん	th	293	th	ยาย	Mo-Mo
+16229	おばあさん	th	293	th	ย่า	Fa-Mo
+16229	おばあさん	tl	1013	tl	lola	Gr-Mo
+16229	おばあさん	tr	1787	tr	baba anne	
+16229	おばあさん	ur	343	ur	دادی	
+16229	おばあさん	vi	494	vi	bà ngoại	
+16229	おばあさん	vi	495	vi	bà nội	
+16229	おばあさん	zh	312	cmn	奶奶	Fa-Mo
+16229	おばあさん	zh	523	cmn	姥姥	Mo-Mo
+16343	夫	ar	446	ar	زوح	
+16343	夫	as	473	apc	جوز	
+16343	夫	as	473	apc	زوج	
+16343	夫	de	1198	de	Mann	
+16343	夫	en	1225	en	husband	Hu
+16343	夫	es	1175	es	marido	
+16343	夫	fr	23	fr	mari	
+16343	夫	id	821	id	suami	
+16343	夫	km	442	km	ប្ដី	
+16343	夫	ko	980	ko	남편	
+16343	夫	lo	456	lo	ຜົວ	
+16343	夫	mn	423	mn	нөхөр	
+16343	夫	pb	1204	pt	marido	
+16343	夫	pt	454	pt	marido	
+16343	夫	ru	1081	ru	муж	
+16343	夫	th	446	th	สามี	
+16343	夫	tl	1195	tl	asawa	
+16343	夫	tr	1969	tr	koca	
+16343	夫	ur	224	ur	شوہر	
+16343	夫	vi	688	vi	chồng	
+16343	夫	zh	538	cmn	丈夫	
+16351	ご主人	ja	1925	ja	ご主人	
+16351	ご主人	ms	1925	ms	suami	
+16351	ご主人	my	1925	my	ခင်ပွန်း	
+16351	ご主人	my	1925	my	ယောက်ျား	
+16351	ご主人	my	1925	my	လင်ယောက်ျား	
+16351	ご主人	my	1925	my	အမျိုးသား	
+16364	妻	ar	440	ar	زوجة	
+16364	妻	as	475	apc	مرة	
+16364	妻	de	1192	de	Frau	
+16364	妻	en	1219	en	wife	Wi
+16364	妻	es	995	es	mujer	
+16364	妻	fr	872	fr	femme	
+16364	妻	id	816	id	istri	
+16364	妻	km	291	km	ប្រពន្ធ	
+16364	妻	ko	974	ko	아내	
+16364	妻	lo	298	lo	ເມຍ	
+16364	妻	mn	278	mn	эхнэр	
+16364	妻	pb	1076	pt	esposa	
+16364	妻	pt	292	pt	esposa	
+16364	妻	ru	1075	ru	жена	
+16364	妻	th	295	th	ภรรยา	
+16364	妻	tl	1015	tl	asawa	
+16364	妻	tr	1789	tr	eş	
+16364	妻	ur	225	ur	بیوی	
+16364	妻	vi	498	vi	vợ	
+16364	妻	zh	488	cmn	妻子	
+16402	奥さん	as	474	apc	زوجة	
+16402	奥さん	de	1018	de	Frau	
+16402	奥さん	en	1045	en	wife	Wi
+16402	奥さん	es	995	es	mujer	
+16402	奥さん	fr	41	fr	madame	
+16402	奥さん	id	696	id	nyonya	
+16402	奥さん	ja	1570	ja	奥さん	
+16402	奥さん	km	291	km	ប្រពន្ធ	
+16402	奥さん	ko	800	ko	부인	
+16402	奥さん	lo	298	lo	ເມຍ	
+16402	奥さん	mn	498	mn	гэргий	
+16402	奥さん	ms	1570	ms	isteri	
+16402	奥さん	my	1570	my	ဇနီး	
+16402	奥さん	my	1570	my	မယား	
+16402	奥さん	my	1570	my	မိန်းမ	
+16402	奥さん	my	1570	my	အမျိုးသမီး	
+16402	奥さん	pb	1076	pt	esposa	
+16402	奥さん	pt	292	pt	esposa	
+16402	奥さん	ru	1075	ru	жена	
+16402	奥さん	th	295	th	ภรรยา	
+16402	奥さん	tl	1015	tl	asawa	
+16402	奥さん	tr	1789	tr	eş	
+16402	奥さん	ur	344	ur	بیگم	
+16402	奥さん	vi	498	vi	vợ	
+16402	奥さん	zh	524	cmn	老婆	
+16488	両親	ar	294	ar	والدان	
+16488	両親	de	1021	de	Eltern	
+16488	両親	en	1048	en	parents	
+16488	両親	es	998	es	padres	
+16488	両親	fr	2052	fr	parents	
+16488	両親	id	698	id	orang tua	
+16488	両親	ja	1855	ja	両親	
+16488	両親	km	294	km	ឪពុកម្ដាយ	
+16488	両親	ko	803	ko	부모	
+16488	両親	lo	301	lo	ພໍ່ແມ່	
+16488	両親	mn	280	mn	аав ээж	
+16488	両親	ms	1855	ms	ibu bapa	
+16488	両親	my	1855	my	မိဘ	
+16488	両親	pb	1079	pt	pais	
+16488	両親	pt	295	pt	meus pais	
+16488	両親	ru	904	ru	родители	
+16488	両親	th	298	th	พ่อแม่	
+16488	両親	tl	1018	tl	magulang	
+16488	両親	tr	1792	tr	anne baba	
+16488	両親	tr	1792	tr	anne babası	
+16488	両親	ur	345	ur	والدین	
+16488	両親	vi	502	vi	bố mẹ	
+16488	両親	vi	503	vi	cha mẹ	
+16488	両親	zh	317	cmn	父母	
+16495	父	ar	295	ar	وَالِدٌ	
+16495	父	ar	520	ar	أَبَوِيٌّ	
+16495	父	as	477	apc	أبّ	
+16495	父	de	1022	de	Vater	
+16495	父	en	1049	en	father	Fa
+16495	父	es	999	es	padre	
+16495	父	fr	1085	fr	père	
+16495	父	id	699	id	ayah	
+16495	父	ja	634	ja	父	
+16495	父	km	295	km	ឪពុក	
+16495	父	ko	804	ko	아버지	
+16495	父	lo	302	lo	ພໍ່	
+16495	父	mn	281	mn	аав	
+16495	父	ms	634	ms	bapa	
+16495	父	my	634	my	ဖေဖေ	
+16495	父	my	634	my	အဖေ	
+16495	父	pt	296	pt	pai	
+16495	父	ru	911	ru	отец	
+16495	父	th	299	th	พ่อ	
+16495	父	tl	1019	tl	tatay	
+16495	父	tr	1793	tr	baba	
+16495	父	ur	346	ur	والد	
+16495	父	vi	504	vi	bố	
+16495	父	vi	505	vi	cha	
+16495	父	zh	318	cmn	父亲	
+16496	母	ar	292	ar	والدة	
+16496	母	as	476	apc	إمّ	
+16496	母	de	1019	de	Mutter	
+16496	母	en	1046	en	mother	Mo
+16496	母	es	996	es	madre	
+16496	母	fr	1080	fr	mère	
+16496	母	id	47	id	ibu	
+16496	母	ja	617	ja	母	
+16496	母	km	292	km	ម្ដាយ	
+16496	母	ko	801	ko	어머니	
+16496	母	lo	299	lo	ແມ່	
+16496	母	mn	279	mn	ээж	
+16496	母	ms	617	ms	ibu	
+16496	母	my	617	my	မေမေ	
+16496	母	my	617	my	အမေ	
+16496	母	pt	293	pt	mãe	
+16496	母	ru	912	ru	мать	
+16496	母	th	296	th	แม่	
+16496	母	tl	1016	tl	nanay	
+16496	母	tr	1790	tr	anne	
+16496	母	ur	347	ur	والدہ	
+16496	母	vi	499	vi	mẹ	
+16496	母	zh	315	cmn	妈妈	
+16500	お父さん	ar	298	ar	أَبٌ	
+16500	お父さん	en	1055	en	dad	
+16500	お父さん	es	999	es	padre	
+16500	お父さん	fr	1085	fr	père	
+16500	お父さん	id	699	id	ayah	
+16500	お父さん	ja	829	ja	お父さん	
+16500	お父さん	km	295	km	ឪពុក	
+16500	お父さん	ko	810	ko	아빠	
+16500	お父さん	lo	302	lo	ພໍ່	
+16500	お父さん	mn	281	mn	аав	
+16500	お父さん	ms	829	ms	ayah	
+16500	お父さん	my	829	my	ဖေဖေ	
+16500	お父さん	my	829	my	အဖေ	
+16500	お父さん	pb	102	pt	pai	
+16500	お父さん	pt	300	pt	papá	
+16500	お父さん	ru	911	ru	отец	
+16500	お父さん	th	302	th	คุณพ่อ	
+16500	お父さん	tl	1019	tl	tatay	
+16500	お父さん	tr	1793	tr	baba	
+16500	お父さん	ur	348	ur	ابو	
+16500	お父さん	vi	504	vi	bố	
+16500	お父さん	vi	505	vi	cha	
+16500	お父さん	zh	324	cmn	爸爸	
+16507	お母さん	ar	299	ar	أُمٌّ	
+16507	お母さん	en	1056	en	mom	
+16507	お母さん	es	996	es	madre	
+16507	お母さん	fr	1080	fr	mère	
+16507	お母さん	id	47	id	ibu	
+16507	お母さん	ja	959	ja	お母さん	
+16507	お母さん	km	292	km	ម្ដាយ	
+16507	お母さん	ko	811	ko	엄마	
+16507	お母さん	lo	299	lo	ແມ່	
+16507	お母さん	mn	279	mn	ээж	
+16507	お母さん	ms	959	ms	emak	
+16507	お母さん	my	959	my	မေမေ	
+16507	お母さん	my	959	my	အမေ	
+16507	お母さん	pb	1077	pt	mãe	
+16507	お母さん	pt	301	pt	mamã	
+16507	お母さん	ru	912	ru	мать	
+16507	お母さん	th	303	th	คุณแม่	
+16507	お母さん	tl	1016	tl	nanay	
+16507	お母さん	tr	1790	tr	anne	
+16507	お母さん	ur	349	ur	امی	
+16507	お母さん	vi	499	vi	mẹ	
+16507	お母さん	zh	315	cmn	妈妈	
+16585	舅	ar	1256	ar	حَمٌ	
+16592	祖母（母方）	tr	2001	tr	anneanne	
+16593	祖父（母方）	zh	554	cmn	老爷	
+16647	息子	ar	517	ar	اِبْنٌ	
+16647	息子	as	480	apc	إبن	
+16751	孫	ar	1240	ar	حَفِيدٌ	Gr-So
+16780	兄弟	ar	289	ar	أَخٌ	Br
+16780	兄弟	as	469	apc	أخّ	
+16780	兄弟	de	1015	de	Geschwister	
+16780	兄弟	en	1042	en	brother	Br
+16780	兄弟	es	991	es	hermano	Br
+16780	兄弟	fr	895	fr	frère	Br
+16780	兄弟	id	694	id	saudara	
+16780	兄弟	ja	1627	ja	兄弟	
+16780	兄弟	km	288	km	បងប្អូនប្រុស	
+16780	兄弟	ko	797	ko	형제	
+16780	兄弟	lo	295	lo	ອ້າຍນ້ອງ	
+16780	兄弟	mn	275	mn	ах дүү	
+16780	兄弟	ms	1627	ms	adik-beradik	
+16780	兄弟	my	1627	my	ညီအစ်ကိုမောင်နှမ	
+16780	兄弟	pb	1073	pt	irmãos	
+16780	兄弟	pt	289	pt	irmão	Br
+16780	兄弟	ru	898	ru	брат	Br
+16780	兄弟	th	292	th	พี่น้อง	
+16780	兄弟	tl	1012	tl	kapatid	
+16780	兄弟	tr	1786	tr	kardeş	
+16780	兄弟	ur	350	ur	بھائی	Br
+16780	兄弟	vi	493	vi	anh em	
+16780	兄弟	zh	311	cmn	兄弟	Yn-Br
+16783	姉妹	ar	296	ar	أُخْتٌ	Ss
+16785	兄	de	1014	de	Bruder	Br
+16785	兄	en	1041	en	brother	Br
+16785	兄	es	991	es	hermano	Br
+16785	兄	fr	895	fr	frère	Br
+16785	兄	id	693	id	kakak laki-laki	
+16785	兄	ja	1287	ja	兄	
+16785	兄	km	287	km	បងប្រុស	El-Br
+16785	兄	ko	796	ko	형	x-El-Br
+16785	兄	lo	294	lo	ອ້າຍ	
+16785	兄	mn	274	mn	ах	El-Br
+16785	兄	ms	1287	ms	abang	El-Br
+16785	兄	my	1287	my	ကိုကို	
+16785	兄	my	1287	my	အစ်ကို	
+16785	兄	pb	1072	pt	irmão	Br
+16785	兄	pt	288	pt	irmão mais velho	
+16785	兄	ru	897	ru	старший брат	
+16785	兄	th	291	th	พี่ชาย	
+16785	兄	tl	1011	tl	kuya	
+16785	兄	tr	1785	tr	ağabey	
+16785	兄	ur	351	ur	بڑا بھائی	
+16785	兄	vi	424	vi	anh	El-Br
+16785	兄	zh	310	cmn	哥哥	El-Br
+16797	お兄さん	de	1026	de	Bruder	Br
+16797	お兄さん	en	1053	en	brother	Br
+16797	お兄さん	es	991	es	hermano	Br
+16797	お兄さん	fr	895	fr	frère	Br
+16797	お兄さん	id	346	id	kakak	
+16797	お兄さん	ja	1578	ja	お兄さん	El-Br
+16797	お兄さん	km	287	km	បងប្រុស	El-Br
+16797	お兄さん	ko	808	ko	형	x-El-Br
+16797	お兄さん	lo	294	lo	ອ້າຍ	
+16797	お兄さん	mn	274	mn	ах	El-Br
+16797	お兄さん	ms	1578	ms	abang	El-Br
+16797	お兄さん	my	1578	my	ကိုကို	
+16797	お兄さん	my	1578	my	အစ်ကို	
+16797	お兄さん	pt	288	pt	irmão mais velho	
+16797	お兄さん	ru	897	ru	старший брат	
+16797	お兄さん	th	291	th	พี่ชาย	
+16797	お兄さん	tl	1011	tl	kuya	
+16797	お兄さん	tr	1797	tr	abi	
+16797	お兄さん	ur	352	ur	بڑے بھائی صاحب	
+16797	お兄さん	vi	424	vi	anh	El-Br
+16797	お兄さん	zh	310	cmn	哥哥	El-Br
+16799	姉	as	470	apc	إخت	
+16799	姉	en	1050	en	sister	Ss
+16799	姉	en	1051	en	sister	Ss
+16799	姉	es	1000	es	hermana	Ss
+16799	姉	fr	894	fr	sœur	Ss
+16799	姉	id	694	id	saudara	
+16799	姉	id	700	id	kakak perempuan	
+16799	姉	ja	1542	ja	姉	
+16799	姉	km	296	km	បងស្រី	El-Ss
+16799	姉	km	297	km	បងប្អូនស្រី	
+16799	姉	ko	805	ko	누나	x-El-Ss
+16799	姉	ko	806	ko	자매	
+16799	姉	lo	303	lo	ເອື້ອຍ	
+16799	姉	lo	304	lo	ເອື້ອຍນ້ອງ	
+16799	姉	mn	282	mn	эгч	El-Ss
+16799	姉	mn	283	mn	эгч дүүс	
+16799	姉	ms	1542	ms	kakak	El-Ss
+16799	姉	my	1542	my	မမ	
+16799	姉	my	1542	my	အစ်မ	
+16799	姉	pb	1080	pt	irmã	Ss
+16799	姉	pb	1081	pt	irmãs	
+16799	姉	pt	297	pt	irmã mais velha	
+16799	姉	pt	298	pt	irmã	Ss
+16799	姉	ru	906	ru	старшая сестра	
+16799	姉	ru	907	ru	сестра	
+16799	姉	th	292	th	พี่น้อง	
+16799	姉	th	300	th	พี่สาว	
+16799	姉	tl	1020	tl	ate	
+16799	姉	tl	1021	tl	kapatid na babae	
+16799	姉	tr	1794	tr	abla	
+16799	姉	tr	1795	tr	kız kardeş	
+16799	姉	ur	353	ur	بڑی بہن	
+16799	姉	vi	425	vi	chị	El-Ss
+16799	姉	vi	507	vi	chị em	
+16799	姉	zh	320	cmn	姐妹	
+16806	お姉さん	de	1023	de	Schwester	Ss
+16806	お姉さん	en	1054	en	sister	Ss
+16806	お姉さん	es	1000	es	hermana	Ss
+16806	お姉さん	fr	894	fr	sœur	Ss
+16806	お姉さん	id	346	id	kakak	
+16806	お姉さん	ja	1579	ja	お姉さん	
+16806	お姉さん	km	296	km	បងស្រី	El-Ss
+16806	お姉さん	ko	809	ko	누나	x-El-Ss
+16806	お姉さん	lo	303	lo	ເອື້ອຍ	
+16806	お姉さん	mn	282	mn	эгч	El-Ss
+16806	お姉さん	ms	1579	ms	kakak	El-Ss
+16806	お姉さん	my	1579	my	မမ	
+16806	お姉さん	my	1579	my	အစ်မ	
+16806	お姉さん	pt	297	pt	irmã mais velha	
+16806	お姉さん	ru	906	ru	старшая сестра	
+16806	お姉さん	th	300	th	พี่สาว	
+16806	お姉さん	tl	1020	tl	ate	
+16806	お姉さん	tr	1794	tr	abla	
+16806	お姉さん	ur	354	ur	آپا	
+16806	お姉さん	vi	425	vi	chị	El-Ss
+16806	お姉さん	zh	323	cmn	姐姐	El-Ss
+16809	弟	es	991	es	hermano	Br
+16809	弟	fr	895	fr	frère	Br
+16809	弟	ja	897	ja	弟	
+16809	弟	ms	897	ms	adik lelaki	
+16809	弟	my	897	my	ညီလေး	
+16809	弟	my	897	my	မောင်လေး	
+16809	弟	ur	541	ur	چھوٹا بھائی	
+16810	弟さん	ja	1927	ja	弟さん	
+16810	弟さん	ms	1927	ms	adik lelaki	
+16810	弟さん	my	1927	my	ညီလေး	
+16810	弟さん	my	1927	my	မောင်လေး	
+16811	妹	es	1000	es	hermana	Ss
+16811	妹	fr	894	fr	sœur	Ss
+16811	妹	ja	1139	ja	妹	
+16811	妹	ms	1139	ms	adik perempuan	
+16811	妹	my	1139	my	ညီမလေး	
+16811	妹	my	1139	my	နှမလေး	
+16811	妹	ur	542	ur	چھوٹی بہن	
+16812	妹さん	ja	1926	ja	妹さん	
+16812	妹さん	ms	1926	ms	adik perempuan	
+16812	妹さん	my	1926	my	ညီမ	
+16812	妹さん	my	1926	my	နှမ	
+16863	おじ・おば（母方）	as	479	apc	خال	
+16863	おじ・おば（母方）	as	479	apc	خالة	
+16866	叔父，伯父	ar	293	ar	عَمٌّ	Fa-Br
+16866	叔父，伯父	ar	480	ar	خَالٌ	Mo-Br
+16866	叔父，伯父	as	478	apc	عمّ	
+16866	叔父，伯父	as	478	apc	عمّة	
+16866	叔父，伯父	de	1020	de	Onkel	Pa-Br
+16866	叔父，伯父	en	1047	en	uncle	Pa-Br;Unc
+16866	叔父，伯父	es	997	es	tío	Pa-Br
+16866	叔父，伯父	fr	857	fr	oncle	Pa-Br
+16866	叔父，伯父	id	697	id	paman	Pa-Br
+16866	叔父，伯父	km	293	km	ពូ	
+16866	叔父，伯父	ko	802	ko	삼촌	Pa-Br
+16866	叔父，伯父	lo	300	lo	ລຸງ	
+16866	叔父，伯父	mn	274	mn	ах	El-Br
+16866	叔父，伯父	mn	454	mn	авга ах	Fa-Br
+16866	叔父，伯父	mn	455	mn	нагац ах	Mo-Br
+16866	叔父，伯父	pb	1078	pt	tio	Pa-Br
+16866	叔父，伯父	pt	294	pt	tio	Pa-Br
+16866	叔父，伯父	ru	903	ru	дядя	
+16866	叔父，伯父	th	297	th	ลุง	Pa-El-Br
+16866	叔父，伯父	th	297	th	อา	Fa-Yn-Sb
+16866	叔父，伯父	tl	1017	tl	tito	Pa-Br
+16866	叔父，伯父	tr	1791	tr	amca	Fa-Br
+16866	叔父，伯父	tr	2002	tr	dayı	Mo-Br
+16866	叔父，伯父	ur	355	ur	تایا	
+16866	叔父，伯父	vi	429	vi	chú	Fa-Yn-Br
+16866	叔父，伯父	vi	500	vi	bác	Fa-El-Br
+16866	叔父，伯父	zh	316	cmn	伯父	
+16866	叔父，伯父	zh	541	cmn	叔父	
+16866	叔父，伯父	zh	542	cmn	姑夫	
+16866	叔父，伯父	zh	543	cmn	舅父	
+16866	叔父，伯父	zh	544	cmn	姨夫	
+16869	叔母，伯母	ar	297	ar	عمة	Fa-Ss
+16869	叔母，伯母	ar	481	ar	خَالَةٌ	Mo-Ss
+16869	叔母，伯母	de	1025	de	Tante	Pa-Ss
+16869	叔母，伯母	en	1052	en	aunt	Aun;Pa-Ss
+16869	叔母，伯母	es	1002	es	tía	Pa-Ss
+16869	叔母，伯母	fr	858	fr	tante	Pa-Ss
+16869	叔母，伯母	id	701	id	bibi	Pa-Ss
+16869	叔母，伯母	km	298	km	មីង	
+16869	叔母，伯母	ko	1009	ko	이모	Mo-Ss
+16869	叔母，伯母	ko	807	ko	고모	Fa-Ss
+16869	叔母，伯母	lo	305	lo	ປ້າ	
+16869	叔母，伯母	mn	282	mn	эгч	El-Ss
+16869	叔母，伯母	mn	496	mn	нагац эгч	Mo-Ss
+16869	叔母，伯母	mn	497	mn	авга эгч	Fa-Ss
+16869	叔母，伯母	pb	1082	pt	tia	Pa-Ss
+16869	叔母，伯母	pt	299	pt	tia	Pa-Ss
+16869	叔母，伯母	ru	908	ru	тётя	Pa-Ss
+16869	叔母，伯母	th	301	th	น้า	Mo-Yn-Sb
+16869	叔母，伯母	th	301	th	ป้า	Pa-El-Ss
+16869	叔母，伯母	tl	1022	tl	tita	Pa-Ss
+16869	叔母，伯母	tr	1796	tr	teyze	Mo-Ss
+16869	叔母，伯母	ur	356	ur	پھوپھی	
+16869	叔母，伯母	vi	428	vi	cô	Fa-Ss
+16869	叔母，伯母	zh	548	cmn	婶母	
+16869	叔母，伯母	zh	549	cmn	姨母	
+16870	伯母（父の兄の妻）	zh	547	cmn	伯母	
+16888	甥	ar	518	ar	اِبْنُ أَخٍ	Br-So
+16892	いとこ	ar	288	ar	اِبْنُ عَمٍّ	Fa-Br-So
+16892	いとこ	de	1013	de	Cousin	Pa-Sb-So
+16892	いとこ	en	1040	en	cousin	Pa-Sb-Ch
+16892	いとこ	es	990	es	primo	Pa-Sb-So
+16892	いとこ	fr	848	fr	cousin	Pa-Sb-So
+16892	いとこ	id	692	id	saudara sepupu	
+16892	いとこ	km	286	km	បងប្អូនជីដូនមួយ	
+16892	いとこ	ko	795	ko	사촌	
+16892	いとこ	lo	293	lo	ລູກເອື້ອຍລູກນ້ອງ	
+16892	いとこ	pb	1071	pt	primo	Pa-Sb-So
+16892	いとこ	pt	287	pt	primo	Pa-Sb-So
+16892	いとこ	ru	896	ru	двоюродный брат	
+16892	いとこ	th	290	th	ลูกพี่ลูกน้อง	
+16892	いとこ	tl	1010	tl	pinsan	
+16892	いとこ	tr	1784	tr	kuzen	
+16892	いとこ	ur	357	ur	چچازاد بھائی	
+16892	いとこ	vi	489	vi	anh họ	El-Pa-Sb-So
+16892	いとこ	vi	490	vi	chị ho	
+16892	いとこ	vi	491	vi	em họ	Yn-Pa-Sb-Ch
+16893	従兄弟（母方）	ar	478	ar	اِبْنُ خَالٍ	Mo-Br-So
+16896	従姉妹	ar	477	ar	بنت عم	Fa-Br-Da
+16896	従姉妹	ar	479	ar	بنت خال	Mo-Br-Da

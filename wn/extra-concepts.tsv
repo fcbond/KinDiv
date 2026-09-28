@@ -1,0 +1,111 @@
+Subdomain	Concept	Abreviation	Source	Definition
+relatives	relative	Rel	OEWN 2025	a person related by blood or marriage
+uncles and aunts	uncle (by blood or marriage)	Unc	OEWN 2025	the brother of your father or mother; the husband of your aunt
+uncles and aunts	aunt (by blood or marriage)	Aun	OEWN 2025	the sister of your father or mother; the wife of your uncle
+uncles and aunts	husband of parent's sister	Pa;Ss;Hu	TUFS	
+uncles and aunts	husband of father's sister	Fa;Ss;Hu	TUFS (zh 姑夫)	
+uncles and aunts	husband of mother's sister	Mo;Ss;Hu	TUFS (zh 姨夫)	
+uncles and aunts	wife of parent's brother	Pa;Br;Wi	TUFS	
+uncles and aunts	wife of father's brother	Fa;Br;Wi	TUFS	
+uncles and aunts	wife of father's elder brother	Fa;El;Br;Wi	TUFS (zh 伯母)	
+uncles and aunts	wife of father's younger brother	Fa;Yn;Br;Wi	TUFS (zh 婶母)	
+parents	parent	Pa	OEWN 2025	a father or mother of a person
+parents	father	Fa	OEWN 2025	
+parents	mother	Mo	OEWN 2025	
+children	child	Ch	OEWN 2025	a son or daughter of a person
+children	son	So	OEWN 2025	
+children	daughter	Da	OEWN 2025	
+spouses	spouse	Sp	OEWN 2025	a husband or wife of a person
+spouses	husband	Hu	OEWN 2025	
+spouses	wife	Wi	OEWN 2025	
+in-laws	in-law	InL	OEWN 2025	a relative by marriage
+in-laws	parent-in-law	Sp;Pa	OEWN 2025	
+in-laws	father-in-law	Sp;Fa	OEWN 2025	
+in-laws	mother-in-law	Sp;Mo	OEWN 2025	
+in-laws	child-in-law	Ch;Sp	OEWN 2025	
+in-laws	son-in-law	Da;Hu	OEWN 2025	
+in-laws	daughter-in-law	So;Wi	OEWN 2025	
+in-laws	brother-in-law	BrL	OEWN 2025	a brother by marriage: a brother of one's spouse or the husband of one's sister
+in-laws	sister-in-law (by marriage)	SsL	OEWN 2025	a sister by marriage: a sister of one's spouse or the wife of one's brother
+in-laws	spouse's brother	Sp;Br	OEWN 2025	
+in-laws	sister's husband	Ss;Hu	OEWN 2025	
+in-laws	spouse's sister	Sp;Ss	OEWN 2025	
+in-laws	brother's wife	Br;Wi	OEWN 2025	
+cousins	son of father's sibling (female speaking)	o;Fa;Sb;So	Hmong, White (2021: 288); pending confirmation (CHECK in hmong-ontology/kindiv-proposals.tsv)	
+cousins	daughter of father's sibling (male speaking)	x;Fa;Sb;Da	Hmong, White (2021: 288); pending confirmation (CHECK in hmong-ontology/kindiv-proposals.tsv)	
+cousins	elder son of father's sibling (male speaking)	x;El;Fa;Sb;So	Hmong, White (2021: 288); pending confirmation (CHECK in hmong-ontology/kindiv-proposals.tsv)	
+cousins	younger son of father's sibling (male speaking)	x;Yn;Fa;Sb;So	Hmong, White (2021: 288); pending confirmation (CHECK in hmong-ontology/kindiv-proposals.tsv)	
+mergers	father or father's brother	Fa|Fa;Br	Kinbank: 230 languages, 73 families, 7 macroareas	the father of a person or a brother of one's father
+mergers	mother or mother's sister	Mo|Mo;Ss	Kinbank: 176 languages, 52 families, 7 macroareas	the mother of a person or a sister of one's mother
+cousins	father's sister's child or mother's brother's child	Fa;Ss;Ch|Mo;Br;Ch	Kinbank: 84 languages, 34 families, 6 macroareas	a child of one's father's sister or a child of one's mother's brother
+nephews and nieces	man's sister's daughter	x;Ss;Da	Kinbank: 71 languages, 32 families, 6 macroareas	
+mergers	child's child or parent's parent	Ch;Ch|Pa;Pa	Kinbank: 106 languages, 23 families, 5 macroareas	a child of one's child or a parent of one's parent
+mergers	mother or parent's sister	Mo|Pa;Ss	Kinbank: 55 languages, 17 families, 5 macroareas	the mother of a person or a sister of one's parent
+in-laws	wife's mother	Wi;Mo	Kinbank: 49 languages, 15 families, 6 macroareas	
+in-laws	husband's father	Hu;Fa	Kinbank: 43 languages, 14 families, 5 macroareas	
+children	man's daughter	x;Da	Kinbank: 23 languages, 14 families, 4 macroareas	
+cousins	father's sister's son or mother's brother's son	Fa;Ss;So|Mo;Br;So	Kinbank: 21 languages, 14 families, 5 macroareas	a son of one's father's sister or a son of one's mother's brother
+in-laws	husband's mother	Hu;Mo	Kinbank: 42 languages, 13 families, 5 macroareas	
+mergers	parent's sibling's child or sibling	Pa;Sb;Ch|Sb	Kinbank: 24 languages, 13 families, 5 macroareas	a child of one's parent's sibling or a sibling of a person
+mergers	brother's son or son	Br;So|So	Kinbank: 19 languages, 13 families, 5 macroareas	a son of one's brother or a son of a person
+cousins	father's sister's daughter or mother's brother's daughter	Fa;Ss;Da|Mo;Br;Da	Kinbank: 17 languages, 13 families, 5 macroareas	a daughter of one's father's sister or a daughter of one's mother's brother
+siblings	woman's brother or man's sister	o;Br|x;Ss	Kinbank: 70 languages, 12 families, 6 macroareas	a brother of a woman or a sister of a man
+in-laws	wife's father	Wi;Fa	Kinbank: 40 languages, 12 families, 5 macroareas	
+mergers	child or sibling's child	Ch|Sb;Ch	Kinbank: 26 languages, 12 families, 4 macroareas	a child of a person or a child of one's sibling
+mergers	mother's brother or mother's brother's son	Mo;Br|Mo;Br;So	Kinbank: 19 languages, 12 families, 5 macroareas	a brother of one's mother or a son of one's mother's brother
+mergers	brother's daughter or daughter	Br;Da|Da	Kinbank: 17 languages, 12 families, 5 macroareas	a daughter of one's brother or a daughter of a person
+mergers	elder brother or parent's sibling's son (older than self)	El;Br|El;Pa;Sb;So	Kinbank: 16 languages, 12 families, 6 macroareas	an elder brother of a person or a son of one's parent's sibling, who is older than oneself
+nephews and nieces	woman's brother's son or man's sister's son	o;Br;So|x;Ss;So	Kinbank: 40 languages, 11 families, 5 macroareas	a son of a woman's brother or a son of a man's sister
+children	man's son	x;So	Kinbank: 17 languages, 11 families, 4 macroareas	
+mergers	mother's brother or sister's child	Mo;Br|Ss;Ch	Kinbank: 16 languages, 11 families, 4 macroareas	a brother of one's mother or a child of one's sister
+siblings	woman's younger sister or man's younger brother	o;Yn;Ss|x;Yn;Br	Kinbank: 43 languages, 10 families, 5 macroareas	a younger sister of a woman or a younger brother of a man
+mergers	child's son or parent's father	Ch;So|Pa;Fa	Kinbank: 27 languages, 10 families, 6 macroareas	a son of one's child or the father of one's parent
+cousins	woman's father's sister's son or woman's mother's brother's son	o;Fa;Ss;So|o;Mo;Br;So	Kinbank: 14 languages, 10 families, 3 macroareas	a son of a woman's father's sister or a son of a woman's mother's brother
+in-laws	wife's brother	Wi;Br	Kinbank: 41 languages, 9 families, 6 macroareas	
+in-laws	husband's sister	Hu;Ss	Kinbank: 39 languages, 9 families, 5 macroareas	
+mergers	woman's brother or woman's parent's sibling's son	o;Br|o;Pa;Sb;So	Kinbank: 38 languages, 9 families, 5 macroareas	a brother of a woman or a son of a woman's parent's sibling
+mergers	man's parent's sibling's daughter or man's sister	x;Pa;Sb;Da|x;Ss	Kinbank: 37 languages, 9 families, 5 macroareas	a daughter of a man's parent's sibling or a sister of a man
+mergers	sibling's son or son	Sb;So|So	Kinbank: 32 languages, 9 families, 5 macroareas	a son of one's sibling or a son of a person
+mergers	child's daughter or parent's mother	Ch;Da|Pa;Mo	Kinbank: 25 languages, 9 families, 6 macroareas	a daughter of one's child or the mother of one's parent
+mergers	mother's brother or man's sister's child	Mo;Br|x;Ss;Ch	Kinbank: 21 languages, 9 families, 3 macroareas	a brother of one's mother or a child of a man's sister
+mergers	father's father or man's son's child	Fa;Fa|x;So;Ch	Kinbank: 19 languages, 9 families, 3 macroareas	the father of one's father or a child of a man's son
+nephews and nieces	woman's brother's daughter	o;Br;Da	Kinbank: 14 languages, 9 families, 6 macroareas	
+siblings	woman's elder sister or man's elder brother	o;El;Ss|x;El;Br	Kinbank: 35 languages, 8 families, 5 macroareas	an elder sister of a woman or an elder brother of a man
+mergers	daughter or sibling's daughter	Da|Sb;Da	Kinbank: 32 languages, 8 families, 3 macroareas	a daughter of a person or a daughter of one's sibling
+mergers	brother's child or child	Br;Ch|Ch	Kinbank: 28 languages, 8 families, 4 macroareas	a child of one's brother or a child of a person
+children	woman's child	o;Ch	Kinbank: 19 languages, 8 families, 5 macroareas	
+mergers	mother's father or man's daughter's child	Mo;Fa|x;Da;Ch	Kinbank: 17 languages, 8 families, 3 macroareas	the father of one's mother or a child of a man's daughter
+mergers	father's mother or woman's son's child	Fa;Mo|o;So;Ch	Kinbank: 15 languages, 8 families, 3 macroareas	the mother of one's father or a child of a woman's son
+cousins	man's father's sister's son or man's mother's brother's son	x;Fa;Ss;So|x;Mo;Br;So	Kinbank: 13 languages, 8 families, 5 macroareas	a son of a man's father's sister or a son of a man's mother's brother
+children	woman's daughter	o;Da	Kinbank: 13 languages, 8 families, 4 macroareas	
+cousins	man's father's sister's son	x;Fa;Ss;So	Kinbank: 12 languages, 8 families, 6 macroareas	
+cousins	man's father's sister's daughter or man's mother's brother's daughter	x;Fa;Ss;Da|x;Mo;Br;Da	Kinbank: 12 languages, 8 families, 3 macroareas	a daughter of a man's father's sister or a daughter of a man's mother's brother
+cousins	woman's father's sister's daughter (older than self)	o;El;Fa;Ss;Da	Kinbank: 11 languages, 8 families, 4 macroareas	
+nephews and nieces	woman's sister's child	o;Ss;Ch	Kinbank: 11 languages, 8 families, 5 macroareas	
+mergers	brother or parent's sibling's son	Br|Pa;Sb;So	Kinbank: 10 languages, 8 families, 4 macroareas	a brother of a person or a son of one's parent's sibling
+mergers	parent's sibling's daughter or sister	Pa;Sb;Da|Ss	Kinbank: 10 languages, 8 families, 6 macroareas	a daughter of one's parent's sibling or a sister of a person
+cousins	woman's father's sister's daughter or woman's mother's brother's daughter	o;Fa;Ss;Da|o;Mo;Br;Da	Kinbank: 10 languages, 8 families, 3 macroareas	a daughter of a woman's father's sister or a daughter of a woman's mother's brother
+mergers	child's child or sibling's child	Ch;Ch|Sb;Ch	Kinbank: 9 languages, 8 families, 3 macroareas	a child of one's child or a child of one's sibling
+cousins	woman's mother's brother's daughter (older than self)	o;El;Mo;Br;Da	Kinbank: 8 languages, 8 families, 4 macroareas	
+children	woman's son	o;So	Kinbank: 11 languages, 7 families, 4 macroareas	
+cousins	woman's mother's sister's son (younger than self)	o;Yn;Mo;Ss;So	Kinbank: 10 languages, 7 families, 4 macroareas	
+nephews and nieces	man's brother's child	x;Br;Ch	Kinbank: 7 languages, 7 families, 4 macroareas	
+in-laws	husband's brother	Hu;Br	Kinbank: 38 languages, 6 families, 4 macroareas	
+cousins	man's father's sister's daughter	x;Fa;Ss;Da	Kinbank: 14 languages, 6 families, 3 macroareas	
+cousins	man's father's brother's daughter (younger than self)	x;Yn;Fa;Br;Da	Kinbank: 12 languages, 6 families, 4 macroareas	
+cousins	woman's father's sister's daughter	o;Fa;Ss;Da	Kinbank: 10 languages, 6 families, 4 macroareas	
+cousins	man's mother's sister's daughter (older than self)	x;El;Mo;Ss;Da	Kinbank: 8 languages, 6 families, 3 macroareas	
+in-laws	spouse's sibling	Sp;Sb	Kinbank: 8 languages, 6 families, 4 macroareas	
+cousins	woman's mother's brother's daughter (younger than self)	o;Yn;Mo;Br;Da	Kinbank: 7 languages, 6 families, 4 macroareas	
+nephews and nieces	woman's sibling's child	o;Sb;Ch	Kinbank: 7 languages, 6 families, 4 macroareas	
+cousins	man's father's sister's daughter (older than self)	x;El;Fa;Ss;Da	Kinbank: 6 languages, 6 families, 3 macroareas	
+parents	man's father	x;Fa	Kinbank: 6 languages, 6 families, 3 macroareas	
+parents	woman's father	o;Fa	Kinbank: 6 languages, 6 families, 4 macroareas	
+in-laws	wife's sister	Wi;Ss	Kinbank: 33 languages, 5 families, 3 macroareas	
+cousins	woman's mother's sister's daughter (younger than self)	o;Yn;Mo;Ss;Da	Kinbank: 9 languages, 5 families, 3 macroareas	
+children	man's child	x;Ch	Kinbank: 9 languages, 5 families, 5 macroareas	
+cousins	woman's father's sister's son	o;Fa;Ss;So	Kinbank: 8 languages, 5 families, 3 macroareas	
+cousins	woman's father's sister's son (older than self)	o;El;Fa;Ss;So	Kinbank: 8 languages, 5 families, 3 macroareas	
+cousins	woman's mother's sister's son (older than self)	o;El;Mo;Ss;So	Kinbank: 6 languages, 5 families, 3 macroareas	
+cousins	woman's mother's brother's son	o;Mo;Br;So	Kinbank: 5 languages, 5 families, 4 macroareas	
+parents	man's mother	x;Mo	Kinbank: 5 languages, 5 families, 4 macroareas	

@@ -1,0 +1,38 @@
+concept	ili	relation	oewn_lemma	note
+Gr;Pr	i90292	exact	grandparent	a parent of your father or mother
+Gr;Fa	i90287	exact	grandfather	the father of your father or mother
+Gr;Mo	i90289	exact	grandmother	the mother of your father or mother
+Gr;Ch	i90280	exact	grandchild	a child of your son or daughter
+Gr;So	i90293	exact	grandson	a male grandchild
+Gr;Da	i90281	exact	granddaughter	a female grandchild
+Sb	i92980	exact	sibling	a person's brother or sister
+Br	i91174	exact	male sibling	a sibling who is male; OEWN brother (i88708) is narrower: full siblings only
+Ss	i89922	exact	female sibling	a person's sister; OEWN sister (i93018) is narrower: full siblings only
+El;Br	i88560	exact	big brother	an older brother
+Yn;Br	i91053	exact	little brother	a younger brother
+El;Ss	i88564	exact	big sister	an older sister
+Yn;Ss	i91057	exact	little sister	a younger sister
+Sb;So	i91586	exact	nephew	a son of your brother or sister
+Sb;Da	i91615	exact	niece	a daughter of your brother or sister
+Pa;Sb;Ch	i89276	exact	cousin	the child of your aunt or uncle
+Pa;Br	i93825	broader	uncle	OEWN also includes the husband of your aunt; KinDiv is consanguineal only
+Pa;Ss	i88357	broader	aunt	OEWN also includes the wife of your uncle; KinDiv is consanguineal only
+Unc	i93825	exact	uncle	
+Aun	i88357	exact	aunt	
+Rel	i90856	exact	relative	
+Pa	i91858	exact	parent	
+Fa	i89901	exact	father	
+Mo	i91462	exact	mother	
+Ch	i88965	exact	child	
+So	i93143	exact	son	
+Da	i89398	exact	daughter	
+Sp	i93233	exact	spouse	
+Hu	i90626	exact	husband	
+Wi	i94123	exact	wife	
+InL	i90702	exact	in-law	
+Sp;Fa	i89906	exact	father-in-law	
+Sp;Mo	i91467	exact	mother-in-law	
+Da;Hu	i93147	exact	son-in-law	
+So;Wi	i89399	exact	daughter-in-law	
+BrL	i88712	exact	brother-in-law	
+Sp;Ss	i93022	exact	sister-in-law	OEWN defines sister-in-law as only 'the sister of your spouse'
