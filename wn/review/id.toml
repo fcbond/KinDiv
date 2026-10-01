@@ -1,0 +1,405 @@
+# KinDiv kinship terms for id, from the built lexicon kindiv-id.
+# One table per concept. Edit `comment`; leave the rest as generated.
+
+["Gr;Fa"]
+lemmas = ["engkong", "kakek"]
+english = ["gramps", "grandfather", "grandpa"]
+label = "grandfather"
+definition = "the father of one's parent (a grandparent)"
+sources = ["engkong <- Wiktionary", "kakek <- Kinbank, TUFS, Wiktionary"]
+comment = ""
+
+["Gr;Mo"]
+lemmas = ["nenek", "nénék"]
+english = ["grandma", "grandmother", "granny"]
+label = "grandmother"
+definition = "the mother of one's parent (a grandparent)"
+sources = ["nenek <- TUFS, Wiktionary", "nénék <- Kinbank"]
+comment = ""
+
+["Gr;Ch"]
+lemmas = ["tjutju"]
+english = ["grandchild", "grandkid"]
+label = "grandchild"
+definition = "a child of one's child (a grandchild)"
+sources = ["tjutju <- Kinbank"]
+comment = ""
+
+["Sb"]
+lemmas = ["saudara"]
+english = ["sibling"]
+label = "sibling"
+definition = "a brother or sister of a person"
+sources = ["saudara <- TUFS"]
+comment = ""
+
+["El;Sb"]
+lemmas = ["kakak"]
+english = ["sibling"]
+english_via = "Sb"
+label = "elder sibling"
+definition = "an elder sibling of a person"
+sources = ["kakak <- Kinbank, TUFS"]
+comment = ""
+
+["Yn;Sb"]
+lemmas = ["adik"]
+english = ["sibling"]
+english_via = "Sb"
+label = "younger sibling"
+definition = "a younger sibling of a person"
+sources = ["adik <- Kinbank"]
+comment = ""
+
+["El;Br"]
+lemmas = ["kakak laki-laki"]
+english = ["brother"]
+english_via = "Br"
+label = "elder brother"
+definition = "an elder brother of a person (a sibling)"
+sources = ["kakak laki-laki <- TUFS"]
+comment = ""
+
+["El;Ss"]
+lemmas = ["kakak perempuan"]
+english = ["sister"]
+english_via = "Ss"
+label = "elder sister"
+definition = "an elder sister of a person (a sibling)"
+sources = ["kakak perempuan <- TUFS"]
+comment = ""
+
+["Pa;Br"]
+lemmas = ["om", "paman"]
+english = ["uncle"]
+label = "uncle"
+definition = "a brother of one's parent (an uncle or aunt)"
+sources = ["om <- Wiktionary", "paman <- Kinbank, TUFS, Wiktionary"]
+comment = ""
+
+["Pa;Ss"]
+lemmas = ["bibi"]
+english = ["aunt"]
+label = "aunt"
+definition = "a sister of one's parent (an uncle or aunt)"
+sources = ["bibi <- Kinbank, TUFS, Wiktionary"]
+comment = ""
+
+["Sb;Ch"]
+lemmas = ["kemanakan"]
+english = ["relative"]
+english_via = "Rel"
+label = "nibling"
+definition = "a child of one's sibling (a nephew or niece)"
+sources = ["kemanakan <- Kinbank"]
+comment = ""
+
+["Pa;Sb;Ch"]
+lemmas = ["saudara sepupu", "sepupu"]
+english = ["cousin"]
+label = "cousin"
+definition = "a child of one's parent's sibling (a cousin)"
+sources = ["saudara sepupu <- TUFS", "sepupu <- Kinbank"]
+comment = ""
+
+["Unc"]
+lemmas = ["paman"]
+english = ["uncle"]
+label = "uncle (by blood or marriage)"
+definition = "the brother of your father or mother; the husband of your aunt"
+sources = ["paman <- TUFS"]
+comment = ""
+
+["Aun"]
+lemmas = ["bibi"]
+english = ["aunt"]
+label = "aunt (by blood or marriage)"
+definition = "the sister of your father or mother; the wife of your uncle"
+sources = ["bibi <- TUFS"]
+comment = ""
+
+["Pa"]
+lemmas = ["orang tua"]
+english = ["parent", "parents"]
+label = "parent"
+definition = "a father or mother of a person"
+sources = ["orang tua <- TUFS"]
+comment = ""
+
+["Fa"]
+lemmas = ["ayah", "babak"]
+english = ["dad", "father"]
+label = "father"
+definition = "the father of a person (a parent)"
+sources = ["ayah <- TUFS", "babak <- Kinbank"]
+comment = ""
+
+["Mo"]
+lemmas = ["ibu"]
+english = ["mom", "mother"]
+label = "mother"
+definition = "the mother of a person (a parent)"
+sources = ["ibu <- Kinbank, TUFS"]
+comment = ""
+
+["Ch"]
+lemmas = ["anak"]
+english = ["child"]
+label = "child"
+definition = "a son or daughter of a person"
+sources = ["anak <- Kinbank"]
+comment = ""
+
+["Hu"]
+lemmas = ["suami"]
+english = ["husband"]
+label = "husband"
+definition = "the husband of a person (a spouse)"
+sources = ["suami <- TUFS"]
+comment = ""
+
+["Wi"]
+lemmas = ["istri"]
+english = ["wife"]
+label = "wife"
+definition = "the wife of a person (a spouse)"
+sources = ["istri <- TUFS"]
+comment = ""
+
+["Gr;Pr"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandparent"
+definition = "a parent of one's parent (a grandparent)"
+comment = ""
+
+["Fa;Pr"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "paternal grandparent"
+definition = "a parent of one's father (a grandparent)"
+comment = ""
+
+["Mo;Pr"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "maternal grandparent"
+definition = "a parent of one's mother (a grandparent)"
+comment = ""
+
+["x;Gr;Pr"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandparent (male speaking)"
+definition = "a parent of a man's parent (a grandparent)"
+comment = ""
+
+["o;Gr;Pr"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandparent (female speaking)"
+definition = "a parent of a woman's parent (a grandparent)"
+comment = ""
+
+["x;Gr;Fa"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandfather (male speaking)"
+definition = "the father of a man's parent (a grandparent)"
+comment = ""
+
+["o;Gr;Fa"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandfather (female speaking)"
+definition = "the father of a woman's parent (a grandparent)"
+comment = ""
+
+["x;Gr;Mo"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandmother (male speaking)"
+definition = "the mother of a man's parent (a grandparent)"
+comment = ""
+
+["o;Gr;Mo"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandmother (female speaking)"
+definition = "the mother of a woman's parent (a grandparent)"
+comment = ""
+
+["x;Fa;Fa"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "paternal grandfather (male speaking)"
+definition = "the father of a man's father (a grandparent)"
+comment = ""
+
+["o;Fa;Fa"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "paternal grandfather (female speaking)"
+definition = "the father of a woman's father (a grandparent)"
+comment = ""
+
+["x;Mo;Mo"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "maternal grandmother (male speaking)"
+definition = "the mother of a man's mother (a grandparent)"
+comment = ""
+
+["o;Mo;Mo"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "maternal grandmother (female speaking)"
+definition = "the mother of a woman's mother (a grandparent)"
+comment = ""
+
+["Pb"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "auncle"
+definition = "a sibling of one's parent (an uncle or aunt)"
+comment = ""
+
+["Fa;Sb"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "father's sibling"
+definition = "a sibling of one's father (an uncle or aunt)"
+comment = ""
+
+["Mo;Sb"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "mother's sibling"
+definition = "a sibling of one's mother (an uncle or aunt)"
+comment = ""
+
+["x;Pa;Br"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "uncle (male speaking)"
+definition = "a brother of a man's parent (an uncle or aunt)"
+comment = ""
+
+["o;Pa;Br"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "uncle (female speaking)"
+definition = "a brother of a woman's parent (an uncle or aunt)"
+comment = ""
+
+["x;Pa;Ss"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "aunt (male speaking)"
+definition = "a sister of a man's parent (an uncle or aunt)"
+comment = ""
+
+["o;Pa;Ss"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "aunt (female speaking)"
+definition = "a sister of a woman's parent (an uncle or aunt)"
+comment = ""
+
+["x;Mo;Br"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "maternal uncle (male speaking)"
+definition = "a brother of a man's mother (an uncle or aunt)"
+comment = ""
+
+["o;Mo;Br"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "maternal uncle (female speaking)"
+definition = "a brother of a woman's mother (an uncle or aunt)"
+comment = ""
+
+["x;Fa;Ss"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "paternal aunt (male speaking)"
+definition = "a sister of a man's father (an uncle or aunt)"
+comment = ""
+
+["o;Fa;Ss"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "paternal aunt (female speaking)"
+definition = "a sister of a woman's father (an uncle or aunt)"
+comment = ""
+
+["Fa;Yn;Sb"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "father's younger sibling"
+definition = "a younger sibling of one's father (an uncle or aunt)"
+comment = ""
+
+["Mo;Yn;Sb"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "mother's younger sibling"
+definition = "a younger sibling of one's mother (an uncle or aunt)"
+comment = ""
+
+["Fa;El;Br"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "father's elder brother"
+definition = "an elder brother of one's father (an uncle or aunt)"
+comment = ""
+
+["Fa;Yn;Br"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "father's younger brother"
+definition = "a younger brother of one's father (an uncle or aunt)"
+comment = ""
+
+["Fa;El;Ss"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "father's elder sister"
+definition = "an elder sister of one's father (an uncle or aunt)"
+comment = ""
+
+["Fa;Yn;Ss"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "father's younger sister"
+definition = "a younger sister of one's father (an uncle or aunt)"
+comment = ""
+
+["Mo;El;Br"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "mother's elder brother"
+definition = "an elder brother of one's mother (an uncle or aunt)"
+comment = ""
+
+["Mo;Yn;Br"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "mother's younger brother"
+definition = "a younger brother of one's mother (an uncle or aunt)"
+comment = ""
+
+["Mo;El;Ss"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "mother's elder sister"
+definition = "an elder sister of one's mother (an uncle or aunt)"
+comment = ""
+
+["Mo;Yn;Ss"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "mother's younger sister"
+definition = "a younger sister of one's mother (an uncle or aunt)"
+comment = ""

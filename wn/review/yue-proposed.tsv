@@ -1,0 +1,45 @@
+code	lemma	jyutping	confidence	note
+Fa	爸爸	baa4 baa1	high	colloquial
+Fa	父親	fu6 can1	high	formal
+Fa	老豆	lou5 dau6	high	slang
+Mo	媽媽	maa4 maa1	high	colloquial
+Mo	母親	mou5 can1	high	formal
+Mo	老母	lou5 mou2	high	slang
+Pa	父母	fu6 mou5	high	'parents', a pair
+So	仔	zai2	high	'son' (also 'boy')
+So	兒子	ji4 zi2	high	formal
+Da	囡	neoi2	high	'daughter'
+Da	女兒	neoi5 ji4	high	formal
+Ch	子女	zi2 neoi5	medium	'children', collective
+Hu	老公	lou5 gung1	high	colloquial
+Hu	丈夫	zoeng6 fu1	high	formal
+Wi	老婆	lou5 po4	high	colloquial
+Wi	太太	taai3 taai2	high	also 'Mrs'
+Wi	妻子	cai1 zi2	high	formal
+Yn;Ss	細妹	sai3 mui2	high	
+Br	兄弟	hing1 dai6	medium	'brothers'; also 'brother' generally
+Ss	姊妹	zi2 mui6	medium	'sisters'
+Fa;El;Br	伯父	baak3 fu6	high	also 阿伯 aa3 baak3
+Fa;Yn;Br	叔叔	suk1 suk1	high	also 阿叔 aa3 suk1
+Mo;Br	舅父	kau5 fu2	high	also 阿舅 aa3 kau5
+Fa;El;Ss	姑媽	gu1 maa1	high	father's elder sister
+Fa;Yn;Ss	姑姐	gu1 ze1	high	father's younger sister
+Mo;El;Ss	姨媽	ji4 maa1	high	mother's elder sister
+Mo;Yn;Ss	阿姨	aa3 ji1	high	mother's younger sister; also any older woman
+Fa;El;Br;Wi	伯娘	baak3 noeng4	high	
+Fa;Yn;Br;Wi	阿嬸	aa3 sam2	high	also 嬸嬸 sam2 sam2
+Fa;Ss;Hu	姑丈	gu1 zoeng2	high	
+Mo;Ss;Hu	姨丈	ji4 zoeng2	high	
+Br;So	姪	zat6	high	also 姪仔 zat6 zai2
+Hu;Fa	老爺	lou5 je4	high	a wife's term for her husband's father
+Hu;Mo	奶奶	naai4 naai2	high	a wife's term for her husband's mother
+Wi;Fa	外父	ngoi6 fu2	high	a husband's term for his wife's father
+Wi;Mo	外母	ngoi6 mou2	high	
+So;Wi	新抱	san1 pou5	high	daughter-in-law
+Da;Hu	女婿	neoi5 sai3	high	
+Ss;Hu	姐夫	ze2 fu1	high	elder sister's husband (no elder-specific concept)
+Ss;Hu	妹夫	mui6 fu1	high	younger sister's husband (no younger-specific concept)
+Br;Wi	阿嫂	aa3 sou2	high	elder brother's wife (no elder-specific concept)
+Br;Wi	弟婦	dai6 fu5	medium	younger brother's wife
+Wi;Br	舅仔	kau5 zai2	medium	wife's (younger) brother
+Rel	親戚	can1 cik1	high	'relative'
