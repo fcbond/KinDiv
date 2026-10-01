@@ -188,3 +188,16 @@ def test_languages_from_later_sources_keep_their_kindiv_gaps(data) -> None:
     _, _, languages = data
     assert languages["Arikara"].words
     assert languages["Arikara"].gaps
+
+
+def test_transcriptions_are_pronunciations_not_words(data) -> None:
+    _, _, languages = data
+    english, german = languages["English"], languages["German"]
+    assert "ˈbɹʌðə" not in english.words
+    assert ("ˈbɹʌðə", "IPA") in english.pronunciations["brother"]
+    assert ("ŭngʹkəl", "respelling") in english.pronunciations["uncle"]
+    # one pronunciation per transcription: Großmutter, not Oma
+    assert "Oma" not in german.pronunciations
+    # a written form held back for a broader synonym, attested by the transcription
+    assert ("ˈtɔχtɐ", "IPA") in german.pronunciations["Tochter"]
+    assert "Tochter" in german.words

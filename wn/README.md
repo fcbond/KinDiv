@@ -161,6 +161,12 @@ differences (Polish *wujek*, Hungarian *unokanővér*). Notes:
 - ISO 639-3 codes map to the tags `languages.tsv` already uses, including
   macrolanguages (`pes` -> `fa`, `hbs` -> `sh`, `tgl` -> `tl`). 217 Kinbank
   languages have no ISO code and are skipped.
+- Two Kinbank varieties transcribe languages with an orthography of their own
+  (`p_englishstan1293`, `p_germanstan1295`: *ˈbɹʌðə*, *ŭngʹkəl*, *ˈtɔχtɐ*). Their
+  forms become `<Pronunciation>`s of the written word for the same concept
+  (`notation="IPA"`, or `respelling` for dictionary respelling), not words. Where
+  that written word was held back for a broader synonym (German *Tochter*,
+  *Sohn*), the transcription's exact match attests it and it is added.
 
 ## Attestations
 

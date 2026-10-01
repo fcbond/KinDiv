@@ -28,6 +28,7 @@ import shutil
 import tarfile
 from collections import defaultdict
 from dataclasses import dataclass, field
+from difflib import SequenceMatcher
 from pathlib import Path
 from xml.sax.saxutils import escape, quoteattr
 
@@ -335,6 +336,10 @@ class Language:
     gaps: dict[str, str] = field(default_factory=dict)
     #: compositional phrase -> concept code, for concepts with no word
     phrases: dict[str, str] = field(default_factory=dict)
+    #: written form -> {(transcription, notation)}, from transcribed sources
+    pronunciations: dict[str, set[tuple[str, str]]] = field(
+        default_factory=lambda: defaultdict(set)
+    )
 
 
 def add_phrases(language: Language, concepts: dict[str, Concept]) -> None:
@@ -443,11 +448,80 @@ def add_kinbank(languages: dict[str, Language], concepts: dict[str, Concept]) ->
     Matches flagged with a broader synonym are left out: there the term's absence
     from a neighbouring position may only mean Kinbank recorded one word per slot.
     """
-    for row in read_tsv(HERE / "kinbank-candidates.tsv"):
+    rows = read_tsv(HERE / "kinbank-candidates.tsv")
+    for row in rows:
+        if row["kinbank_language"] in TRANSCRIBED:
+            continue
         if not row["broader_synonym"]:
             name = register_language(row["language"], row["tag"])
             source = f"Kinbank {row['kinbank_language']}: {row['positions']}"
             add_word(languages, name, row["form"], concepts[row["concept"]], source)
+    add_transcriptions(languages, concepts, rows)
+
+
+#: Kinbank varieties that transcribe a language with an orthography of its own
+#: (English and German in IPA or dictionary respelling): their forms are
+#: pronunciations of the written words, not words
+TRANSCRIBED = {"p_englishstan1293", "p_germanstan1295"}
+#: characters of dictionary respelling (Webster's *ŭngʹkəl*), not IPA
+RESPELLING = set("ĭŭăĕŏʹ'")
+
+
+def add_transcriptions(
+    languages: dict[str, Language], concepts: dict[str, Concept], rows: list[dict]
+) -> None:
+    """Attach transcribed Kinbank forms to the written words they transcribe.
+
+    A transcription goes to the written form Kinbank gives for the same concept
+    and language from another variety (*ˈbɹʌðə* to *brother*); failing that, to
+    the language's only word for the concept. Otherwise it is left out and logged.
+    A written form held back for a broader synonym (German *Tochter*, also under
+    *Kind*) is added after all: the transcribing variety records it for exactly
+    the concept's positions, so the two sources together attest it.
+    """
+    written: dict[tuple[str, str], list[dict]] = defaultdict(list)
+    for row in rows:
+        if row["kinbank_language"] not in TRANSCRIBED:
+            written[row["tag"], row["concept"]].append(row)
+    for row in rows:
+        if row["kinbank_language"] not in TRANSCRIBED:
+            continue
+        name = register_language(row["language"], row["tag"])
+        language = languages.setdefault(name, Language(name, row["tag"]))
+        form = row["form"].replace("®", "").strip()
+        notation = "respelling" if RESPELLING & set(form) else "IPA"
+        targets = []
+        # of several written forms (Großmutter, Oma), the one it transcribes
+        pairs = written[row["tag"], row["concept"]]
+        pairs = sorted(pairs, key=lambda pair: -similarity(pair["form"], form))[:1]
+        for pair in pairs:
+            source = (
+                f"Kinbank {pair['kinbank_language']}: {pair['positions']};"
+                f" Kinbank {row['kinbank_language']}: {row['positions']}"
+            )
+            if pair["form"] not in language.words:
+                add_word(
+                    languages, name, pair["form"], concepts[row["concept"]], source
+                )
+            targets.append(pair["form"])
+        if not targets:
+            words = [
+                w
+                for w, senses in language.words.items()
+                if any(code == row["concept"] for code, _ in senses)
+            ]
+            targets = words if len(words) == 1 else []
+        if not targets:
+            logger.warning(
+                "no written word for %s %s %s", row["tag"], row["concept"], form
+            )
+        for word in targets:
+            language.pronunciations[word].add((form, notation))
+
+
+def similarity(spelling: str, transcription: str) -> float:
+    """How alike a written form and a transcription are, from 0 to 1."""
+    return SequenceMatcher(None, spelling.lower(), transcription).ratio()
 
 
 def register_language(name: str, tag: str) -> str:
@@ -583,7 +657,18 @@ def write_language(
         entry_id = f"{lexicon_id}-e{index:04d}"
         meanings = language.words.get(form, [])
         lines.append(f'    <LexicalEntry id="{entry_id}">')
-        lines.append(f'      <Lemma writtenForm={quoteattr(form)} partOfSpeech="n"/>')
+        sounds = sorted(language.pronunciations.get(form, ()))
+        lemma = f'      <Lemma writtenForm={quoteattr(form)} partOfSpeech="n"'
+        if sounds:
+            lines.append(lemma + ">")
+            for sound, notation in sounds:
+                lines.append(
+                    f'        <Pronunciation notation="{notation}">'
+                    f"{escape(sound)}</Pronunciation>"
+                )
+            lines.append("      </Lemma>")
+        else:
+            lines.append(lemma + "/>")
         if form in language.phrases:
             code = language.phrases[form]
             lines.append(
