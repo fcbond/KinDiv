@@ -23,16 +23,26 @@ uv run --with pytest pytest wn       # tests
 - **`kindiv-<tag>`** (1,028 lexicons: 171 from KinDiv, TUFS and hmong-ontology, the rest from Kinbank) are
   standalone lexicons of words: one synset per concept the language lexicalizes,
   carrying the concept's ILI where it has one (empty otherwise), and
-  `dc:identifier="KinDiv:Fa;Br;So"`. They have **no relations**; the hierarchy is
-  reached through the ILI:
+  `dc:identifier="KinDiv:Fa;Br;So"`. They have **no relations**. The hierarchy
+  is in the shared lexicon; join a language synset to its concept on
+  `dc:identifier`:
 
   ```python
-  zh = wn.Wordnet("kindiv-cmn", expand="kindiv")
-  zh.synsets("哥哥")[0].hypernym_paths()  # male sibling > sibling > relative
+  base = wn.Wordnet("kindiv")
+  concept = {s.metadata()["identifier"]: s for s in base.synsets()}
+  pl = wn.Wordnet("kindiv-pl")
+  wujek = pl.synsets("wujek")[0]
+  concept[wujek.metadata()["identifier"]].hypernyms()
+  # KinDiv:Mo;Sb, KinDiv:Pa;Br, KinDiv:Mo;Br|Mo;Br;So, KinDiv:Mo;Br|x;Ss;Ch
   ```
 
-  This works for the 35 ILI-linked concepts now, and for the others once CILI
-  assigns ILIs to the proposals; until then, match on `dc:identifier`.
+  Wn's `expand="kindiv"` does **not** give the hierarchy yet. It matches
+  synsets by ILI, and a proposed concept (`ili="in"`) has none until CILI
+  assigns one, so only the 35 ILI-linked concepts are reached, and even their
+  paths skip proposed ancestors (*dziadek* "grandfather" reaches *grandparent*
+  but not the merger above it). Expansion also returns only synsets present in
+  the language's own lexicon. Once CILI assigns ILIs to the proposals,
+  `expand` will work for every concept.
 - **Words** become entries, with one sense per concept they express. The sense's
   `dc:source` is the provenance (KinDiv, TUFS, OEWN or Wiktionary).
 - **English phrases**: every concept English has no word for (197 of 236) gets
