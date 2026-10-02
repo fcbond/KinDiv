@@ -143,3 +143,62 @@ when linking:
   *male*, and *foster sister* (`i90061`) under *female*, not under any
   relative; *foster parent* (`i90060`) is under *defender*. *adoptive parent*
   and *stepparent* are under *parent*, so the treatment is inconsistent.
+
+## 4. Speaker sex, register and politeness on kin terms
+
+**Anchor sex is not speaker register.** KinDiv's `x`/`o` ("male/female
+speaking", after Murdock's *m.s.*/*w.s.*) is the sex of the *anchor* (ego), the
+person the relation is traced from: `x;El;Br` is "an elder brother of a man", and it changes what the
+word denotes (Burmese *nyi* is a man's younger brother whoever is speaking). The
+pronoun wordnet's `Men`/`Wom` ("men's/women's speech", from NTUMC) is a
+restriction on the *speaker*, a register: *boku* "I" is predominantly men's
+speech but denotes whoever says it. The two coincide only when the speaker is
+the anchor (first-person pronouns, kin terms of address), which is why "male speaking"
+looks like the same thing. They should stay distinct features, but:
+
+- the labels now say "(male anchor)" rather than "(male speaking)" (done:
+  `relabel` in `build.py`);
+- `Men`/`Wom` applies to kin terms too: Japanese *oyaji* "father" and *ofukuro*
+  "mother" are mostly men's speech, whatever the anchor's sex.
+
+**Politeness and formality are missing.** Kin terms vary on the same axes as
+pronouns:
+
+- politeness: Japanese *ani* (one's own elder brother, spoken of to outsiders)
+  vs *oniisan* (respectful; in address and for others' brothers); *chichi* vs
+  *otōsan*, *haha* vs *okāsan*;
+- formality: English *father* vs *dad* vs *old man*; Japanese *chichiue*
+  (formal, archaic) vs *oyaji* (familiar).
+
+The pronoun features `Fml`/`Infml`, `Pol`/`Hon`/`NHon` and `Men`/`Wom` would apply
+unchanged (`El;Br;Hon` for *oniisan*). No source we use records them for kin
+terms:
+
+- KinDiv, Kinbank and TUFS give one word per kin type, or list alternatives
+  without saying how they differ.
+- NTUMC puts Japanese *兄*, *兄さん* and *兄貴* in one synset ("an older brother"),
+  and *父*, *お父さん*, *親父*, *父上* in another ("a male parent"); none of its 32
+  links from non-pronoun synsets to feature synsets is from a kin synset.
+- OEWN does separate register for English parents, as concepts of their own:
+  *dad, daddy, pa, papa* (`i89370`, "an informal term for a father") and
+  *old man* (`i91724`, "an informal term for your father") are hyponyms of
+  *father* (`i89901`, our `Fa`); *old man* is also a hyponym of *dysphemism*;
+  *ma, mama, mom, mommy* (`i91123`, "informal terms for a mother") is under
+  *mother* (`i91462`, our `Mo`). The register is stated only in the
+  definition (and, for *old man*, the second hypernym), not by a feature.
+  NTUMC's Japanese mixes them: formal *母* is in the informal-mother synset,
+  and *お母さん* in both.
+
+**How to add them.** OEWN's practice answers the design question: a register
+variant is a concept of its own, a hyponym of the plain kin type, as in the
+pronoun wordnet, where `1;Sg;Fml` is under `1;Sg`. Kin codes would take the
+pronoun features: `Fa;Infml` for *dad* (= `i89370`), `Fa;Infml;Men`
+for *old man*/*oyaji*, `El;Br;Hon` for *oniisan*, with `exemplifies` links to
+the same feature synsets. Admission needs evidence that languages lexicalize
+the register distinction for a kin type, which none of our sources records.
+
+**Future work:** add register features to kin concepts, starting from English
+(OEWN's *dad*, *old man*, *mom*, which would link to existing ILIs) and
+Japanese (where the distinctions are grammaticalized), and from
+pronoun-substitute data (question 2 of omw-pronoun's list: kin terms used in
+address).

@@ -65,6 +65,15 @@ A LexiconExtension design (languages extending `kindiv`) was tried and dropped:
 wn 1.1 checks every extension's base before adding anything, so extensions shipped
 with their base in one file or collection are silently skipped.
 
+## Labels: anchor, not speaker
+
+KinDiv's `x`/`o` (Murdock's "male/female speaking") is the sex of the **anchor**,
+the person a relation is traced from: `x;El;Br` is a man's elder brother, whoever
+is speaking. The build labels these concepts "(male anchor)"/"(female anchor)"
+(`relabel` in `build.py`), so they are not confused with a restriction on the
+speaker, such as the pronoun wordnet's *men's speech* (`docs/open-questions.md`,
+question 4).
+
 ## ILI links
 
 `concept-ili.tsv` is the hand-curated mapping to the CILI, checked against OEWN 2025.
@@ -197,8 +206,8 @@ Research for the concepts no source attested found words in `attested-words.tsv`
 (with source URLs and quoted definitions): e.g. Serbo-Croatian *tetak* and
 *strina*, Ukrainian *дядина*, Swedish *morförälder*, Comanche and Gunwinggu
 speaker-sex grandchild terms. With Kinbank, only 7 concepts remain unattested:
-grandparent/grandfather/grandmother (female speaking), paternal grandfather (male
-speaking), and uncle (both) and aunt (female speaking) by speaker sex.
+grandparent/grandfather/grandmother (female anchor), paternal grandfather (male
+anchor), and uncle (both) and aunt (female anchor) by anchor sex.
 
 ## Concepts from Kinbank
 

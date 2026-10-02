@@ -20,7 +20,7 @@ A term matches a concept **exactly** when its atoms equal the concept's atoms, i
 is listed under no position outside the atom space, and the language was asked
 about every *neighbouring* atom (flip ego sex, the sex or side of any link, or the
 relative age) -- so we know the term does not extend there. Without that check, a
-language recorded for male ego only would seem to have "male speaking" terms
+language recorded for male ego only would seem to have "male anchor" terms
 everywhere.
 
 Writes ``kinbank-candidates.tsv``.

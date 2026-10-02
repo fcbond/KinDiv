@@ -267,6 +267,20 @@ class Concept:
         return slug(self.code)
 
 
+def relabel(label: str) -> str:
+    """Name the anchor, not the speaker: "(male speaking)" -> "(male anchor)".
+
+    KinDiv's ``x``/``o`` (Murdock's "male/female speaking") is the sex of the
+    anchor, the person the relation is traced from (``x;El;Br`` is a man's elder
+    brother, whoever speaks), not a restriction on the speaker such as the
+    pronoun wordnet's men's speech.
+
+    >>> relabel("grandfather (female speaking)")
+    'grandfather (female anchor)'
+    """
+    return label.replace("male speaking)", "male anchor)")
+
+
 def read_concepts() -> dict[str, Concept]:
     """Read KinDiv's concepts and ours, and attach the curated ILI mapping.
 
@@ -278,7 +292,7 @@ def read_concepts() -> dict[str, Concept]:
     concepts = {
         row["Abreviation"]: Concept(
             code=row["Abreviation"],
-            label=row["Concept"],
+            label=relabel(row["Concept"]),
             subdomain=row["Subdomain"],
             source=row["Source"],
             definition=row.get("Definition")
@@ -383,7 +397,7 @@ def read_languages(concepts: dict[str, Concept]) -> dict[str, Language]:
                 languages,
                 row["Language"],
                 form,
-                by_label[row["Concept"]],
+                by_label[relabel(row["Concept"])],
                 row["Source"],
             )
     return languages
