@@ -1,0 +1,145 @@
+# Open questions
+
+Design points that are not settled. Each says what the build does now.
+
+## 1. Which ILI for *brother* and *sister*?
+
+**Now.** `concept-ili.tsv` links `Br` and `Ss` to Princeton's *male sibling* and
+*female sibling*. The existing wordnets put the words *brother* and *sister* one
+level down, in their hyponyms:
+
+| concept | KinDiv links to | the wordnets' *brother* / *sister* (a hyponym of it) |
+|---|---|---|
+| `Br` | `i91174` *male sibling* "a sibling who is male" | `i88708` *brother, blood brother* "a male with the same parents as someone else" |
+| `Ss` | `i89922` *female sibling* "a person's sister" | `i93018` *sister, sis* "a female person who has the same parents as another person" |
+
+In OEWN, *male sibling* and *female sibling* are under *kinsman* and
+*kinswoman*, not under *sibling* (`i92980`, our `Sb`). Which Cygnet wordnets have
+each ILI (from the review files' `existing_by_ili`):
+
+- `i91174` *male sibling*: OEWN, omw-ja, and TUFS (en, zh, ja, id).
+- `i88708` *brother*: OEWN, omw-cmn, omw-ja, omw-id, omw-pl, CantoWN, and TUFS
+  (en, zh, ja, id).
+- `i89922` *female sibling*: OEWN and omw-ja only.
+- `i93018` *sister*: OEWN, omw-cmn, omw-ja, omw-id and omw-pl.
+
+These are the only two of the 35 ILI links where our English lemma's sense in
+OEWN differs from our link.
+
+**The difference in meaning.** "Same parents" makes `i88708`/`i93018` full
+siblings, which leaves out half-siblings. KinDiv's `Br` is the kin type
+"brother", which does not separate full from half siblings; that fits
+`i91174`/`i89922`. But the wordnets' words *brother*, *brat* and 兄弟 are linked to
+the narrower synset, though they are used for half-brothers too.
+
+**Options.**
+- (a) Keep `i91174`/`i89922`: their definitions fit the kin type. Words that
+  other wordnets link to `i88708` reach KinDiv only through the hypernym.
+- (b) Relink to `i88708`/`i93018`, where the words are. `Br` then claims "same
+  parents", which is narrower than the kin type.
+- (c) Keep (a), and propose to CILI that the definitions of `i88708`/`i93018`
+  say what the words mean (a brother or sister, including half-siblings), or
+  that they be merged with their hypernyms.
+- In any case, should *male sibling* and *female sibling* be under *sibling*?
+  KinDiv's hierarchy puts `Br` under `Sb`; OEWN does not (see question 3).
+
+**Evidence from OEWN's own hierarchy.** OEWN puts *half sister* (`i93019`, "a
+sister who has only one parent in common with you") under *sister* (`i93018`,
+"a female person who has the **same parents** as another person"), and *half
+brother* (`i93307`) under *brother* (`i88708`). A half-sister cannot have the
+same parents, so either the definitions of `i88708`/`i93018` are too narrow or
+the hierarchy is wrong. The hyponymy says the words mean any brother or sister,
+full or half, which is what KinDiv's `Br` and `Ss` mean. This favours (b) or
+(c): link to `i88708`/`i93018` and ask CILI to widen their definitions to
+"a male/female sibling", or merge each with its hypernym, since nothing then
+separates them from *male sibling*/*female sibling*.
+
+## 2. Half, step, adoptive and foster relatives
+
+**Now.** None of these is a concept. KinDiv's codes are chains of genealogical
+links (`Fa`, `Br`, `So`, ...) with no way to say how a link was made, so `Br` is
+any brother: full, half, step or adoptive. Our extension (parents, spouses,
+in-laws, Kinbank's recurring types) adds none either. `kinbank_words.py` reads
+only positions whose links are capital letters with optional `e`/`y` for age,
+so Kinbank's half-sibling positions (`mhB`, `fehZ`) and step positions
+(`mFWS_notBorhB`) fall outside the atom space: they are neither matched nor
+used as neighbours.
+
+**What the sources have.**
+
+- *Kinbank* records half siblings in 8 + 8 positions (by ego sex and sibling
+  sex, some by relative age: `mehB` "male ego's older half brother", some by
+  the shared parent: `mhB_FS` "paternal half brother") and step siblings
+  indirectly (`mFWS_notBorhB` "father's wife's son that is not a brother or
+  half brother"). Only 13 languages fill any of them, all from the VariKin
+  sample:
+
+  | language | family | what it distinguishes |
+  |---|---|---|
+  | Ama | Nyimang | *abakeri* any half sibling; *abakɛriŋ kaʃɛl*/*kar* half brother/sister |
+  | Dilling | Nubian | *anenta*, *ambagan-dwano* any half sibling |
+  | Karko | Nubian | *áfá-n-t̪ɔ́ɔ́d̪ʊ̀* any half sibling |
+  | Moro | Heibanic | *leleŋnu*, *orba* any half sibling |
+  | Ngile | Narrow Talodi | *anobede* any half sibling |
+  | Nuer | Nilotic | *Gat gwa* half brother, *Nya gwa* half sister |
+  | Southeastern Dinka | Nilotic | *Wenawa* half brother, *Nyanawa* half sister |
+  | Hausa | Afro-Asiatic | paternal (*ɗan'ùbā*, *ùbā*) vs maternal (*uwarmù ɗaya*) half sibling |
+  | Halia | Austronesian | by relative sex: same-sex *hahatoulana*, cross-sex *hahahinana* |
+  | Hunza | isolate | *tcho*, *lus*, *yas*, partly shared with step siblings |
+  | Hamtai | Nuclear Trans New Guinea | step siblings only: *taso*, *nukwe* |
+  | Nunamiut | Eskimo-Aleut | half siblings by age and sex (*apiaqerak*, *nukaqerak*); step sister *kataq* |
+  | Ottawa Ojibwa | Algic | half siblings by age and sex (*nissaye*, *nimisse*, *nishime*) |
+
+  A general "half sibling" word occurs in 4 families (Nyimang, Nubian,
+  Heibanic, Talodi), all in the Nuba Mountains, so one macroarea; sex-specific
+  half brother/sister in 3 families (Nilotic, Afro-Asiatic, Austronesian) in 2
+  macroareas. Neither meets the admission rule (5 families, 3 macroareas).
+  Absence elsewhere means "not asked", not "no word": the other datasets did
+  not elicit these positions.
+- *KinDiv* records no gaps for them.
+- *TUFS* has no half, step or adoptive kin words among its kin headings.
+- *OEWN* has *half blood* (`i90390`, under *sibling*), *half brother*/*half
+  sister* (`i93307`/`i93019`, under *brother*/*sister*), *stepparent*
+  (`i93312`), *stepchild* (`i93308`), *adoptive parent* (`i88091`), *foster
+  parent*/*child*/*brother*/*sister* (`i90060`, `i90055`, `i90054`, `i90061`),
+  but no *stepbrother*/*stepsister* synset of their own (question 3).
+
+**What adding them would take.**
+
+- A new feature in the code for how a link is made, on the link it qualifies:
+  half (one shared parent), step (through a parent's spouse or a spouse's
+  parent), adoptive, foster. For example `hBr` or `Br(h)`, with the shared
+  parent where it matters (`Fa.hBr` paternal half brother). A step brother
+  is *not* simply `Fa;Wi;So`: a father's wife's son is usually one's own
+  brother, so the chain needs the same qualifier (a step link) to exclude him.
+- A decision on what plain `Br` means. Now it is any brother. With half
+  brothers as concepts, `Br` stays the broader concept and `hBr` and a new
+  full-brother concept (`fBr`, the "same parents" of `i88708`) sit under it.
+- Parsing Kinbank's `h` positions, and admitting by the usual rule. On the
+  current data nothing would be admitted; the main source would have to be
+  dictionaries, as for the attestations of unattested concepts.
+- Kinbank's step positions are negative ("father's wife's son that is not a
+  brother or half brother"), which the extension matcher cannot read as a
+  set of atoms.
+
+## 3. OEWN problems found while linking
+
+To report to OEWN (github.com/globalwordnet/english-wordnet), and to keep in mind
+when linking:
+
+- **Step and half siblings merged.** `i93019` has the lemmas *half sister*,
+  *half-sister* and *stepsister*, and `i93307` has *stepbrother*,
+  *half-brother* and *half brother*, both defined as "only one parent in
+  common". A step sibling shares no parent; *stepbrother* and *stepsister*
+  need synsets of their own (child of one's stepparent), beside *stepparent*
+  and *stepchild*, which OEWN has.
+- **Half siblings under full siblings.** As in question 1: *half sister* is
+  under *sister* "same parents", *half brother* under *brother*.
+- **Male and female sibling not under sibling.** *male sibling* (`i91174`)
+  is under *kinsman*, *female sibling* (`i89922`) under *kinswoman*, while
+  *sibling* (`i92980`) is under *relative*. Each should also be a hyponym of
+  *sibling* (multiple inheritance, as for *brother*: male and sibling).
+- **Foster siblings outside kinship.** *foster brother* (`i90054`) is under
+  *male*, and *foster sister* (`i90061`) under *female*, not under any
+  relative; *foster parent* (`i90060`) is under *defender*. *adoptive parent*
+  and *stepparent* are under *parent*, so the treatment is inconsistent.

@@ -59,7 +59,8 @@ with their base in one file or collection are silently skipped.
 
 `concept-ili.tsv` is the hand-curated mapping to the CILI, checked against OEWN 2025.
 Only `exact` rows become `ili=`. A `broader` row (OEWN *uncle*/*aunt* also cover
-relatives by marriage) is kept only as `dc:relation` plus a note.
+relatives by marriage) is kept only as `dc:relation` plus a note. Which ILI
+*brother* and *sister* should link to is open: see `docs/open-questions.md`.
 
 ## Beyond KinDiv
 

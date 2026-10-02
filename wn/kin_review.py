@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.11"
-# dependencies = []
+# dependencies = ["wn>=1.1"]  # cygnet_wordnets.py
 # ///
 """Write kinship lexicons as TOML for human review.
 
@@ -23,10 +23,12 @@ import csv
 import json
 import sys
 from collections import defaultdict
+from functools import cache
 from pathlib import Path
 from xml.etree import ElementTree
 
 import build
+import cygnet_wordnets
 
 HERE = Path(__file__).resolve().parent
 DC = "{https://globalwordnet.github.io/schemas/dc/}"
@@ -78,6 +80,46 @@ def read_lexicon(tag: str) -> tuple[dict, set[str], dict[str, str]]:
             }
             words[code_of[sense.get("synset")]][lemma] = sources
     return words, gaps, phrases
+
+
+@cache
+def kin_ilis() -> frozenset[str]:
+    """The ILIs KinDiv's concepts link to (*relative*, *spouse*, *grandfather*...)."""
+    return frozenset(c.ili for c in build.read_concepts().values() if c.ili)
+
+
+def kin_like(synset: cygnet_wordnets.wn.Synset) -> bool:
+    """Whether an existing synset could be a kinship sense.
+
+    Kept: synsets whose ILI is, or is below in OEWN, one KinDiv links to (a
+    synset with no ILI is judged by its hypernyms), and synsets with neither
+    (TUFS's own). That drops other senses of the same words: *brother* the monk
+    or the buddy, *uncle* the benefactor, Polish *babka* the cake.
+    """
+    return cygnet_wordnets.under(synset, kin_ilis()) is not False
+
+
+def existing_lines(tag: str, ili: str, lemmas: list[str]) -> list[str]:
+    """What the language's Cygnet wordnets already have, to check against.
+
+    ``existing_by_ili``: their synsets for the concept's ILI, where it has one.
+    ``existing_by_lemma``: their noun synsets for each of our lemmas that could
+    be kinship senses (`kin_like`); ``existing_hidden`` counts the others.
+    """
+    lines = []
+    found = cygnet_wordnets.by_ili(tag, ili)
+    if found:
+        lines.append(f"existing_by_ili = {array(found)}")
+    hits, hidden = [], 0
+    for lemma in lemmas:
+        kept, dropped = cygnet_wordnets.by_lemma(tag, lemma, "n", kin_like)
+        hits += [f"{lemma} -> {synset}" for synset in kept]
+        hidden += dropped
+    if hits:
+        lines.append(f"existing_by_lemma = {array(hits)}")
+    if hidden:
+        lines.append(f"existing_hidden = {hidden}  # other senses of these lemmas")
+    return lines
 
 
 def ancestors(code: str, parents: dict[str, set[str]]) -> list[str]:
@@ -151,6 +193,19 @@ def write(
             "# Concepts with no word here are included where the hierarchy needs them"
             " (status `unlexicalized`)."
         ),
+        (
+            "# existing_by_ili, existing_by_lemma: synsets in the language's Cygnet"
+            " wordnets (oewn, omw-pl, ...), as"
+        ),
+        (
+            "#   lexicon id [ILI] lemmas: definition; (CILI) marks a definition taken"
+            " from the ILI."
+        ),
+        (
+            "#   Lemma matches keep only kinship senses (no ILI, or under an ILI"
+            " KinDiv links to, by OEWN);"
+        ),
+        "#   existing_hidden counts the rest.",
     ]
     if proposed:
         lines.append(
@@ -190,6 +245,8 @@ def write(
                 lines.append(f"english_via = {s(via)}")
         lines.append(f"label = {s(concept.label)}")
         lines.append(f"definition = {s(concept.definition)}")
+        mine = list(words.get(code, {})) + [p["lemma"] for p in proposed.get(code, [])]
+        lines += existing_lines(tag, concept.ili, mine)
         lines += hierarchy_lines(code, parents)
         sources = [
             f"{w} <- {', '.join(sorted(src))}" for w, src in words.get(code, {}).items()
@@ -207,6 +264,7 @@ def write(
             lines.append(f"phrase = {s(phrases[code])}  # unlexicalized")
         lines.append(f"label = {s(concept.label)}")
         lines.append(f"definition = {s(concept.definition)}")
+        lines += existing_lines(tag, concept.ili, [])
         lines += hierarchy_lines(code, parents)
         lines.append('comment = ""')
         lines.append("")
