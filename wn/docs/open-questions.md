@@ -158,17 +158,17 @@ looks like the same thing. They should stay distinct features, but:
 
 - the labels now say "(male anchor)" rather than "(male speaking)" (done:
   `relabel` in `build.py`);
-- `Men`/`Wom` applies to kin terms too: Japanese *oyaji* "father" and *ofukuro*
-  "mother" are mostly men's speech, whatever the anchor's sex.
+- `Men`/`Wom` could apply to kin terms too, but we have no checked example:
+  Wiktionary marks Japanese *oyaji* 親父 "father" and *ofukuro* 御袋 "mother"
+  only as informal, not as men's speech.
 
 **Politeness and formality are missing.** Kin terms vary on the same axes as
 pronouns:
 
-- politeness: Japanese *ani* (one's own elder brother, spoken of to outsiders)
-  vs *oniisan* (respectful; in address and for others' brothers); *chichi* vs
-  *otōsan*, *haha* vs *okāsan*;
-- formality: English *father* vs *dad* vs *old man*; Japanese *chichiue*
-  (formal, archaic) vs *oyaji* (familiar).
+- politeness: Japanese *ani* 兄 "elder brother" (plain) vs *oniisan* お兄さん
+  (honorific);
+- formality: English *father* vs *dad* vs *old man*; Japanese *chichiue* 父上
+  (archaic, honorific) vs *oyaji* 親父 (informal).
 
 The pronoun features `Fml`/`Infml`, `Pol`/`Hon`/`NHon` and `Men`/`Wom` would apply
 unchanged (`El;Br;Hon` for *oniisan*). No source we use records them for kin
@@ -192,9 +192,11 @@ terms:
 **How to add them.** OEWN's practice answers the design question: a register
 variant is a concept of its own, a hyponym of the plain kin type, as in the
 pronoun wordnet, where `1;Sg;Fml` is under `1;Sg`. Kin codes would take the
-pronoun features: `Fa;Infml` for *dad* (= `i89370`), `Fa;Infml;Men`
-for *old man*/*oyaji*, `El;Br;Hon` for *oniisan*, with `exemplifies` links to
-the same feature synsets. Admission needs evidence that languages lexicalize
+pronoun features: `Fa;Infml` for *dad* (= `i89370`), `El;Br;Hon` for
+*oniisan*, with `exemplifies` links to the same feature synsets. *old man*
+(`i91724`) is also `Fa;Infml`; OEWN separates it from *dad* only as a
+dysphemism, so the codes would need a value for that (a pejorative register)
+or the two would fall together. Admission needs evidence that languages lexicalize
 the register distinction for a kin type, which none of our sources records.
 
 **Future work:** add register features to kin concepts, starting from English
@@ -202,3 +204,45 @@ the register distinction for a kin type, which none of our sources records.
 Japanese (where the distinctions are grammaticalized), and from
 pronoun-substitute data (question 2 of omw-pronoun's list: kin terms used in
 address).
+
+## 5. Beyond genealogy: adoption, death, divorce and more (future work)
+
+KinDiv's kin types are chains of birth and marriage links between living people.
+Languages also lexicalize how a link was made, whether it still holds, and
+relations that run through a third party. None of these is a concept yet (half
+and step siblings are question 2). Examples to start from:
+
+| area | examples |
+|---|---|
+| adoption, fostering | Japanese *mukoyōshi* 婿養子, "an adult man who is adopted into a Japanese family as a daughter's husband, and who takes the family's surname" (son-in-law and adopted son at once); *yōshi* 養子 "adopted child", *yōfu* 養父 "adoptive father"; Hawaiian *hānai* "foster child, adopted child"; English *foster brother* |
+| death | English *widow*, *widower*, *orphan*; Japanese *mibōjin* 未亡人 and *goke* 後家 "widow"; Mandarin *xiānfù* 先父 "one's deceased father" (respectful, literary) and *xiānbǐ* 先妣 "one's deceased mother"; Japanese *bōfu* 亡父 "deceased father"; English *levir* "a husband's brother", the term of levirate marriage, in which a widow marries her late husband's brother |
+| divorce, remarriage | English *ex-wife*, *ex-husband*; Mandarin *qiánqī* 前妻 "ex-wife or late wife"; English *stepmother*, Japanese *keibo*/*mamahaha* 継母; Japanese *harachigai* 腹違い "a paternal half sibling" (same father, different mother) |
+| plural marriage | Hindi *saut*, *sautan* "co-wife"; Hebrew *tsará* צָרָה and Swahili *mke mwenza* "co-wife" |
+| affines of affines | Spanish *consuegro*/*consuegra* "co-father/mother-in-law", the parent of one's child's spouse; Yiddish *mekhutn* מחותּן "male relative by marriage, especially son-in-law's or daughter-in-law's father"; Hindi *samdhī* "co-father-in-law"; Korean *sadon* 사돈 "co-parent-in-law"; Hindi *sāṛhū* "husband of sister of wife" |
+| ritual and fictive kin | Spanish *compadre*, "godfather of one's child; parent of one's godchild"; Mandarin *gāndiē* 干爹 (乾爹) "godfather; (nominally) adoptive father"; milk kinship: English *milk sibling*, Turkish *süt kardeşi* |
+| birth order | Japanese *chōnan* 長男 "the eldest of a family's sons", *suekko* 末っ子 "youngest child" |
+
+Every example was checked against English Wiktionary (October 2026); glosses in
+quotation marks are Wiktionary's. Not confirmed there, so left out: Hebrew
+*shakul* "bereaved of a child", an Arabic term for "milk brother", and Japanese
+*ibo kyōdai* 異母兄弟 (Wiktionary has it only as Chinese).
+
+**What the codes would need.**
+
+- *Link qualifiers*, saying how a link was made: adoptive, foster, step, half,
+  milk, ritual (godparenthood). *mukoyōshi* is `Da;Hu` that is also an
+  adoptive `So`.
+- *Link status*: former (divorce), late (death). *qiánqī* is a former `Wi`;
+  *xiānfù* a late `Fa` (with politeness: question 4).
+- *Relations through a missing link*: a widow is a `Wi` whose `Hu` is dead; an
+  orphan a `Ch` whose `Pa` are dead.
+- *Co-relations*, shared position rather than a chain: co-wife (`Hu;Wi` of a
+  `Wi`), *consuegro* (`Ch;Sp;Pa`, already a chain), *sāṛhū* (`Wi;Ss;Hu`, already a
+  chain).
+- *Birth order* beyond elder/younger: eldest, youngest, second.
+
+Some of these are already chains in the current notation (*consuegro*,
+*sāṛhū*) and could be admitted now if a source records them; the rest need new
+features. Kinbank elicits few of them (13 languages for half siblings, step
+siblings only negatively); dictionaries and OEWN (*widow*, *widower*, *orphan*,
+*stepmother*, *foster brother*) are the likely sources.
