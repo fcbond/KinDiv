@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.10"
-# dependencies = []
+# dependencies = ["unidecode"]
 # ///
 """Build a multilingual WN-LMF wordnet from the KinDiv kinship database.
 
@@ -26,11 +26,14 @@ import csv
 import logging
 import shutil
 import tarfile
+import unicodedata
 from collections import defaultdict
 from dataclasses import dataclass, field
 from difflib import SequenceMatcher
 from pathlib import Path
 from xml.sax.saxutils import escape, quoteattr
+
+from unidecode import unidecode
 
 logger = logging.getLogger(__name__)
 
@@ -336,6 +339,8 @@ class Language:
     gaps: dict[str, str] = field(default_factory=dict)
     #: compositional phrase -> concept code, for concepts with no word
     phrases: dict[str, str] = field(default_factory=dict)
+    #: lemmas that are themselves transcriptions (romanized Kinbank forms)
+    transcribed: set[str] = field(default_factory=set)
     #: written form -> {(transcription, notation)}, from transcribed sources
     pronunciations: dict[str, set[tuple[str, str]]] = field(
         default_factory=lambda: defaultdict(set)
@@ -447,49 +452,156 @@ def add_kinbank(languages: dict[str, Language], concepts: dict[str, Concept]) ->
 
     Matches flagged with a broader synonym are left out: there the term's absence
     from a neighbouring position may only mean Kinbank recorded one word per slot.
+    Forms that transcribe the language (column ``transcription``, set by
+    `kinbank_words.py`) are handled after all other words are in: IPA by
+    `add_transcriptions`, romanizations by `add_romanization`.
     """
     rows = read_tsv(HERE / "kinbank-candidates.tsv")
     for row in rows:
-        if row["kinbank_language"] in TRANSCRIBED:
-            continue
-        if not row["broader_synonym"]:
+        if not row["transcription"] and not row["broader_synonym"]:
             name = register_language(row["language"], row["tag"])
             source = f"Kinbank {row['kinbank_language']}: {row['positions']}"
             add_word(languages, name, row["form"], concepts[row["concept"]], source)
     add_transcriptions(languages, concepts, rows)
+    for row in rows:
+        if row["transcription"] == "romanization" and not row["broader_synonym"]:
+            add_romanization(languages, concepts[row["concept"]], row)
 
 
-#: Kinbank varieties that transcribe a language with an orthography of its own
-#: (English and German in IPA or dictionary respelling): their forms are
-#: pronunciations of the written words, not words
-TRANSCRIBED = {"p_englishstan1293", "p_germanstan1295"}
-#: characters of dictionary respelling (Webster's *ŭngʹkəl*), not IPA
-RESPELLING = set("ĭŭăĕŏʹ'")
+#: Unicode name prefixes of letters -> ISO 15924 script
+SCRIPTS = {
+    "LATIN": "Latn",
+    "CYRILLIC": "Cyrl",
+    "GREEK": "Grek",
+    "ARABIC": "Arab",
+    "HEBREW": "Hebr",
+    "DEVANAGARI": "Deva",
+    "BENGALI": "Beng",
+    "GURMUKHI": "Guru",
+    "GUJARATI": "Gujr",
+    "ORIYA": "Orya",
+    "TAMIL": "Taml",
+    "TELUGU": "Telu",
+    "KANNADA": "Knda",
+    "MALAYALAM": "Mlym",
+    "SINHALA": "Sinh",
+    "THAI": "Thai",
+    "LAO": "Laoo",
+    "KHMER": "Khmr",
+    "MYANMAR": "Mymr",
+    "TIBETAN": "Tibt",
+    "GEORGIAN": "Geor",
+    "ARMENIAN": "Armn",
+    "ETHIOPIC": "Ethi",
+    "HANGUL": "Hang",
+    "CJK": "Hani",
+    "HIRAGANA": "Hira",
+    "KATAKANA": "Kana",
+    "MONGOLIAN": "Mong",
+}
+
+
+def script_of(form: str) -> str:
+    """The ISO 15924 script of a form, or '' if mixed or unknown.
+
+    Japanese kanji with kana is ``Jpan``, as in omw-pronoun.
+
+    >>> script_of("哥哥"), script_of("お兄さん"), script_of("брат"), script_of("xiong di")
+    ('Hani', 'Jpan', 'Cyrl', 'Latn')
+    """
+    found = set()
+    for ch in form:
+        if ch.isalpha():
+            name = unicodedata.name(ch, "")
+            found |= {s for prefix, s in SCRIPTS.items() if name.startswith(prefix)}
+    if len(found & {"Hani", "Hira", "Kana"}) > 1:
+        return "Jpan"
+    return found.pop() if len(found) == 1 else ""
+
+
+def romanized_match(romanization: str, words: list[str]) -> list[str]:
+    """The words a romanization transcribes, by transliterating them (Unidecode).
+
+    The best match must score at least 0.6 and beat the next by 0.1, except
+    that words tied at 1.0 are all kept (Russian *дедушка* and *де́душка* differ
+    only in the stress mark).
+
+    >>> romanized_match("tang jie", ["堂姐", "堂姊"])
+    ['堂姐']
+    >>> romanized_match("djádja", ["дя́дя", "дя́дька"])
+    []
+    """
+
+    def letters(text: str) -> str:
+        return "".join(ch for ch in unidecode(text).lower() if ch.isalpha())
+
+    scored = sorted(
+        ((similarity(letters(w), letters(romanization)), w) for w in words),
+        reverse=True,
+    )
+    if not scored:
+        return []
+    best = scored[0][0]
+    if best == 1.0:
+        return [w for score, w in scored if score == 1.0]
+    runner_up = scored[1][0] if len(scored) > 1 else 0.0
+    return [scored[0][1]] if best >= 0.6 and best - runner_up >= 0.1 else []
+
+
+def add_romanization(
+    languages: dict[str, Language], concept: Concept, row: dict[str, str]
+) -> None:
+    """Add a Kinbank romanization (Mandarin *xiong di*, Hindi *bhāī*).
+
+    Where the language has words in its own script for the concept (from
+    KinDiv, TUFS, an attestation or a Kinbank source in that script), the
+    romanization is the pronunciation of the one it transcribes: the only one,
+    or the one whose transliteration matches it best (`romanized_match`).
+    Otherwise it is the only record of the word, so it stays a lemma, marked as
+    a transcription.
+    """
+    name = register_language(row["language"], row["tag"])
+    language = languages.setdefault(name, Language(name, row["tag"]))
+    native = [
+        word
+        for word, senses in language.words.items()
+        if script_of(word) not in ("", "Latn")
+        and any(code == concept.code for code, _ in senses)
+    ]
+    matched = native if len(native) == 1 else romanized_match(row["form"], native)
+    if matched:
+        for word in matched:
+            language.pronunciations[word].add((row["form"], "romanization"))
+        return
+    source = f"Kinbank {row['kinbank_language']}: {row['positions']}"
+    add_word(languages, name, row["form"], concept, source)
+    language.transcribed.add(" ".join(row["form"].translate(INVISIBLE).split()))
 
 
 def add_transcriptions(
     languages: dict[str, Language], concepts: dict[str, Concept], rows: list[dict]
 ) -> None:
-    """Attach transcribed Kinbank forms to the written words they transcribe.
+    """Attach Kinbank's IPA and respelled forms to the written words they transcribe.
 
-    A transcription goes to the written form Kinbank gives for the same concept
-    and language from another variety (*ˈbɹʌðə* to *brother*); failing that, to
-    the language's only word for the concept. Otherwise it is left out and logged.
-    A written form held back for a broader synonym (German *Tochter*, also under
-    *Kind*) is added after all: the transcribing variety records it for exactly
-    the concept's positions, so the two sources together attest it.
+    Two Kinbank varieties transcribe English and German, which have orthographies
+    of their own. A transcription goes to the written form Kinbank gives for the
+    same concept and language from another variety (*ˈbɹʌðə* to *brother*);
+    failing that, to the language's only word for the concept. Otherwise it is
+    left out and logged. A written form held back for a broader synonym (German
+    *Tochter*, also under *Kind*) is added after all: the transcribing variety
+    records it for exactly the concept's positions, so the two sources together
+    attest it.
     """
     written: dict[tuple[str, str], list[dict]] = defaultdict(list)
     for row in rows:
-        if row["kinbank_language"] not in TRANSCRIBED:
+        if not row["transcription"]:
             written[row["tag"], row["concept"]].append(row)
     for row in rows:
-        if row["kinbank_language"] not in TRANSCRIBED:
+        if row["transcription"] not in ("IPA", "respelling"):
             continue
         name = register_language(row["language"], row["tag"])
         language = languages.setdefault(name, Language(name, row["tag"]))
         form = row["form"].replace("®", "").strip()
-        notation = "respelling" if RESPELLING & set(form) else "IPA"
         targets = []
         # of several written forms (Großmutter, Oma), the one it transcribes
         pairs = written[row["tag"], row["concept"]]
@@ -516,7 +628,7 @@ def add_transcriptions(
                 "no written word for %s %s %s", row["tag"], row["concept"], form
             )
         for word in targets:
-            language.pronunciations[word].add((form, notation))
+            language.pronunciations[word].add((form, row["transcription"]))
 
 
 def similarity(spelling: str, transcription: str) -> float:
@@ -658,7 +770,13 @@ def write_language(
         meanings = language.words.get(form, [])
         lines.append(f'    <LexicalEntry id="{entry_id}">')
         sounds = sorted(language.pronunciations.get(form, ()))
-        lemma = f'      <Lemma writtenForm={quoteattr(form)} partOfSpeech="n"'
+        if form in language.transcribed:
+            sounds.insert(0, (form, "source-transcription"))
+        lemma = (
+            f"      <Lemma writtenForm={quoteattr(form)}"
+            + attrs([("script", script_of(form))])
+            + ' partOfSpeech="n"'
+        )
         if sounds:
             lines.append(lemma + ">")
             for sound, notation in sounds:

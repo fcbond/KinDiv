@@ -201,3 +201,20 @@ def test_transcriptions_are_pronunciations_not_words(data) -> None:
     # a written form held back for a broader synonym, attested by the transcription
     assert ("ˈtɔχtɐ", "IPA") in german.pronunciations["Tochter"]
     assert "Tochter" in german.words
+
+
+def test_romanizations_are_pronunciations_of_native_words(data) -> None:
+    _, _, languages = data
+    mandarin = languages["Mandarin"]
+    assert "tang jie" not in mandarin.words
+    assert ("tang jie", "romanization") in mandarin.pronunciations["堂姐"]
+    assert "堂姊" not in mandarin.pronunciations  # tang jie transcribes 堂姐
+    # with no word in Devanagari for the concept, a romanization stays a lemma
+    hindi = languages["Hindi"]
+    assert hindi.transcribed and hindi.transcribed <= set(hindi.words)
+
+
+def test_script_of() -> None:
+    assert build.script_of("堂姐") == "Hani"
+    assert build.script_of("tang jie") == "Latn"
+    assert build.script_of("お兄さん") == "Jpan"

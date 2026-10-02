@@ -35,7 +35,9 @@ import itertools
 import logging
 import re
 import sys
+import unicodedata
 from collections import defaultdict
+from functools import cache
 from pathlib import Path
 
 import langcodes
@@ -228,6 +230,52 @@ def broader_synonym(
     return ""
 
 
+#: Kinbank varieties that transcribe a language written in Latin script: English
+#: and German in IPA or dictionary respelling
+TRANSCRIBED = {"p_englishstan1293", "p_germanstan1295"}
+#: characters of dictionary respelling (Webster's *ŭngʹkəl*), not IPA
+RESPELLING = set("ĭŭăĕŏʹ'")
+
+
+#: languages whose likely script in CLDR is not what their texts use: Old Norse
+#: and Old Irish are edited in Latin letters, not runes or ogham
+LATIN_WRITTEN = {"non", "sga"}
+
+
+@cache
+def likely_script(tag: str) -> str:
+    """The script a language is usually written in (ISO 15924), or ''."""
+    if tag in LATIN_WRITTEN:
+        return "Latn"
+    try:
+        return langcodes.Language.get(tag).maximize().script or ""
+    except (ValueError, LookupError):
+        return ""
+
+
+def transcription(form: str, tag: str, variety: str) -> str:
+    """How a Kinbank form transcribes the language, or '' if it is written normally.
+
+    ``IPA`` or ``respelling`` for the transcribing English and German varieties;
+    ``romanization`` for a Latin-letter form of a language usually written in
+    another script (Mandarin *xiong di*, Hindi *bhāī*, Russian *brat*).
+
+    >>> transcription("xiong di", "cmn", "v_mandarinchinamand1415")
+    'romanization'
+    >>> transcription("брат", "ru", "p_russianruss1263a")
+    ''
+    >>> transcription("brat", "pl", "v_polishpoli1260")
+    ''
+    """
+    if variety in TRANSCRIBED:
+        return "respelling" if RESPELLING & set(form) else "IPA"
+    script = likely_script(tag)
+    latin = any(
+        ch.isalpha() and unicodedata.name(ch, "").startswith("LATIN") for ch in form
+    )
+    return "romanization" if latin and script not in ("", "Latn") else ""
+
+
 def iso_to_tag(iso: str) -> str:
     """Our tag for an ISO 639-3 code: the one languages.tsv uses, if any.
 
@@ -324,23 +372,25 @@ def main() -> None:
             skipped_no_iso += 1
             continue
         for form, atoms, broader in verified_extents(words):
+            tag = iso_to_tag(language["ISO639P3code"])
             for code in by_atoms.get(atoms, []):
                 rows.append(
                     (
                         code,
-                        iso_to_tag(language["ISO639P3code"]),
+                        tag,
                         language["ISO639P3code"],
                         language["Glottolog_Name"] or language["Name"],
                         form,
                         language_id,
                         ";".join(sorted(words[form])),
                         broader,
+                        transcription(form, tag, language_id),
                     )
                 )
     with (build.HERE / "kinbank-candidates.tsv").open("w", encoding="utf8") as out:
         out.write(
             "concept\ttag\tiso639_3\tlanguage\tform\tkinbank_language\tpositions"
-            "\tbroader_synonym\n"
+            "\tbroader_synonym\ttranscription\n"
         )
         for row in sorted(rows):
             out.write("\t".join(row) + "\n")

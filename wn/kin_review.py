@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.11"
-# dependencies = ["wn>=1.1"]  # cygnet_wordnets.py
+# dependencies = ["unidecode", "wn>=1.1"]  # build.py, cygnet_wordnets.py
 # ///
 """Write kinship lexicons as TOML for human review.
 
@@ -122,6 +122,53 @@ def existing_lines(tag: str, ili: str, lemmas: list[str]) -> list[str]:
     return lines
 
 
+def read_sounds(tag: str) -> dict[str, list[tuple[str, str]]]:
+    """Lemma -> its pronunciations as (text, notation).
+
+    ``source-transcription`` marks a lemma that is itself a transcription (a
+    Kinbank romanization with no word in the language's own script).
+    """
+    lexicon = f"kindiv-{tag}"
+    path = (
+        HERE
+        / "release"
+        / f"kindiv-{build.VERSION}"
+        / lexicon
+        / f"{lexicon}-{build.VERSION}.xml"
+    )
+    sounds: dict[str, list[tuple[str, str]]] = defaultdict(list)
+    for lemma in ElementTree.parse(path).getroot().iter("Lemma"):
+        for sound in lemma.iter("Pronunciation"):
+            sounds[lemma.get("writtenForm")].append(
+                (sound.text or "", sound.get("notation") or "")
+            )
+    return sounds
+
+
+def sound_lines(lemmas: list[str], sounds: dict) -> list[str]:
+    """``pronunciations`` (IPA, romanization) and ``transcribed`` lemmas, if any."""
+    heard = [
+        f"{lemma}: {text} ({notation})"
+        for lemma in lemmas
+        for text, notation in sounds.get(lemma, ())
+        if notation != "source-transcription"
+    ]
+    transcribed = [
+        lemma
+        for lemma in lemmas
+        if any(n == "source-transcription" for _, n in sounds.get(lemma, ()))
+    ]
+    lines = []
+    if heard:
+        lines.append(f"pronunciations = {array(heard)}")
+    if transcribed:
+        lines.append(
+            f"transcribed = {array(transcribed)}"
+            "  # romanized in the source; no word in the native script here"
+        )
+    return lines
+
+
 def ancestors(code: str, parents: dict[str, set[str]]) -> list[str]:
     """Every concept above `code` in the shared hierarchy, nearest first.
 
@@ -178,6 +225,7 @@ def write(
     language, so that each table's ``ancestors`` can be read in the file.
     """
     words, gaps, phrases = read_lexicon(tag)
+    sounds = read_sounds(tag)
     proposed = proposals(tag)
     order = list(concepts)
     listed = set(words) | set(proposed) | gaps
@@ -218,6 +266,7 @@ def write(
         concept = concepts[code]
         lines.append(f"[{s(code)}]")
         lines.append(f"lemmas = {array(list(words.get(code, {})))}")
+        lines += sound_lines(list(words.get(code, {})), sounds)
         if code in gaps:
             lines.append(
                 'status = "KinDiv records a gap here, but there are words: check"'

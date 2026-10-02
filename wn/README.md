@@ -10,7 +10,7 @@ from `collection/`.
 uv run wn/tufs_words.py              # TUFS words -> tufs-candidates.tsv
 uv run wn/tufs_curation.py           # candidates -> tufs-kindiv.tsv
 uv run wn/build.py                   # collection, lexicons.tsv, ili-proposals.tsv
-uv run --with pytest pytest wn       # tests
+uv run --with pytest --with langcodes --with language_data --with unidecode pytest wn  # tests
 ```
 
 ## Model
@@ -178,6 +178,18 @@ differences (Polish *wujek*, Hungarian *unokanővér*). Notes:
   (`notation="IPA"`, or `respelling` for dictionary respelling), not words. Where
   that written word was held back for a broader synonym (German *Tochter*,
   *Sohn*), the transcription's exact match attests it and it is added.
+- Most Kinbank forms for languages written in another script are
+  romanizations (Mandarin *xiong di*, Hindi *bhāī*, Russian *brat*): 3,000
+  forms in 65 languages. `kinbank_words.py` marks them in the `transcription`
+  column, by comparing the form's letters with the language's likely script
+  (CLDR via langcodes; Old Norse and Old Irish count as Latin-written). Where
+  the language has a word in its own script for the concept, the romanization
+  becomes its `<Pronunciation notation="romanization">`: the only such word,
+  or the one whose Unidecode transliteration matches best (*tang jie* goes to
+  *堂姐*, not *堂姊*). Otherwise it stays a lemma, the only record of the word,
+  with `<Pronunciation notation="source-transcription">`. 325 romanizations are
+  pronunciations; 1,902 lemmas are transcriptions. Every lemma records its
+  script (`script="Hani"`).
 
 ## Attestations
 
