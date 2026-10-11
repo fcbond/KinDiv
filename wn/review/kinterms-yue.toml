@@ -1,0 +1,2582 @@
+# KinDiv kinship terms for yue, from the built lexicon kindiv-yue.
+# One table per concept. Edit `comment`; leave the rest as generated.
+# hypernyms: direct hypernyms in the shared (mul) hierarchy; ancestors: all of them, nearest first.
+# Concepts with no word here are included where the hierarchy needs them (status `unlexicalized`).
+# existing_by_ili, existing_by_lemma: synsets in the language's Cygnet wordnets (oewn, omw-pl, ...), as
+#   lexicon id [ILI] lemmas: definition; (CILI) marks a definition taken from the ILI.
+#   Lemma matches keep only kinship senses (no ILI, or under an ILI KinDiv links to, by OEWN);
+#   existing_hidden counts the rest.
+# `proposed` lemmas are NOT in the build: written by Claude Opus 5.5 from its own knowledge, for a speaker to check (Jyutping romanization).
+
+["Fa;Fa"]
+lemmas = ["爺爺", "祖父"]
+english = ["gramps", "grandfather", "grandpa"]
+english_via = "Gr;Fa"
+label = "paternal grandfather"
+definition = "the father of one's father (a grandparent)"
+existing_by_lemma = ["爺爺 -> cantown-yue cantown-yue-10142391-n [i90287] 阿公, 爺爺, 外公, 阿爺: (CILI) the father of your father or mother"]
+hypernyms = ["Fa;Fa|x;So;Ch", "Fa;Pr", "Gr;Fa"]
+ancestors = ["Fa;Fa|x;So;Ch", "Fa;Pr", "Gr;Fa", "Ch;Ch|Pa;Pa", "Ch;So|Pa;Fa", "Gr;Pr", "Rel"]
+sources = ["爺爺 <- Wiktionary", "祖父 <- Wiktionary"]
+comment = ""
+
+["Mo;Fa"]
+lemmas = ["公公", "外公", "外祖父"]
+english = ["gramps", "grandfather", "grandpa"]
+english_via = "Gr;Fa"
+label = "maternal grandfather"
+definition = "the father of one's mother (a grandparent)"
+existing_by_lemma = ["外公 -> cantown-yue cantown-yue-10142391-n [i90287] 阿公, 爺爺, 外公, 阿爺: (CILI) the father of your father or mother"]
+hypernyms = ["Gr;Fa", "Mo;Fa|x;Da;Ch", "Mo;Pr"]
+ancestors = ["Gr;Fa", "Mo;Fa|x;Da;Ch", "Mo;Pr", "Ch;Ch|Pa;Pa", "Ch;So|Pa;Fa", "Gr;Pr", "Rel"]
+sources = ["公公 <- Wiktionary", "外公 <- Wiktionary", "外祖父 <- Wiktionary"]
+comment = ""
+
+["Fa;Mo"]
+lemmas = ["嫲嫲", "祖母"]
+english = ["grandma", "grandmother", "granny"]
+english_via = "Gr;Mo"
+label = "paternal grandmother"
+definition = "the mother of one's father (a grandparent)"
+hypernyms = ["Fa;Mo|o;So;Ch", "Fa;Pr", "Gr;Mo"]
+ancestors = ["Fa;Mo|o;So;Ch", "Fa;Pr", "Gr;Mo", "Ch;Ch|Pa;Pa", "Ch;Da|Pa;Mo", "Gr;Pr", "Rel"]
+sources = ["嫲嫲 <- Wiktionary", "祖母 <- Wiktionary"]
+comment = ""
+
+["Mo;Mo"]
+lemmas = ["外婆", "外祖母", "姥姥"]
+english = ["grandma", "grandmother", "granny"]
+english_via = "Gr;Mo"
+label = "maternal grandmother"
+definition = "the mother of one's mother (a grandparent)"
+hypernyms = ["Gr;Mo", "Mo;Pr"]
+ancestors = ["Gr;Mo", "Mo;Pr", "Ch;Da|Pa;Mo", "Gr;Pr", "Ch;Ch|Pa;Pa", "Rel"]
+sources = ["外婆 <- Wiktionary", "外祖母 <- Wiktionary", "姥姥 <- Wiktionary"]
+comment = ""
+
+["Gr;Ch"]
+lemmas = ["孫"]
+english = ["grandchild", "grandkid"]
+label = "grandchild"
+definition = "a child of one's child (a grandchild)"
+hypernyms = ["Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch"]
+ancestors = ["Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+sources = ["孫 <- Wiktionary"]
+comment = ""
+
+["Gr;So"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["grandson"]
+label = "grandson"
+definition = "a son of one's child (a grandchild)"
+hypernyms = ["Ch;So|Pa;Fa", "Gr;Ch"]
+ancestors = ["Ch;So|Pa;Fa", "Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Gr;Da"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["granddaughter"]
+label = "granddaughter"
+definition = "a daughter of one's child (a grandchild)"
+hypernyms = ["Ch;Da|Pa;Mo", "Gr;Ch"]
+ancestors = ["Ch;Da|Pa;Mo", "Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["So;Ch"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["grandchild", "grandkid"]
+english_via = "Gr;Ch"
+label = "son's child"
+definition = "a child of one's son (a grandchild)"
+hypernyms = ["Gr;Ch"]
+ancestors = ["Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Da;Ch"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["grandchild", "grandkid"]
+english_via = "Gr;Ch"
+label = "daughter's child"
+definition = "a child of one's daughter (a grandchild)"
+hypernyms = ["Gr;Ch"]
+ancestors = ["Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["So;So"]
+lemmas = ["孫兒", "孫子"]
+english = ["grandson"]
+english_via = "Gr;So"
+label = "son's son"
+definition = "a son of one's son (a grandchild)"
+hypernyms = ["Gr;So", "So;Ch"]
+ancestors = ["Gr;So", "So;Ch", "Ch;So|Pa;Fa", "Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+sources = ["孫兒 <- Wiktionary", "孫子 <- Wiktionary"]
+comment = ""
+
+["So;Da"]
+lemmas = ["孫女"]
+english = ["granddaughter"]
+english_via = "Gr;Da"
+label = "son's daughter"
+definition = "a daughter of one's son (a grandchild)"
+hypernyms = ["Gr;Da", "So;Ch"]
+ancestors = ["Gr;Da", "So;Ch", "Ch;Da|Pa;Mo", "Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+sources = ["孫女 <- Wiktionary"]
+comment = ""
+
+["Da;So"]
+lemmas = ["外孫"]
+english = ["grandson"]
+english_via = "Gr;So"
+label = "daughter's son"
+definition = "a son of one's daughter (a grandchild)"
+hypernyms = ["Da;Ch", "Gr;So"]
+ancestors = ["Da;Ch", "Gr;So", "Ch;So|Pa;Fa", "Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+sources = ["外孫 <- Wiktionary"]
+comment = ""
+
+["Da;Da"]
+lemmas = ["外孫女"]
+english = ["granddaughter"]
+english_via = "Gr;Da"
+label = "daughter's daughter"
+definition = "a daughter of one's daughter (a grandchild)"
+hypernyms = ["Da;Ch", "Gr;Da"]
+ancestors = ["Da;Ch", "Gr;Da", "Ch;Da|Pa;Mo", "Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+sources = ["外孫女 <- Wiktionary"]
+comment = ""
+
+["Br"]
+lemmas = []
+status = "KinDiv records a gap here, but there are words: check"
+proposed = ["兄弟"]
+jyutping = ["hing1 dai6"]
+confidence = ["medium"]
+notes = ["兄弟: 'brothers'; also 'brother' generally"]
+english = ["brother"]
+label = "brother"
+definition = "a brother of a person (a sibling)"
+existing_by_lemma = ["兄弟 -> cantown-yue cantown-yue-09876454-n [i88708] 哥哥, 阿哥, 細佬, 巴打, 大佬, 弟弟, ...: (CILI) a male with the same parents as someone else"]
+hypernyms = ["Br|Pa;Sb;So", "Sb"]
+ancestors = ["Br|Pa;Sb;So", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Ss"]
+lemmas = []
+status = "KinDiv records a gap here, but there are words: check"
+proposed = ["姊妹"]
+jyutping = ["zi2 mui6"]
+confidence = ["medium"]
+notes = ["姊妹: 'sisters'"]
+english = ["sister"]
+label = "sister"
+definition = "a sister of a person (a sibling)"
+hypernyms = ["Pa;Sb;Da|Ss", "Sb"]
+ancestors = ["Pa;Sb;Da|Ss", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["El;Br"]
+lemmas = ["哥哥", "大佬", "阿哥"]
+english = ["brother"]
+english_via = "Br"
+label = "elder brother"
+definition = "an elder brother of a person (a sibling)"
+existing_by_lemma = ["哥哥 -> cantown-yue cantown-yue-09876454-n [i88708] 哥哥, 阿哥, 細佬, 巴打, 大佬, 弟弟, ...: (CILI) a male with the same parents as someone else", "大佬 -> cantown-yue cantown-yue-09876454-n [i88708] 哥哥, 阿哥, 細佬, 巴打, 大佬, 弟弟, ...: (CILI) a male with the same parents as someone else", "阿哥 -> cantown-yue cantown-yue-09876454-n [i88708] 哥哥, 阿哥, 細佬, 巴打, 大佬, 弟弟, ...: (CILI) a male with the same parents as someone else"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["Br", "El;Br|El;Pa;Sb;So", "El;Sb"]
+ancestors = ["Br", "El;Br|El;Pa;Sb;So", "El;Sb", "Br|Pa;Sb;So", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+sources = ["哥哥 <- Wiktionary", "大佬 <- Wiktionary", "阿哥 <- Wiktionary"]
+comment = ""
+
+["El;Ss"]
+lemmas = ["姐姐", "家姐", "阿姊"]
+english = ["sister"]
+english_via = "Ss"
+label = "elder sister"
+definition = "an elder sister of a person (a sibling)"
+hypernyms = ["El;Sb", "Ss"]
+ancestors = ["El;Sb", "Ss", "Pa;Sb;Da|Ss", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+sources = ["姐姐 <- Wiktionary", "家姐 <- Wiktionary", "阿姊 <- Wiktionary"]
+comment = ""
+
+["Yn;Br"]
+lemmas = ["弟弟", "細佬"]
+english = ["brother"]
+english_via = "Br"
+label = "younger brother"
+definition = "a younger brother of a person (a sibling)"
+existing_by_lemma = ["弟弟 -> cantown-yue cantown-yue-09876454-n [i88708] 哥哥, 阿哥, 細佬, 巴打, 大佬, 弟弟, ...: (CILI) a male with the same parents as someone else", "細佬 -> cantown-yue cantown-yue-09876454-n [i88708] 哥哥, 阿哥, 細佬, 巴打, 大佬, 弟弟, ...: (CILI) a male with the same parents as someone else"]
+hypernyms = ["Br", "Yn;Sb"]
+ancestors = ["Br", "Yn;Sb", "Br|Pa;Sb;So", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+sources = ["弟弟 <- Wiktionary", "細佬 <- Wiktionary"]
+comment = ""
+
+["Yn;Ss"]
+lemmas = ["妹妹"]
+proposed = ["細妹"]
+jyutping = ["sai3 mui2"]
+confidence = ["high"]
+english = ["sister"]
+english_via = "Ss"
+label = "younger sister"
+definition = "a younger sister of a person (a sibling)"
+hypernyms = ["Ss", "Yn;Sb"]
+ancestors = ["Ss", "Yn;Sb", "Pa;Sb;Da|Ss", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+sources = ["妹妹 <- Wiktionary"]
+comment = ""
+
+["Pb"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "auncle"
+definition = "a sibling of one's parent (an uncle or aunt)"
+hypernyms = ["Rel"]
+ancestors = ["Rel"]
+comment = ""
+
+["Pa;Br"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["uncle"]
+label = "uncle"
+definition = "a brother of one's parent (an uncle or aunt)"
+hypernyms = ["Pb", "Unc"]
+ancestors = ["Pb", "Unc", "Rel"]
+comment = ""
+
+["Pa;Ss"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["aunt"]
+label = "aunt"
+definition = "a sister of one's parent (an uncle or aunt)"
+hypernyms = ["Aun", "Mo|Pa;Ss", "Pb"]
+ancestors = ["Aun", "Mo|Pa;Ss", "Pb", "Rel"]
+comment = ""
+
+["Fa;Sb"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "father's sibling"
+definition = "a sibling of one's father (an uncle or aunt)"
+hypernyms = ["Pb"]
+ancestors = ["Pb", "Rel"]
+comment = ""
+
+["Mo;Sb"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "mother's sibling"
+definition = "a sibling of one's mother (an uncle or aunt)"
+hypernyms = ["Pb"]
+ancestors = ["Pb", "Rel"]
+comment = ""
+
+["Fa;Br"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["uncle"]
+english_via = "Pa;Br"
+label = "paternal uncle"
+definition = "a brother of one's father (an uncle or aunt)"
+hypernyms = ["Fa;Sb", "Fa|Fa;Br", "Pa;Br"]
+ancestors = ["Fa;Sb", "Fa|Fa;Br", "Pa;Br", "Pb", "Rel", "Unc"]
+comment = ""
+
+["Mo;Br"]
+lemmas = []
+proposed = ["舅父"]
+jyutping = ["kau5 fu2"]
+confidence = ["high"]
+notes = ["舅父: also 阿舅 aa3 kau5"]
+english = ["uncle"]
+english_via = "Pa;Br"
+label = "maternal uncle"
+definition = "a brother of one's mother (an uncle or aunt)"
+existing_by_lemma = ["舅父 -> cantown-yue cantown-yue-10736091-n [i93825] 姨丈, 伯父, 伯伯, 阿伯, 姑丈, 阿叔, ...: (CILI) the brother of your father or mother; the husband of your aunt"]
+hypernyms = ["Mo;Br|Mo;Br;So", "Mo;Br|x;Ss;Ch", "Mo;Sb", "Pa;Br"]
+ancestors = ["Mo;Br|Mo;Br;So", "Mo;Br|x;Ss;Ch", "Mo;Sb", "Pa;Br", "Mo;Br|Ss;Ch", "Pb", "Rel", "Unc"]
+comment = ""
+
+["Fa;Ss"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["aunt"]
+english_via = "Pa;Ss"
+label = "paternal aunt"
+definition = "a sister of one's father (an uncle or aunt)"
+hypernyms = ["Fa;Sb", "Pa;Ss"]
+ancestors = ["Fa;Sb", "Pa;Ss", "Aun", "Mo|Pa;Ss", "Pb", "Rel"]
+comment = ""
+
+["Mo;Ss"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["aunt"]
+english_via = "Pa;Ss"
+label = "maternal aunt"
+definition = "a sister of one's mother (an uncle or aunt)"
+hypernyms = ["Mo;Sb", "Mo|Mo;Ss", "Pa;Ss"]
+ancestors = ["Mo;Sb", "Mo|Mo;Ss", "Pa;Ss", "Aun", "Mo|Pa;Ss", "Pb", "Rel"]
+comment = ""
+
+["Pa;El;Br"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["uncle"]
+english_via = "Pa;Br"
+label = "parent's elder brother"
+definition = "an elder brother of one's parent (an uncle or aunt)"
+hypernyms = ["Pa;Br"]
+ancestors = ["Pa;Br", "Pb", "Unc", "Rel"]
+comment = ""
+
+["Pa;El;Ss"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["aunt"]
+english_via = "Pa;Ss"
+label = "parent's elder sister"
+definition = "an elder sister of one's parent (an uncle or aunt)"
+hypernyms = ["Pa;Ss"]
+ancestors = ["Pa;Ss", "Aun", "Mo|Pa;Ss", "Pb", "Rel"]
+comment = ""
+
+["Pa;Yn;Br"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["uncle"]
+english_via = "Pa;Br"
+label = "parent's younger brother"
+definition = "a younger brother of one's parent (an uncle or aunt)"
+hypernyms = ["Pa;Br"]
+ancestors = ["Pa;Br", "Pb", "Unc", "Rel"]
+comment = ""
+
+["Pa;Yn;Ss"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["aunt"]
+english_via = "Pa;Ss"
+label = "parent's younger sister"
+definition = "a younger sister of one's parent (an uncle or aunt)"
+hypernyms = ["Pa;Ss"]
+ancestors = ["Pa;Ss", "Aun", "Mo|Pa;Ss", "Pb", "Rel"]
+comment = ""
+
+["Fa;Yn;Sb"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "father's younger sibling"
+definition = "a younger sibling of one's father (an uncle or aunt)"
+hypernyms = ["Fa;Sb"]
+ancestors = ["Fa;Sb", "Pb", "Rel"]
+comment = ""
+
+["Mo;Yn;Sb"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "mother's younger sibling"
+definition = "a younger sibling of one's mother (an uncle or aunt)"
+hypernyms = ["Mo;Sb"]
+ancestors = ["Mo;Sb", "Pb", "Rel"]
+comment = ""
+
+["Fa;El;Br"]
+lemmas = []
+proposed = ["伯父"]
+jyutping = ["baak3 fu6"]
+confidence = ["high"]
+notes = ["伯父: also 阿伯 aa3 baak3"]
+english = ["uncle"]
+english_via = "Pa;Br"
+label = "father's elder brother"
+definition = "an elder brother of one's father (an uncle or aunt)"
+existing_by_lemma = ["伯父 -> cantown-yue cantown-yue-10736091-n [i93825] 姨丈, 伯父, 伯伯, 阿伯, 姑丈, 阿叔, ...: (CILI) the brother of your father or mother; the husband of your aunt"]
+hypernyms = ["Fa;Br", "Pa;El;Br"]
+ancestors = ["Fa;Br", "Pa;El;Br", "Fa;Sb", "Fa|Fa;Br", "Pa;Br", "Pb", "Rel", "Unc"]
+comment = ""
+
+["Fa;Yn;Br"]
+lemmas = []
+proposed = ["叔叔"]
+jyutping = ["suk1 suk1"]
+confidence = ["high"]
+notes = ["叔叔: also 阿叔 aa3 suk1"]
+english = ["uncle"]
+english_via = "Pa;Br"
+label = "father's younger brother"
+definition = "a younger brother of one's father (an uncle or aunt)"
+hypernyms = ["Fa;Br", "Fa;Yn;Sb", "Pa;Yn;Br"]
+ancestors = ["Fa;Br", "Fa;Yn;Sb", "Pa;Yn;Br", "Fa;Sb", "Fa|Fa;Br", "Pa;Br", "Pb", "Rel", "Unc"]
+comment = ""
+
+["Fa;El;Ss"]
+lemmas = []
+proposed = ["姑媽"]
+jyutping = ["gu1 maa1"]
+confidence = ["high"]
+notes = ["姑媽: father's elder sister"]
+english = ["aunt"]
+english_via = "Pa;Ss"
+label = "father's elder sister"
+definition = "an elder sister of one's father (an uncle or aunt)"
+existing_by_lemma = ["姑媽 -> cantown-yue cantown-yue-09823502-n [i88357] 阿嬸, 阿姨, 伯母, 姑媽, 姨媽, 姑姐, ...: (CILI) the sister of your father or mother; the wife of your uncle"]
+hypernyms = ["Fa;Ss", "Pa;El;Ss"]
+ancestors = ["Fa;Ss", "Pa;El;Ss", "Fa;Sb", "Pa;Ss", "Aun", "Mo|Pa;Ss", "Pb", "Rel"]
+comment = ""
+
+["Fa;Yn;Ss"]
+lemmas = []
+proposed = ["姑姐"]
+jyutping = ["gu1 ze1"]
+confidence = ["high"]
+notes = ["姑姐: father's younger sister"]
+english = ["aunt"]
+english_via = "Pa;Ss"
+label = "father's younger sister"
+definition = "a younger sister of one's father (an uncle or aunt)"
+existing_by_lemma = ["姑姐 -> cantown-yue cantown-yue-09823502-n [i88357] 阿嬸, 阿姨, 伯母, 姑媽, 姨媽, 姑姐, ...: (CILI) the sister of your father or mother; the wife of your uncle"]
+hypernyms = ["Fa;Ss", "Fa;Yn;Sb", "Pa;Yn;Ss"]
+ancestors = ["Fa;Ss", "Fa;Yn;Sb", "Pa;Yn;Ss", "Fa;Sb", "Pa;Ss", "Aun", "Mo|Pa;Ss", "Pb", "Rel"]
+comment = ""
+
+["Mo;El;Ss"]
+lemmas = []
+proposed = ["姨媽"]
+jyutping = ["ji4 maa1"]
+confidence = ["high"]
+notes = ["姨媽: mother's elder sister"]
+english = ["aunt"]
+english_via = "Pa;Ss"
+label = "mother's elder sister"
+definition = "an elder sister of one's mother (an uncle or aunt)"
+existing_by_lemma = ["姨媽 -> cantown-yue cantown-yue-09823502-n [i88357] 阿嬸, 阿姨, 伯母, 姑媽, 姨媽, 姑姐, ...: (CILI) the sister of your father or mother; the wife of your uncle"]
+hypernyms = ["Mo;Ss", "Pa;El;Ss"]
+ancestors = ["Mo;Ss", "Pa;El;Ss", "Mo;Sb", "Mo|Mo;Ss", "Pa;Ss", "Aun", "Mo|Pa;Ss", "Pb", "Rel"]
+comment = ""
+
+["Mo;Yn;Ss"]
+lemmas = []
+proposed = ["阿姨"]
+jyutping = ["aa3 ji1"]
+confidence = ["high"]
+notes = ["阿姨: mother's younger sister; also any older woman"]
+english = ["aunt"]
+english_via = "Pa;Ss"
+label = "mother's younger sister"
+definition = "a younger sister of one's mother (an uncle or aunt)"
+existing_by_lemma = ["阿姨 -> cantown-yue cantown-yue-09823502-n [i88357] 阿嬸, 阿姨, 伯母, 姑媽, 姨媽, 姑姐, ...: (CILI) the sister of your father or mother; the wife of your uncle"]
+hypernyms = ["Mo;Ss", "Mo;Yn;Sb", "Pa;Yn;Ss"]
+ancestors = ["Mo;Ss", "Mo;Yn;Sb", "Pa;Yn;Ss", "Mo;Sb", "Mo|Mo;Ss", "Pa;Ss", "Aun", "Mo|Pa;Ss", "Pb", "Rel"]
+comment = ""
+
+["Br;So"]
+lemmas = ["姪子"]
+proposed = ["姪"]
+jyutping = ["zat6"]
+confidence = ["high"]
+notes = ["姪: also 姪仔 zat6 zai2"]
+english = ["nephew"]
+english_via = "Sb;So"
+label = "brother's son"
+definition = "a son of one's brother (a nephew or niece)"
+hypernyms = ["Br;Ch", "Br;So|So", "Sb;So"]
+ancestors = ["Br;Ch", "Br;So|So", "Sb;So", "Br;Ch|Ch", "Sb;Ch", "Sb;So|So", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+sources = ["姪子 <- Wiktionary"]
+comment = ""
+
+["Br;Da"]
+lemmas = ["姪女"]
+english = ["niece"]
+english_via = "Sb;Da"
+label = "brother's daughter"
+definition = "a daughter of one's brother (a nephew or niece)"
+hypernyms = ["Br;Ch", "Br;Da|Da", "Sb;Da"]
+ancestors = ["Br;Ch", "Br;Da|Da", "Sb;Da", "Br;Ch|Ch", "Da|Sb;Da", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+sources = ["姪女 <- Wiktionary"]
+comment = ""
+
+["Ss;So"]
+lemmas = ["外甥"]
+english = ["nephew"]
+english_via = "Sb;So"
+label = "sister's son"
+definition = "a son of one's sister (a nephew or niece)"
+hypernyms = ["Sb;So", "Ss;Ch"]
+ancestors = ["Sb;So", "Ss;Ch", "Mo;Br|Ss;Ch", "Sb;Ch", "Sb;So|So", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+sources = ["外甥 <- Wiktionary"]
+comment = ""
+
+["Ss;Da"]
+lemmas = ["外甥女", "甥女"]
+english = ["niece"]
+english_via = "Sb;Da"
+label = "sister's daughter"
+definition = "a daughter of one's sister (a nephew or niece)"
+hypernyms = ["Sb;Da", "Ss;Ch"]
+ancestors = ["Sb;Da", "Ss;Ch", "Da|Sb;Da", "Mo;Br|Ss;Ch", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+sources = ["外甥女 <- Wiktionary", "甥女 <- Wiktionary"]
+comment = ""
+
+["El;Fa;Br;So"]
+lemmas = ["堂兄", "堂哥", "堂大佬"]
+english = ["cousin"]
+english_via = "Pa;Sb;Ch"
+label = "elder, son of father's brother"
+definition = "a son of one's father's brother, who is older than oneself (a cousin)"
+existing_by_lemma = ["堂兄 -> cantown-yue cantown-yue-09972010-n [i89276] 堂妹, 表弟, 老表, 堂兄, 表妹, 堂哥, ...: (CILI) the child of your aunt or uncle", "堂哥 -> cantown-yue cantown-yue-09972010-n [i89276] 堂妹, 表弟, 老表, 堂兄, 表妹, 堂哥, ...: (CILI) the child of your aunt or uncle", "堂大佬 -> cantown-yue cantown-yue-09972010-n [i89276] 堂妹, 表弟, 老表, 堂兄, 表妹, 堂哥, ...: (CILI) the child of your aunt or uncle"]
+hypernyms = ["El;Pa;Sb;So", "Fa;Br;So"]
+ancestors = ["El;Pa;Sb;So", "Fa;Br;So", "El;Br|El;Pa;Sb;So", "El;Pa;Sb;Ch", "Fa;Br;Ch", "Fa;Sb;So", "Pa;Br;So", "Pa;Sb;So", "Br|Pa;Sb;So", "Fa;Sb;Ch", "Pa;Br;Ch", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+sources = ["堂兄 <- Wiktionary", "堂哥 <- Wiktionary", "堂大佬 <- Wiktionary"]
+comment = ""
+
+["Yn;Fa;Br;So"]
+lemmas = ["堂弟", "堂細佬"]
+english = ["cousin"]
+english_via = "Pa;Sb;Ch"
+label = "younger, son of father's brother"
+definition = "a son of one's father's brother, who is younger than oneself (a cousin)"
+existing_by_lemma = ["堂弟 -> cantown-yue cantown-yue-09972010-n [i89276] 堂妹, 表弟, 老表, 堂兄, 表妹, 堂哥, ...: (CILI) the child of your aunt or uncle", "堂細佬 -> cantown-yue cantown-yue-09972010-n [i89276] 堂妹, 表弟, 老表, 堂兄, 表妹, 堂哥, ...: (CILI) the child of your aunt or uncle"]
+hypernyms = ["Fa;Br;So", "Yn;Pa;Sb;So"]
+ancestors = ["Fa;Br;So", "Yn;Pa;Sb;So", "Fa;Br;Ch", "Fa;Sb;So", "Pa;Br;So", "Pa;Sb;So", "Yn;Pa;Sb;Ch", "Br|Pa;Sb;So", "Fa;Sb;Ch", "Pa;Br;Ch", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+sources = ["堂弟 <- Wiktionary", "堂細佬 <- Wiktionary"]
+comment = ""
+
+["El;Fa;Br;Da"]
+lemmas = ["堂姊", "堂姐", "堂家姐"]
+english = ["cousin"]
+english_via = "Pa;Sb;Ch"
+label = "elder, daughter of father's brother"
+definition = "a daughter of one's father's brother, who is older than oneself (a cousin)"
+existing_by_lemma = ["堂姐 -> cantown-yue cantown-yue-09972010-n [i89276] 堂妹, 表弟, 老表, 堂兄, 表妹, 堂哥, ...: (CILI) the child of your aunt or uncle"]
+hypernyms = ["El;Pa;Sb;Da", "Fa;Br;Da"]
+ancestors = ["El;Pa;Sb;Da", "Fa;Br;Da", "El;Pa;Sb;Ch", "Fa;Br;Ch", "Fa;Sb;Da", "Pa;Br;Da", "Pa;Sb;Da", "Fa;Sb;Ch", "Pa;Br;Ch", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+sources = ["堂姊 <- Wiktionary", "堂姐 <- Wiktionary", "堂家姐 <- Wiktionary"]
+comment = ""
+
+["Yn;Fa;Br;Da"]
+lemmas = ["堂妹"]
+english = ["cousin"]
+english_via = "Pa;Sb;Ch"
+label = "younger, daughter of father's brother"
+definition = "a daughter of one's father's brother, who is younger than oneself (a cousin)"
+existing_by_lemma = ["堂妹 -> cantown-yue cantown-yue-09972010-n [i89276] 堂妹, 表弟, 老表, 堂兄, 表妹, 堂哥, ...: (CILI) the child of your aunt or uncle"]
+hypernyms = ["Fa;Br;Da", "Yn;Pa;Sb;Da"]
+ancestors = ["Fa;Br;Da", "Yn;Pa;Sb;Da", "Fa;Br;Ch", "Fa;Sb;Da", "Pa;Br;Da", "Pa;Sb;Da", "Yn;Pa;Sb;Ch", "Fa;Sb;Ch", "Pa;Br;Ch", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+sources = ["堂妹 <- Wiktionary"]
+comment = ""
+
+["El;Fa;Ss;So"]
+lemmas = ["表兄", "表哥"]
+english = ["cousin"]
+english_via = "Pa;Sb;Ch"
+label = "elder, son of father's sister"
+definition = "a son of one's father's sister, who is older than oneself (a cousin)"
+existing_by_lemma = ["表哥 -> cantown-yue cantown-yue-09972010-n [i89276] 堂妹, 表弟, 老表, 堂兄, 表妹, 堂哥, ...: (CILI) the child of your aunt or uncle"]
+hypernyms = ["El;Pa;Sb;So", "Fa;Ss;So"]
+ancestors = ["El;Pa;Sb;So", "Fa;Ss;So", "El;Br|El;Pa;Sb;So", "El;Pa;Sb;Ch", "Fa;Sb;So", "Fa;Ss;Ch", "Fa;Ss;So|Mo;Br;So", "Pa;Sb;So", "Pa;Ss;So", "Br|Pa;Sb;So", "Fa;Sb;Ch", "Fa;Ss;Ch|Mo;Br;Ch", "Pa;Sb;Ch", "Pa;Ss;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+sources = ["表兄 <- Wiktionary", "表哥 <- Wiktionary"]
+comment = ""
+
+["Yn;Fa;Ss;So"]
+lemmas = ["表弟"]
+english = ["cousin"]
+english_via = "Pa;Sb;Ch"
+label = "younger, son of father's sister"
+definition = "a son of one's father's sister, who is younger than oneself (a cousin)"
+existing_by_lemma = ["表弟 -> cantown-yue cantown-yue-09972010-n [i89276] 堂妹, 表弟, 老表, 堂兄, 表妹, 堂哥, ...: (CILI) the child of your aunt or uncle"]
+hypernyms = ["Fa;Ss;So", "Yn;Pa;Sb;So"]
+ancestors = ["Fa;Ss;So", "Yn;Pa;Sb;So", "Fa;Sb;So", "Fa;Ss;Ch", "Fa;Ss;So|Mo;Br;So", "Pa;Sb;So", "Pa;Ss;So", "Yn;Pa;Sb;Ch", "Br|Pa;Sb;So", "Fa;Sb;Ch", "Fa;Ss;Ch|Mo;Br;Ch", "Pa;Sb;Ch", "Pa;Ss;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+sources = ["表弟 <- Wiktionary"]
+comment = ""
+
+["El;Fa;Ss;Da"]
+lemmas = ["表姐"]
+english = ["cousin"]
+english_via = "Pa;Sb;Ch"
+label = "elder, daughter of father's sister"
+definition = "a daughter of one's father's sister, who is older than oneself (a cousin)"
+existing_by_lemma = ["表姐 -> cantown-yue cantown-yue-09972010-n [i89276] 堂妹, 表弟, 老表, 堂兄, 表妹, 堂哥, ...: (CILI) the child of your aunt or uncle"]
+hypernyms = ["El;Pa;Sb;Da", "Fa;Ss;Da"]
+ancestors = ["El;Pa;Sb;Da", "Fa;Ss;Da", "El;Pa;Sb;Ch", "Fa;Sb;Da", "Fa;Ss;Ch", "Fa;Ss;Da|Mo;Br;Da", "Pa;Sb;Da", "Pa;Ss;Da", "Fa;Sb;Ch", "Fa;Ss;Ch|Mo;Br;Ch", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Ss;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+sources = ["表姐 <- Wiktionary"]
+comment = ""
+
+["Yn;Fa;Ss;Da"]
+lemmas = ["表妹"]
+english = ["cousin"]
+english_via = "Pa;Sb;Ch"
+label = "younger, daughter of father's sister"
+definition = "a daughter of one's father's sister, who is younger than oneself (a cousin)"
+existing_by_lemma = ["表妹 -> cantown-yue cantown-yue-09972010-n [i89276] 堂妹, 表弟, 老表, 堂兄, 表妹, 堂哥, ...: (CILI) the child of your aunt or uncle"]
+hypernyms = ["Fa;Ss;Da", "Yn;Pa;Sb;Da"]
+ancestors = ["Fa;Ss;Da", "Yn;Pa;Sb;Da", "Fa;Sb;Da", "Fa;Ss;Ch", "Fa;Ss;Da|Mo;Br;Da", "Pa;Sb;Da", "Pa;Ss;Da", "Yn;Pa;Sb;Ch", "Fa;Sb;Ch", "Fa;Ss;Ch|Mo;Br;Ch", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Ss;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+sources = ["表妹 <- Wiktionary"]
+comment = ""
+
+["El;Mo;Sb;So"]
+lemmas = ["表兄", "表哥"]
+english = ["cousin"]
+english_via = "Pa;Sb;Ch"
+label = "elder, son of mother's sibling"
+definition = "a son of one's mother's sibling, who is older than oneself (a cousin)"
+existing_by_lemma = ["表哥 -> cantown-yue cantown-yue-09972010-n [i89276] 堂妹, 表弟, 老表, 堂兄, 表妹, 堂哥, ...: (CILI) the child of your aunt or uncle"]
+hypernyms = ["El;Pa;Sb;So", "Mo;Sb;So"]
+ancestors = ["El;Pa;Sb;So", "Mo;Sb;So", "El;Br|El;Pa;Sb;So", "El;Pa;Sb;Ch", "Mo;Sb;Ch", "Pa;Sb;So", "Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+sources = ["表兄 <- Wiktionary", "表哥 <- Wiktionary"]
+comment = ""
+
+["Yn;Mo;Sb;So"]
+lemmas = ["表弟"]
+english = ["cousin"]
+english_via = "Pa;Sb;Ch"
+label = "younger, son of mother's sibling"
+definition = "a son of one's mother's sibling, who is younger than oneself (a cousin)"
+existing_by_lemma = ["表弟 -> cantown-yue cantown-yue-09972010-n [i89276] 堂妹, 表弟, 老表, 堂兄, 表妹, 堂哥, ...: (CILI) the child of your aunt or uncle"]
+hypernyms = ["Mo;Sb;So", "Yn;Pa;Sb;So"]
+ancestors = ["Mo;Sb;So", "Yn;Pa;Sb;So", "Mo;Sb;Ch", "Pa;Sb;So", "Yn;Pa;Sb;Ch", "Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+sources = ["表弟 <- Wiktionary"]
+comment = ""
+
+["El;Mo;Sb;Da"]
+lemmas = ["表姐"]
+english = ["cousin"]
+english_via = "Pa;Sb;Ch"
+label = "elder, daughter of mother's sibling"
+definition = "a daughter of one's mother's sibling, who is older than oneself (a cousin)"
+existing_by_lemma = ["表姐 -> cantown-yue cantown-yue-09972010-n [i89276] 堂妹, 表弟, 老表, 堂兄, 表妹, 堂哥, ...: (CILI) the child of your aunt or uncle"]
+hypernyms = ["El;Pa;Sb;Da", "Mo;Sb;Da"]
+ancestors = ["El;Pa;Sb;Da", "Mo;Sb;Da", "El;Pa;Sb;Ch", "Mo;Sb;Ch", "Pa;Sb;Da", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+sources = ["表姐 <- Wiktionary"]
+comment = ""
+
+["Yn;Mo;Sb;Da"]
+lemmas = ["表妹"]
+english = ["cousin"]
+english_via = "Pa;Sb;Ch"
+label = "younger, daughter of mother's sibling"
+definition = "a daughter of one's mother's sibling, who is younger than oneself (a cousin)"
+existing_by_lemma = ["表妹 -> cantown-yue cantown-yue-09972010-n [i89276] 堂妹, 表弟, 老表, 堂兄, 表妹, 堂哥, ...: (CILI) the child of your aunt or uncle"]
+hypernyms = ["Mo;Sb;Da", "Yn;Pa;Sb;Da"]
+ancestors = ["Mo;Sb;Da", "Yn;Pa;Sb;Da", "Mo;Sb;Ch", "Pa;Sb;Da", "Yn;Pa;Sb;Ch", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+sources = ["表妹 <- Wiktionary"]
+comment = ""
+
+["Rel"]
+lemmas = []
+proposed = ["親戚"]
+jyutping = ["can1 cik1"]
+confidence = ["high"]
+notes = ["親戚: 'relative'"]
+english = ["relative"]
+label = "relative"
+definition = "a person related by blood or marriage"
+existing_hidden = 2  # other senses of these lemmas
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Unc"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["uncle"]
+label = "uncle (by blood or marriage)"
+definition = "the brother of your father or mother; the husband of your aunt"
+existing_by_ili = ["cantown-yue cantown-yue-10736091-n [i93825] 姨丈, 伯父, 伯伯, 阿伯, 姑丈, 阿叔, ...: (CILI) the brother of your father or mother; the husband of your aunt"]
+hypernyms = ["Rel"]
+ancestors = ["Rel"]
+comment = ""
+
+["Aun"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["aunt"]
+label = "aunt (by blood or marriage)"
+definition = "the sister of your father or mother; the wife of your uncle"
+existing_by_ili = ["cantown-yue cantown-yue-09823502-n [i88357] 阿嬸, 阿姨, 伯母, 姑媽, 姨媽, 姑姐, ...: (CILI) the sister of your father or mother; the wife of your uncle"]
+hypernyms = ["Rel"]
+ancestors = ["Rel"]
+comment = ""
+
+["Pa;Ss;Hu"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["in-law"]
+english_via = "InL"
+label = "husband of parent's sister"
+definition = "the husband of one's parent's sister (an uncle or aunt)"
+hypernyms = ["InL", "Unc"]
+ancestors = ["InL", "Unc", "Rel"]
+comment = ""
+
+["Fa;Ss;Hu"]
+lemmas = []
+proposed = ["姑丈"]
+jyutping = ["gu1 zoeng2"]
+confidence = ["high"]
+english = ["in-law"]
+english_via = "InL"
+label = "husband of father's sister"
+definition = "the husband of one's father's sister (an uncle or aunt)"
+existing_by_lemma = ["姑丈 -> cantown-yue cantown-yue-10736091-n [i93825] 姨丈, 伯父, 伯伯, 阿伯, 姑丈, 阿叔, ...: (CILI) the brother of your father or mother; the husband of your aunt"]
+hypernyms = ["Pa;Ss;Hu"]
+ancestors = ["Pa;Ss;Hu", "InL", "Unc", "Rel"]
+comment = ""
+
+["Mo;Ss;Hu"]
+lemmas = []
+proposed = ["姨丈"]
+jyutping = ["ji4 zoeng2"]
+confidence = ["high"]
+english = ["in-law"]
+english_via = "InL"
+label = "husband of mother's sister"
+definition = "the husband of one's mother's sister (an uncle or aunt)"
+existing_by_lemma = ["姨丈 -> cantown-yue cantown-yue-10736091-n [i93825] 姨丈, 伯父, 伯伯, 阿伯, 姑丈, 阿叔, ...: (CILI) the brother of your father or mother; the husband of your aunt"]
+hypernyms = ["Pa;Ss;Hu"]
+ancestors = ["Pa;Ss;Hu", "InL", "Unc", "Rel"]
+comment = ""
+
+["Pa;Br;Wi"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["aunt"]
+english_via = "Aun"
+label = "wife of parent's brother"
+definition = "the wife of one's parent's brother (an uncle or aunt)"
+hypernyms = ["Aun", "InL"]
+ancestors = ["Aun", "InL", "Rel"]
+comment = ""
+
+["Fa;Br;Wi"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["aunt"]
+english_via = "Aun"
+label = "wife of father's brother"
+definition = "the wife of one's father's brother (an uncle or aunt)"
+hypernyms = ["Pa;Br;Wi"]
+ancestors = ["Pa;Br;Wi", "Aun", "InL", "Rel"]
+comment = ""
+
+["Fa;El;Br;Wi"]
+lemmas = []
+proposed = ["伯娘"]
+jyutping = ["baak3 noeng4"]
+confidence = ["high"]
+english = ["aunt"]
+english_via = "Aun"
+label = "wife of father's elder brother"
+definition = "the wife of one's father's elder brother (an uncle or aunt)"
+existing_by_lemma = ["伯娘 -> cantown-yue cantown-yue-09823502-n [i88357] 阿嬸, 阿姨, 伯母, 姑媽, 姨媽, 姑姐, ...: (CILI) the sister of your father or mother; the wife of your uncle"]
+hypernyms = ["Fa;Br;Wi"]
+ancestors = ["Fa;Br;Wi", "Pa;Br;Wi", "Aun", "InL", "Rel"]
+comment = ""
+
+["Fa;Yn;Br;Wi"]
+lemmas = []
+proposed = ["阿嬸"]
+jyutping = ["aa3 sam2"]
+confidence = ["high"]
+notes = ["阿嬸: also 嬸嬸 sam2 sam2"]
+english = ["aunt"]
+english_via = "Aun"
+label = "wife of father's younger brother"
+definition = "the wife of one's father's younger brother (an uncle or aunt)"
+existing_by_lemma = ["阿嬸 -> cantown-yue cantown-yue-09823502-n [i88357] 阿嬸, 阿姨, 伯母, 姑媽, 姨媽, 姑姐, ...: (CILI) the sister of your father or mother; the wife of your uncle"]
+hypernyms = ["Fa;Br;Wi"]
+ancestors = ["Fa;Br;Wi", "Pa;Br;Wi", "Aun", "InL", "Rel"]
+comment = ""
+
+["Pa"]
+lemmas = []
+proposed = ["父母"]
+jyutping = ["fu6 mou5"]
+confidence = ["high"]
+notes = ["父母: 'parents', a pair"]
+english = ["parent", "parents"]
+label = "parent"
+definition = "a father or mother of a person"
+hypernyms = ["Rel"]
+ancestors = ["Rel"]
+comment = ""
+
+["Fa"]
+lemmas = []
+proposed = ["爸爸", "父親", "老豆"]
+jyutping = ["baa4 baa1", "fu6 can1", "lou5 dau6"]
+confidence = ["high", "high", "high"]
+notes = ["爸爸: colloquial", "父親: formal", "老豆: slang"]
+english = ["dad", "father"]
+label = "father"
+definition = "the father of a person (a parent)"
+existing_by_lemma = ["爸爸 -> cantown-yue cantown-yue-09988063-n [i89370] 爹哋, 爸爸: (CILI) an informal term for a father; probably derived from baby talk"]
+hypernyms = ["Fa|Fa;Br", "Pa"]
+ancestors = ["Fa|Fa;Br", "Pa", "Rel"]
+comment = ""
+
+["Mo"]
+lemmas = []
+proposed = ["媽媽", "母親", "老母"]
+jyutping = ["maa4 maa1", "mou5 can1", "lou5 mou2"]
+confidence = ["high", "high", "high"]
+notes = ["媽媽: colloquial", "母親: formal", "老母: slang"]
+english = ["mom", "mother"]
+label = "mother"
+definition = "the mother of a person (a parent)"
+existing_by_ili = ["cantown-yue cantown-yue-10332385-n [i91462] 老母, 老媽子, 媽咪, 媽媽, 阿媽, 母親大人: (CILI) a woman who has given birth to a child (also used as a term of address to your mother)"]
+existing_by_lemma = ["媽媽 -> cantown-yue cantown-yue-10278128-n [i91123] 老母, 老媽子, 阿媽, 媽咪, 母親, 媽媽: (CILI) informal terms for a mother", "媽媽 -> cantown-yue cantown-yue-10332385-n [i91462] 老母, 老媽子, 媽咪, 媽媽, 阿媽, 母親大人: (CILI) a woman who has given birth to a child (also used as a term of address to your mother)", "母親 -> cantown-yue cantown-yue-10278128-n [i91123] 老母, 老媽子, 阿媽, 媽咪, 母親, 媽媽: (CILI) informal terms for a mother", "老母 -> cantown-yue cantown-yue-10278128-n [i91123] 老母, 老媽子, 阿媽, 媽咪, 母親, 媽媽: (CILI) informal terms for a mother", "老母 -> cantown-yue cantown-yue-10332385-n [i91462] 老母, 老媽子, 媽咪, 媽媽, 阿媽, 母親大人: (CILI) a woman who has given birth to a child (also used as a term of address to your mother)"]
+hypernyms = ["Mo|Mo;Ss", "Pa"]
+ancestors = ["Mo|Mo;Ss", "Pa", "Mo|Pa;Ss", "Rel"]
+comment = ""
+
+["Ch"]
+lemmas = []
+proposed = ["子女"]
+jyutping = ["zi2 neoi5"]
+confidence = ["medium"]
+notes = ["子女: 'children', collective"]
+english = ["child"]
+label = "child"
+definition = "a son or daughter of a person"
+hypernyms = ["Br;Ch|Ch"]
+ancestors = ["Br;Ch|Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["So"]
+lemmas = []
+proposed = ["仔", "兒子"]
+jyutping = ["zai2", "ji4 zi2"]
+confidence = ["high", "high"]
+notes = ["仔: 'son' (also 'boy')", "兒子: formal"]
+english = ["son"]
+label = "son"
+definition = "a son of a person (a child)"
+hypernyms = ["Br;So|So", "Ch"]
+ancestors = ["Br;So|So", "Ch", "Br;Ch|Ch", "Sb;So|So", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Da"]
+lemmas = []
+proposed = ["囡", "女兒"]
+jyutping = ["neoi2", "neoi5 ji4"]
+confidence = ["high", "high"]
+notes = ["囡: 'daughter'", "女兒: formal"]
+english = ["daughter"]
+label = "daughter"
+definition = "a daughter of a person (a child)"
+existing_by_ili = ["cantown-yue cantown-yue-09992837-n [i89398] 女女, 女: (CILI) a female human offspring"]
+hypernyms = ["Br;Da|Da", "Ch"]
+ancestors = ["Br;Da|Da", "Ch", "Br;Ch|Ch", "Da|Sb;Da", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Sp"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["spouse"]
+label = "spouse"
+definition = "a husband or wife of a person"
+hypernyms = ["Rel"]
+ancestors = ["Rel"]
+comment = ""
+
+["Hu"]
+lemmas = []
+proposed = ["老公", "丈夫"]
+jyutping = ["lou5 gung1", "zoeng6 fu1"]
+confidence = ["high", "high"]
+notes = ["老公: colloquial", "丈夫: formal"]
+english = ["husband"]
+label = "husband"
+definition = "the husband of a person (a spouse)"
+hypernyms = ["Sp"]
+ancestors = ["Sp", "Rel"]
+comment = ""
+
+["Wi"]
+lemmas = []
+proposed = ["老婆", "太太", "妻子"]
+jyutping = ["lou5 po4", "taai3 taai2", "cai1 zi2"]
+confidence = ["high", "high", "high"]
+notes = ["老婆: colloquial", "太太: also 'Mrs'", "妻子: formal"]
+english = ["wife"]
+label = "wife"
+definition = "the wife of a person (a spouse)"
+hypernyms = ["Sp"]
+ancestors = ["Sp", "Rel"]
+comment = ""
+
+["InL"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["in-law"]
+label = "in-law"
+definition = "a relative by marriage"
+hypernyms = ["Rel"]
+ancestors = ["Rel"]
+comment = ""
+
+["Sp;Pa"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["parent-in-law"]
+label = "parent-in-law"
+definition = "a parent of one's spouse (an in-law)"
+hypernyms = ["InL"]
+ancestors = ["InL", "Rel"]
+comment = ""
+
+["Sp;Fa"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["father-in-law"]
+label = "father-in-law"
+definition = "the father of one's spouse (an in-law)"
+hypernyms = ["Sp;Pa"]
+ancestors = ["Sp;Pa", "InL", "Rel"]
+comment = ""
+
+["Sp;Mo"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["mother-in-law"]
+label = "mother-in-law"
+definition = "the mother of one's spouse (an in-law)"
+hypernyms = ["Sp;Pa"]
+ancestors = ["Sp;Pa", "InL", "Rel"]
+comment = ""
+
+["Ch;Sp"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["child-in-law"]
+label = "child-in-law"
+definition = "a spouse of one's child (an in-law)"
+hypernyms = ["InL"]
+ancestors = ["InL", "Rel"]
+comment = ""
+
+["Da;Hu"]
+lemmas = []
+proposed = ["女婿"]
+jyutping = ["neoi5 sai3"]
+confidence = ["high"]
+english = ["son-in-law"]
+label = "son-in-law"
+definition = "the husband of one's daughter (an in-law)"
+hypernyms = ["Ch;Sp"]
+ancestors = ["Ch;Sp", "InL", "Rel"]
+comment = ""
+
+["So;Wi"]
+lemmas = []
+proposed = ["新抱"]
+jyutping = ["san1 pou5"]
+confidence = ["high"]
+notes = ["新抱: daughter-in-law"]
+english = ["daughter-in-law"]
+label = "daughter-in-law"
+definition = "the wife of one's son (an in-law)"
+hypernyms = ["Ch;Sp"]
+ancestors = ["Ch;Sp", "InL", "Rel"]
+comment = ""
+
+["BrL"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["brother-in-law"]
+label = "brother-in-law"
+definition = "a brother by marriage: a brother of one's spouse or the husband of one's sister"
+hypernyms = ["InL"]
+ancestors = ["InL", "Rel"]
+comment = ""
+
+["SsL"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["sister-in-law"]
+label = "sister-in-law (by marriage)"
+definition = "a sister by marriage: a sister of one's spouse or the wife of one's brother"
+hypernyms = ["InL"]
+ancestors = ["InL", "Rel"]
+comment = ""
+
+["Sp;Br"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["brother-in-law"]
+label = "spouse's brother"
+definition = "a brother of one's spouse (an in-law)"
+hypernyms = ["BrL", "Sp;Sb"]
+ancestors = ["BrL", "Sp;Sb", "InL", "Rel"]
+comment = ""
+
+["Ss;Hu"]
+lemmas = []
+proposed = ["姐夫", "妹夫"]
+jyutping = ["ze2 fu1", "mui6 fu1"]
+confidence = ["high", "high"]
+notes = ["姐夫: elder sister's husband (no elder-specific concept)", "妹夫: younger sister's husband (no younger-specific concept)"]
+english = ["brother-in-law"]
+label = "sister's husband"
+definition = "the husband of one's sister (an in-law)"
+hypernyms = ["BrL"]
+ancestors = ["BrL", "InL", "Rel"]
+comment = ""
+
+["Br;Wi"]
+lemmas = []
+proposed = ["阿嫂", "弟婦"]
+jyutping = ["aa3 sou2", "dai6 fu5"]
+confidence = ["high", "medium"]
+notes = ["阿嫂: elder brother's wife (no elder-specific concept)", "弟婦: younger brother's wife"]
+english = ["sister-in-law"]
+label = "brother's wife"
+definition = "the wife of one's brother (an in-law)"
+hypernyms = ["SsL"]
+ancestors = ["SsL", "InL", "Rel"]
+comment = ""
+
+["Fa|Fa;Br"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "father or father's brother"
+definition = "the father of a person or a brother of one's father"
+hypernyms = ["Rel"]
+ancestors = ["Rel"]
+comment = ""
+
+["Mo|Mo;Ss"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "mother or mother's sister"
+definition = "the mother of a person or a sister of one's mother"
+hypernyms = ["Mo|Pa;Ss"]
+ancestors = ["Mo|Pa;Ss", "Rel"]
+comment = ""
+
+["Fa;Ss;Ch|Mo;Br;Ch"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["cousin"]
+english_via = "Pa;Sb;Ch"
+label = "father's sister's child or mother's brother's child"
+definition = "a child of one's father's sister or a child of one's mother's brother"
+hypernyms = ["Pa;Sb;Ch"]
+ancestors = ["Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Ch;Ch|Pa;Pa"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "child's child or parent's parent"
+definition = "a child of one's child or a parent of one's parent"
+hypernyms = ["Rel"]
+ancestors = ["Rel"]
+comment = ""
+
+["Mo|Pa;Ss"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "mother or parent's sister"
+definition = "the mother of a person or a sister of one's parent"
+hypernyms = ["Rel"]
+ancestors = ["Rel"]
+comment = ""
+
+["Wi;Mo"]
+lemmas = []
+proposed = ["外母"]
+jyutping = ["ngoi6 mou2"]
+confidence = ["high"]
+english = ["mother-in-law"]
+english_via = "Sp;Mo"
+label = "wife's mother"
+definition = "the mother of one's wife (an in-law)"
+hypernyms = ["Sp;Mo"]
+ancestors = ["Sp;Mo", "Sp;Pa", "InL", "Rel"]
+comment = ""
+
+["Hu;Fa"]
+lemmas = []
+proposed = ["老爺"]
+jyutping = ["lou5 je4"]
+confidence = ["high"]
+notes = ["老爺: a wife's term for her husband's father"]
+english = ["father-in-law"]
+english_via = "Sp;Fa"
+label = "husband's father"
+definition = "the father of one's husband (an in-law)"
+hypernyms = ["Sp;Fa"]
+ancestors = ["Sp;Fa", "Sp;Pa", "InL", "Rel"]
+comment = ""
+
+["Fa;Ss;So|Mo;Br;So"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["cousin"]
+english_via = "Pa;Sb;Ch"
+label = "father's sister's son or mother's brother's son"
+definition = "a son of one's father's sister or a son of one's mother's brother"
+hypernyms = ["Fa;Ss;Ch|Mo;Br;Ch", "Pa;Sb;So"]
+ancestors = ["Fa;Ss;Ch|Mo;Br;Ch", "Pa;Sb;So", "Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Hu;Mo"]
+lemmas = []
+proposed = ["奶奶"]
+jyutping = ["naai4 naai2"]
+confidence = ["high"]
+notes = ["奶奶: a wife's term for her husband's mother"]
+english = ["mother-in-law"]
+english_via = "Sp;Mo"
+label = "husband's mother"
+definition = "the mother of one's husband (an in-law)"
+hypernyms = ["Sp;Mo"]
+ancestors = ["Sp;Mo", "Sp;Pa", "InL", "Rel"]
+comment = ""
+
+["Pa;Sb;Ch|Sb"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "parent's sibling's child or sibling"
+definition = "a child of one's parent's sibling or a sibling of a person"
+hypernyms = ["Rel"]
+ancestors = ["Rel"]
+comment = ""
+
+["Br;So|So"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "brother's son or son"
+definition = "a son of one's brother or a son of a person"
+hypernyms = ["Br;Ch|Ch", "Sb;So|So"]
+ancestors = ["Br;Ch|Ch", "Sb;So|So", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Fa;Ss;Da|Mo;Br;Da"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["cousin"]
+english_via = "Pa;Sb;Ch"
+label = "father's sister's daughter or mother's brother's daughter"
+definition = "a daughter of one's father's sister or a daughter of one's mother's brother"
+hypernyms = ["Fa;Ss;Ch|Mo;Br;Ch", "Pa;Sb;Da"]
+ancestors = ["Fa;Ss;Ch|Mo;Br;Ch", "Pa;Sb;Da", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["o;Br|x;Ss"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["sibling"]
+english_via = "Sb"
+label = "woman's brother or man's sister"
+definition = "a brother of a woman or a sister of a man"
+hypernyms = ["Sb"]
+ancestors = ["Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Wi;Fa"]
+lemmas = []
+proposed = ["外父"]
+jyutping = ["ngoi6 fu2"]
+confidence = ["high"]
+notes = ["外父: a husband's term for his wife's father"]
+english = ["father-in-law"]
+english_via = "Sp;Fa"
+label = "wife's father"
+definition = "the father of one's wife (an in-law)"
+hypernyms = ["Sp;Fa"]
+ancestors = ["Sp;Fa", "Sp;Pa", "InL", "Rel"]
+comment = ""
+
+["Ch|Sb;Ch"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "child or sibling's child"
+definition = "a child of a person or a child of one's sibling"
+hypernyms = ["Rel"]
+ancestors = ["Rel"]
+comment = ""
+
+["Mo;Br|Mo;Br;So"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "mother's brother or mother's brother's son"
+definition = "a brother of one's mother or a son of one's mother's brother"
+hypernyms = ["Rel"]
+ancestors = ["Rel"]
+comment = ""
+
+["Br;Da|Da"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "brother's daughter or daughter"
+definition = "a daughter of one's brother or a daughter of a person"
+hypernyms = ["Br;Ch|Ch", "Da|Sb;Da"]
+ancestors = ["Br;Ch|Ch", "Da|Sb;Da", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["El;Br|El;Pa;Sb;So"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "elder brother or parent's sibling's son (older than self)"
+definition = "an elder brother of a person or a son of one's parent's sibling, who is older than oneself"
+hypernyms = ["Br|Pa;Sb;So"]
+ancestors = ["Br|Pa;Sb;So", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["o;Br;So|x;Ss;So"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["nephew"]
+english_via = "Sb;So"
+label = "woman's brother's son or man's sister's son"
+definition = "a son of a woman's brother or a son of a man's sister"
+hypernyms = ["Sb;So"]
+ancestors = ["Sb;So", "Sb;Ch", "Sb;So|So", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Mo;Br|Ss;Ch"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "mother's brother or sister's child"
+definition = "a brother of one's mother or a child of one's sister"
+hypernyms = ["Rel"]
+ancestors = ["Rel"]
+comment = ""
+
+["o;Yn;Ss|x;Yn;Br"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["sibling"]
+english_via = "Sb"
+label = "woman's younger sister or man's younger brother"
+definition = "a younger sister of a woman or a younger brother of a man"
+hypernyms = ["Yn;Sb"]
+ancestors = ["Yn;Sb", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Ch;So|Pa;Fa"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "child's son or parent's father"
+definition = "a son of one's child or the father of one's parent"
+hypernyms = ["Ch;Ch|Pa;Pa"]
+ancestors = ["Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["Wi;Br"]
+lemmas = []
+proposed = ["舅仔"]
+jyutping = ["kau5 zai2"]
+confidence = ["medium"]
+notes = ["舅仔: wife's (younger) brother"]
+english = ["brother-in-law"]
+english_via = "Sp;Br"
+label = "wife's brother"
+definition = "a brother of one's wife (an in-law)"
+hypernyms = ["Sp;Br"]
+ancestors = ["Sp;Br", "BrL", "Sp;Sb", "InL", "Rel"]
+comment = ""
+
+["o;Br|o;Pa;Sb;So"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "woman's brother or woman's parent's sibling's son"
+definition = "a brother of a woman or a son of a woman's parent's sibling"
+hypernyms = ["Br|Pa;Sb;So"]
+ancestors = ["Br|Pa;Sb;So", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["x;Pa;Sb;Da|x;Ss"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "man's parent's sibling's daughter or man's sister"
+definition = "a daughter of a man's parent's sibling or a sister of a man"
+hypernyms = ["Pa;Sb;Da|Ss"]
+ancestors = ["Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Sb;So|So"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "sibling's son or son"
+definition = "a son of one's sibling or a son of a person"
+hypernyms = ["Ch|Sb;Ch"]
+ancestors = ["Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Ch;Da|Pa;Mo"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "child's daughter or parent's mother"
+definition = "a daughter of one's child or the mother of one's parent"
+hypernyms = ["Ch;Ch|Pa;Pa"]
+ancestors = ["Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["Mo;Br|x;Ss;Ch"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "mother's brother or man's sister's child"
+definition = "a brother of one's mother or a child of a man's sister"
+hypernyms = ["Mo;Br|Ss;Ch"]
+ancestors = ["Mo;Br|Ss;Ch", "Rel"]
+comment = ""
+
+["Fa;Fa|x;So;Ch"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "father's father or man's son's child"
+definition = "the father of one's father or a child of a man's son"
+hypernyms = ["Ch;Ch|Pa;Pa"]
+ancestors = ["Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["o;El;Ss|x;El;Br"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["sibling"]
+english_via = "Sb"
+label = "woman's elder sister or man's elder brother"
+definition = "an elder sister of a woman or an elder brother of a man"
+hypernyms = ["El;Sb"]
+ancestors = ["El;Sb", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Da|Sb;Da"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "daughter or sibling's daughter"
+definition = "a daughter of a person or a daughter of one's sibling"
+hypernyms = ["Ch|Sb;Ch"]
+ancestors = ["Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Br;Ch|Ch"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "brother's child or child"
+definition = "a child of one's brother or a child of a person"
+hypernyms = ["Ch|Sb;Ch"]
+ancestors = ["Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Mo;Fa|x;Da;Ch"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "mother's father or man's daughter's child"
+definition = "the father of one's mother or a child of a man's daughter"
+hypernyms = ["Ch;Ch|Pa;Pa"]
+ancestors = ["Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["Fa;Mo|o;So;Ch"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "father's mother or woman's son's child"
+definition = "the mother of one's father or a child of a woman's son"
+hypernyms = ["Ch;Ch|Pa;Pa"]
+ancestors = ["Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["o;Ss;Ch"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "woman's sister's child"
+definition = "a child of a woman's sister (a nephew or niece)"
+hypernyms = ["Ss;Ch", "o;Sb;Ch"]
+ancestors = ["Ss;Ch", "o;Sb;Ch", "Mo;Br|Ss;Ch", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Br|Pa;Sb;So"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "brother or parent's sibling's son"
+definition = "a brother of a person or a son of one's parent's sibling"
+hypernyms = ["Pa;Sb;Ch|Sb"]
+ancestors = ["Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Pa;Sb;Da|Ss"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "parent's sibling's daughter or sister"
+definition = "a daughter of one's parent's sibling or a sister of a person"
+hypernyms = ["Pa;Sb;Ch|Sb"]
+ancestors = ["Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Ch;Ch|Sb;Ch"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "child's child or sibling's child"
+definition = "a child of one's child or a child of one's sibling"
+hypernyms = ["Rel"]
+ancestors = ["Rel"]
+comment = ""
+
+["x;Br;Ch"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "man's brother's child"
+definition = "a child of a man's brother (a nephew or niece)"
+hypernyms = ["Br;Ch"]
+ancestors = ["Br;Ch", "Br;Ch|Ch", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Sp;Sb"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["in-law"]
+english_via = "InL"
+label = "spouse's sibling"
+definition = "a sibling of one's spouse (an in-law)"
+hypernyms = ["InL"]
+ancestors = ["InL", "Rel"]
+comment = ""
+
+["o;Sb;Ch"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["relative"]
+english_via = "Rel"
+label = "woman's sibling's child"
+definition = "a child of a woman's sibling (a nephew or niece)"
+hypernyms = ["Sb;Ch"]
+ancestors = ["Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Gr;Pr"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandparent"
+definition = "a parent of one's parent (a grandparent)"
+hypernyms = ["Ch;Ch|Pa;Pa"]
+ancestors = ["Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["Gr;Fa"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandfather"
+definition = "the father of one's parent (a grandparent)"
+existing_by_ili = ["cantown-yue cantown-yue-10142391-n [i90287] 阿公, 爺爺, 外公, 阿爺: (CILI) the father of your father or mother"]
+hypernyms = ["Ch;So|Pa;Fa", "Gr;Pr"]
+ancestors = ["Ch;So|Pa;Fa", "Gr;Pr", "Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["Fa;Pr"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "paternal grandparent"
+definition = "a parent of one's father (a grandparent)"
+hypernyms = ["Gr;Pr"]
+ancestors = ["Gr;Pr", "Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["Mo;Pr"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "maternal grandparent"
+definition = "a parent of one's mother (a grandparent)"
+hypernyms = ["Gr;Pr"]
+ancestors = ["Gr;Pr", "Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["x;Gr;Pr"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandparent (male anchor)"
+definition = "a parent of a man's parent (a grandparent)"
+hypernyms = ["Gr;Pr"]
+ancestors = ["Gr;Pr", "Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["o;Gr;Pr"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandparent (female anchor)"
+definition = "a parent of a woman's parent (a grandparent)"
+hypernyms = ["Gr;Pr"]
+ancestors = ["Gr;Pr", "Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["Gr;Mo"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandmother"
+definition = "the mother of one's parent (a grandparent)"
+hypernyms = ["Ch;Da|Pa;Mo", "Gr;Pr"]
+ancestors = ["Ch;Da|Pa;Mo", "Gr;Pr", "Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["x;Gr;Fa"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandfather (male anchor)"
+definition = "the father of a man's parent (a grandparent)"
+hypernyms = ["Gr;Fa", "x;Gr;Pr"]
+ancestors = ["Gr;Fa", "x;Gr;Pr", "Ch;So|Pa;Fa", "Gr;Pr", "Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["o;Gr;Fa"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandfather (female anchor)"
+definition = "the father of a woman's parent (a grandparent)"
+hypernyms = ["Gr;Fa", "o;Gr;Pr"]
+ancestors = ["Gr;Fa", "o;Gr;Pr", "Ch;So|Pa;Fa", "Gr;Pr", "Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["x;Gr;Mo"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandmother (male anchor)"
+definition = "the mother of a man's parent (a grandparent)"
+hypernyms = ["Gr;Mo", "x;Gr;Pr"]
+ancestors = ["Gr;Mo", "x;Gr;Pr", "Ch;Da|Pa;Mo", "Gr;Pr", "Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["o;Gr;Mo"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandmother (female anchor)"
+definition = "the mother of a woman's parent (a grandparent)"
+hypernyms = ["Gr;Mo", "o;Gr;Pr"]
+ancestors = ["Gr;Mo", "o;Gr;Pr", "Ch;Da|Pa;Mo", "Gr;Pr", "Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["x;Fa;Fa"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "paternal grandfather (male anchor)"
+definition = "the father of a man's father (a grandparent)"
+hypernyms = ["Fa;Fa", "x;Gr;Fa"]
+ancestors = ["Fa;Fa", "x;Gr;Fa", "Fa;Fa|x;So;Ch", "Fa;Pr", "Gr;Fa", "x;Gr;Pr", "Ch;Ch|Pa;Pa", "Ch;So|Pa;Fa", "Gr;Pr", "Rel"]
+comment = ""
+
+["o;Fa;Fa"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "paternal grandfather (female anchor)"
+definition = "the father of a woman's father (a grandparent)"
+hypernyms = ["Fa;Fa", "o;Gr;Fa"]
+ancestors = ["Fa;Fa", "o;Gr;Fa", "Fa;Fa|x;So;Ch", "Fa;Pr", "Gr;Fa", "o;Gr;Pr", "Ch;Ch|Pa;Pa", "Ch;So|Pa;Fa", "Gr;Pr", "Rel"]
+comment = ""
+
+["x;Mo;Mo"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "maternal grandmother (male anchor)"
+definition = "the mother of a man's mother (a grandparent)"
+hypernyms = ["Mo;Mo", "x;Gr;Mo"]
+ancestors = ["Mo;Mo", "x;Gr;Mo", "Gr;Mo", "Mo;Pr", "x;Gr;Pr", "Ch;Da|Pa;Mo", "Gr;Pr", "Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["o;Mo;Mo"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "maternal grandmother (female anchor)"
+definition = "the mother of a woman's mother (a grandparent)"
+hypernyms = ["Mo;Mo", "o;Gr;Mo"]
+ancestors = ["Mo;Mo", "o;Gr;Mo", "Gr;Mo", "Mo;Pr", "o;Gr;Pr", "Ch;Da|Pa;Mo", "Gr;Pr", "Ch;Ch|Pa;Pa", "Rel"]
+comment = ""
+
+["x;Gr;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandchild (male anchor)"
+definition = "a child of a man's child (a grandchild)"
+hypernyms = ["Gr;Ch"]
+ancestors = ["Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["o;Gr;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandchild (female anchor)"
+definition = "a child of a woman's child (a grandchild)"
+hypernyms = ["Gr;Ch"]
+ancestors = ["Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["x;Gr;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandson (male anchor)"
+definition = "a son of a man's child (a grandchild)"
+hypernyms = ["Gr;So", "x;Gr;Ch"]
+ancestors = ["Gr;So", "x;Gr;Ch", "Ch;So|Pa;Fa", "Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["o;Gr;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "grandson (female anchor)"
+definition = "a son of a woman's child (a grandchild)"
+hypernyms = ["Gr;So", "o;Gr;Ch"]
+ancestors = ["Gr;So", "o;Gr;Ch", "Ch;So|Pa;Fa", "Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["x;Gr;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "granddaughter (male anchor)"
+definition = "a daughter of a man's child (a grandchild)"
+hypernyms = ["Gr;Da", "x;Gr;Ch"]
+ancestors = ["Gr;Da", "x;Gr;Ch", "Ch;Da|Pa;Mo", "Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["o;Gr;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "granddaughter (female anchor)"
+definition = "a daughter of a woman's child (a grandchild)"
+hypernyms = ["Gr;Da", "o;Gr;Ch"]
+ancestors = ["Gr;Da", "o;Gr;Ch", "Ch;Da|Pa;Mo", "Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["x;So;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son's child (male anchor)"
+definition = "a child of a man's son (a grandchild)"
+hypernyms = ["Fa;Fa|x;So;Ch", "So;Ch", "x;Gr;Ch"]
+ancestors = ["Fa;Fa|x;So;Ch", "So;Ch", "x;Gr;Ch", "Ch;Ch|Pa;Pa", "Gr;Ch", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["o;So;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son's child (female anchor)"
+definition = "a child of a woman's son (a grandchild)"
+hypernyms = ["Fa;Mo|o;So;Ch", "So;Ch", "o;Gr;Ch"]
+ancestors = ["Fa;Mo|o;So;Ch", "So;Ch", "o;Gr;Ch", "Ch;Ch|Pa;Pa", "Gr;Ch", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["x;Da;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter's child (male anchor)"
+definition = "a child of a man's daughter (a grandchild)"
+hypernyms = ["Da;Ch", "Mo;Fa|x;Da;Ch", "x;Gr;Ch"]
+ancestors = ["Da;Ch", "Mo;Fa|x;Da;Ch", "x;Gr;Ch", "Ch;Ch|Pa;Pa", "Gr;Ch", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["o;Da;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter's child (female anchor)"
+definition = "a child of a woman's daughter (a grandchild)"
+hypernyms = ["Da;Ch", "o;Gr;Ch"]
+ancestors = ["Da;Ch", "o;Gr;Ch", "Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["x;So;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son's son (male anchor)"
+definition = "a son of a man's son (a grandchild)"
+hypernyms = ["So;So", "x;Gr;So", "x;So;Ch"]
+ancestors = ["So;So", "x;Gr;So", "x;So;Ch", "Fa;Fa|x;So;Ch", "Gr;So", "So;Ch", "x;Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;So|Pa;Fa", "Gr;Ch", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["o;So;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son's son (female anchor)"
+definition = "a son of a woman's son (a grandchild)"
+hypernyms = ["So;So", "o;Gr;So", "o;So;Ch"]
+ancestors = ["So;So", "o;Gr;So", "o;So;Ch", "Fa;Mo|o;So;Ch", "Gr;So", "So;Ch", "o;Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;So|Pa;Fa", "Gr;Ch", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["x;So;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son's daughter (male anchor)"
+definition = "a daughter of a man's son (a grandchild)"
+hypernyms = ["So;Da", "x;Gr;Da", "x;So;Ch"]
+ancestors = ["So;Da", "x;Gr;Da", "x;So;Ch", "Fa;Fa|x;So;Ch", "Gr;Da", "So;Ch", "x;Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Da|Pa;Mo", "Gr;Ch", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["o;So;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son's daughter (female anchor)"
+definition = "a daughter of a woman's son (a grandchild)"
+hypernyms = ["So;Da", "o;Gr;Da", "o;So;Ch"]
+ancestors = ["So;Da", "o;Gr;Da", "o;So;Ch", "Fa;Mo|o;So;Ch", "Gr;Da", "So;Ch", "o;Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Da|Pa;Mo", "Gr;Ch", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["x;Da;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter's son (male anchor)"
+definition = "a son of a man's daughter (a grandchild)"
+hypernyms = ["Da;So", "x;Da;Ch", "x;Gr;So"]
+ancestors = ["Da;So", "x;Da;Ch", "x;Gr;So", "Da;Ch", "Gr;So", "Mo;Fa|x;Da;Ch", "x;Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;So|Pa;Fa", "Gr;Ch", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["o;Da;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter's son (female anchor)"
+definition = "a son of a woman's daughter (a grandchild)"
+hypernyms = ["Da;So", "o;Da;Ch", "o;Gr;So"]
+ancestors = ["Da;So", "o;Da;Ch", "o;Gr;So", "Da;Ch", "Gr;So", "o;Gr;Ch", "Ch;So|Pa;Fa", "Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["x;Da;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter's daughter (male anchor)"
+definition = "a daughter of a man's daughter (a grandchild)"
+hypernyms = ["Da;Da", "x;Da;Ch", "x;Gr;Da"]
+ancestors = ["Da;Da", "x;Da;Ch", "x;Gr;Da", "Da;Ch", "Gr;Da", "Mo;Fa|x;Da;Ch", "x;Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Da|Pa;Mo", "Gr;Ch", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["o;Da;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter's daughter (female anchor)"
+definition = "a daughter of a woman's daughter (a grandchild)"
+hypernyms = ["Da;Da", "o;Da;Ch", "o;Gr;Da"]
+ancestors = ["Da;Da", "o;Da;Ch", "o;Gr;Da", "Da;Ch", "Gr;Da", "o;Gr;Ch", "Ch;Da|Pa;Mo", "Gr;Ch", "Ch;Ch|Pa;Pa", "Ch;Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Sb"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "sibling"
+definition = "a brother or sister of a person"
+hypernyms = ["Pa;Sb;Ch|Sb"]
+ancestors = ["Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["x;Br"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "brother (male anchor)"
+definition = "a brother of a man (a sibling)"
+hypernyms = ["Br"]
+ancestors = ["Br", "Br|Pa;Sb;So", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["o;Br"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "brother (female anchor)"
+definition = "a brother of a woman (a sibling)"
+hypernyms = ["Br", "o;Br|o;Pa;Sb;So", "o;Br|x;Ss"]
+ancestors = ["Br", "o;Br|o;Pa;Sb;So", "o;Br|x;Ss", "Br|Pa;Sb;So", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["x;Ss"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "sister (male anchor)"
+definition = "a sister of a man (a sibling)"
+hypernyms = ["Ss", "o;Br|x;Ss", "x;Pa;Sb;Da|x;Ss"]
+ancestors = ["Ss", "o;Br|x;Ss", "x;Pa;Sb;Da|x;Ss", "Pa;Sb;Da|Ss", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["o;Ss"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "sister (female anchor)"
+definition = "a sister of a woman (a sibling)"
+hypernyms = ["Ss"]
+ancestors = ["Ss", "Pa;Sb;Da|Ss", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["El;Sb"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "elder sibling"
+definition = "an elder sibling of a person"
+hypernyms = ["Sb"]
+ancestors = ["Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Yn;Sb"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "younger sibling"
+definition = "a younger sibling of a person"
+hypernyms = ["Sb"]
+ancestors = ["Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["x;El;Br"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "elder brother (male anchor)"
+definition = "an elder brother of a man (a sibling)"
+hypernyms = ["El;Br", "o;El;Ss|x;El;Br", "x;Br"]
+ancestors = ["El;Br", "o;El;Ss|x;El;Br", "x;Br", "Br", "El;Br|El;Pa;Sb;So", "El;Sb", "Br|Pa;Sb;So", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["o;El;Br"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "elder brother (female anchor)"
+definition = "an elder brother of a woman (a sibling)"
+hypernyms = ["El;Br", "o;Br"]
+ancestors = ["El;Br", "o;Br", "Br", "El;Br|El;Pa;Sb;So", "El;Sb", "o;Br|o;Pa;Sb;So", "o;Br|x;Ss", "Br|Pa;Sb;So", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["x;El;Ss"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "elder sister (male anchor)"
+definition = "an elder sister of a man (a sibling)"
+hypernyms = ["El;Ss", "x;Ss"]
+ancestors = ["El;Ss", "x;Ss", "El;Sb", "Ss", "o;Br|x;Ss", "x;Pa;Sb;Da|x;Ss", "Pa;Sb;Da|Ss", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["o;El;Ss"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "elder sister (female anchor)"
+definition = "an elder sister of a woman (a sibling)"
+hypernyms = ["El;Ss", "o;El;Ss|x;El;Br", "o;Ss"]
+ancestors = ["El;Ss", "o;El;Ss|x;El;Br", "o;Ss", "El;Sb", "Ss", "Pa;Sb;Da|Ss", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["x;Yn;Br"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "younger brother (male anchor)"
+definition = "a younger brother of a man (a sibling)"
+hypernyms = ["Yn;Br", "o;Yn;Ss|x;Yn;Br", "x;Br"]
+ancestors = ["Yn;Br", "o;Yn;Ss|x;Yn;Br", "x;Br", "Br", "Yn;Sb", "Br|Pa;Sb;So", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["o;Yn;Br"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "younger brother (female anchor)"
+definition = "a younger brother of a woman (a sibling)"
+hypernyms = ["Yn;Br", "o;Br"]
+ancestors = ["Yn;Br", "o;Br", "Br", "Yn;Sb", "o;Br|o;Pa;Sb;So", "o;Br|x;Ss", "Br|Pa;Sb;So", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["x;Yn;Ss"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "younger sister (male anchor)"
+definition = "a younger sister of a man (a sibling)"
+hypernyms = ["Yn;Ss", "x;Ss"]
+ancestors = ["Yn;Ss", "x;Ss", "Ss", "Yn;Sb", "o;Br|x;Ss", "x;Pa;Sb;Da|x;Ss", "Pa;Sb;Da|Ss", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["o;Yn;Ss"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "younger sister (female anchor)"
+definition = "a younger sister of a woman (a sibling)"
+hypernyms = ["Yn;Ss", "o;Ss", "o;Yn;Ss|x;Yn;Br"]
+ancestors = ["Yn;Ss", "o;Ss", "o;Yn;Ss|x;Yn;Br", "Ss", "Yn;Sb", "Pa;Sb;Da|Ss", "Sb", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Sb;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "nibling"
+definition = "a child of one's sibling (a nephew or niece)"
+hypernyms = ["Ch;Ch|Sb;Ch", "Ch|Sb;Ch"]
+ancestors = ["Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Sb;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "nephew"
+definition = "a son of one's sibling (a nephew or niece)"
+hypernyms = ["Sb;Ch", "Sb;So|So"]
+ancestors = ["Sb;Ch", "Sb;So|So", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Sb;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "niece"
+definition = "a daughter of one's sibling (a nephew or niece)"
+hypernyms = ["Da|Sb;Da", "Sb;Ch"]
+ancestors = ["Da|Sb;Da", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Br;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "brother's child"
+definition = "a child of one's brother (a nephew or niece)"
+hypernyms = ["Br;Ch|Ch", "Sb;Ch"]
+ancestors = ["Br;Ch|Ch", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Ss;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "sister's child"
+definition = "a child of one's sister (a nephew or niece)"
+hypernyms = ["Mo;Br|Ss;Ch", "Sb;Ch"]
+ancestors = ["Mo;Br|Ss;Ch", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["o;Br;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "brother's child (female anchor)"
+definition = "a child of a woman's brother (a nephew or niece)"
+hypernyms = ["Br;Ch", "o;Sb;Ch"]
+ancestors = ["Br;Ch", "o;Sb;Ch", "Br;Ch|Ch", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["x;Ss;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "sister's child (male anchor)"
+definition = "a child of a man's sister (a nephew or niece)"
+hypernyms = ["Mo;Br|x;Ss;Ch", "Ss;Ch"]
+ancestors = ["Mo;Br|x;Ss;Ch", "Ss;Ch", "Mo;Br|Ss;Ch", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["x;Br;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "brother's son (male anchor)"
+definition = "a son of a man's brother (a nephew or niece)"
+hypernyms = ["Br;So", "x;Br;Ch"]
+ancestors = ["Br;So", "x;Br;Ch", "Br;Ch", "Br;So|So", "Sb;So", "Br;Ch|Ch", "Sb;Ch", "Sb;So|So", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["o;Br;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "brother's son (female anchor)"
+definition = "a son of a woman's brother (a nephew or niece)"
+hypernyms = ["Br;So", "o;Br;Ch", "o;Br;So|x;Ss;So"]
+ancestors = ["Br;So", "o;Br;Ch", "o;Br;So|x;Ss;So", "Br;Ch", "Br;So|So", "Sb;So", "o;Sb;Ch", "Br;Ch|Ch", "Sb;Ch", "Sb;So|So", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["x;Br;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "brother's daughter (male anchor)"
+definition = "a daughter of a man's brother (a nephew or niece)"
+hypernyms = ["Br;Da", "x;Br;Ch"]
+ancestors = ["Br;Da", "x;Br;Ch", "Br;Ch", "Br;Da|Da", "Sb;Da", "Br;Ch|Ch", "Da|Sb;Da", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["x;Ss;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "sister's son (male anchor)"
+definition = "a son of a man's sister (a nephew or niece)"
+hypernyms = ["Ss;So", "o;Br;So|x;Ss;So", "x;Ss;Ch"]
+ancestors = ["Ss;So", "o;Br;So|x;Ss;So", "x;Ss;Ch", "Mo;Br|x;Ss;Ch", "Sb;So", "Ss;Ch", "Mo;Br|Ss;Ch", "Sb;Ch", "Sb;So|So", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["o;Ss;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "sister's son (female anchor)"
+definition = "a son of a woman's sister (a nephew or niece)"
+hypernyms = ["Ss;So", "o;Ss;Ch"]
+ancestors = ["Ss;So", "o;Ss;Ch", "Sb;So", "Ss;Ch", "o;Sb;Ch", "Mo;Br|Ss;Ch", "Sb;Ch", "Sb;So|So", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["o;Ss;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "sister's daughter (female anchor)"
+definition = "a daughter of a woman's sister (a nephew or niece)"
+hypernyms = ["Ss;Da", "o;Ss;Ch"]
+ancestors = ["Ss;Da", "o;Ss;Ch", "Sb;Da", "Ss;Ch", "o;Sb;Ch", "Da|Sb;Da", "Mo;Br|Ss;Ch", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["El;Br;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "elder brother's child"
+definition = "a child of one's elder brother (a nephew or niece)"
+hypernyms = ["Br;Ch"]
+ancestors = ["Br;Ch", "Br;Ch|Ch", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Yn;Br;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "younger brother's child"
+definition = "a child of one's younger brother (a nephew or niece)"
+hypernyms = ["Br;Ch"]
+ancestors = ["Br;Ch", "Br;Ch|Ch", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["El;Ss;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "elder sister's child"
+definition = "a child of one's elder sister (a nephew or niece)"
+hypernyms = ["Ss;Ch"]
+ancestors = ["Ss;Ch", "Mo;Br|Ss;Ch", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Yn;Ss;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "younger sister's child"
+definition = "a child of one's younger sister (a nephew or niece)"
+hypernyms = ["Ss;Ch"]
+ancestors = ["Ss;Ch", "Mo;Br|Ss;Ch", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["x;El;Br;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "elder brother's child (male anchor)"
+definition = "a child of a man's elder brother (a nephew or niece)"
+hypernyms = ["El;Br;Ch", "x;Br;Ch"]
+ancestors = ["El;Br;Ch", "x;Br;Ch", "Br;Ch", "Br;Ch|Ch", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["x;Yn;Br;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "younger brother's child (male anchor)"
+definition = "a child of a man's younger brother (a nephew or niece)"
+hypernyms = ["Yn;Br;Ch", "x;Br;Ch"]
+ancestors = ["Yn;Br;Ch", "x;Br;Ch", "Br;Ch", "Br;Ch|Ch", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["o;El;Ss;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "elder sister's child (female anchor)"
+definition = "a child of a woman's elder sister (a nephew or niece)"
+hypernyms = ["El;Ss;Ch", "o;Ss;Ch"]
+ancestors = ["El;Ss;Ch", "o;Ss;Ch", "Ss;Ch", "o;Sb;Ch", "Mo;Br|Ss;Ch", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["o;Yn;Ss;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "younger sister's child (female anchor)"
+definition = "a child of a woman's younger sister (a nephew or niece)"
+hypernyms = ["Yn;Ss;Ch", "o;Ss;Ch"]
+ancestors = ["Yn;Ss;Ch", "o;Ss;Ch", "Ss;Ch", "o;Sb;Ch", "Mo;Br|Ss;Ch", "Sb;Ch", "Ch;Ch|Sb;Ch", "Ch|Sb;Ch", "Rel"]
+comment = ""
+
+["Pa;Sb;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "cousin"
+definition = "a child of one's parent's sibling (a cousin)"
+existing_by_ili = ["cantown-yue cantown-yue-09972010-n [i89276] 堂妹, 表弟, 老表, 堂兄, 表妹, 堂哥, ...: (CILI) the child of your aunt or uncle"]
+hypernyms = ["Pa;Sb;Ch|Sb"]
+ancestors = ["Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["o;Pa;Sb;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "cousin (female anchor)"
+definition = "a child of a woman's parent's sibling (a cousin)"
+hypernyms = ["Pa;Sb;Ch"]
+ancestors = ["Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Pa;Sb;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "male cousin"
+definition = "a son of one's parent's sibling (a cousin)"
+hypernyms = ["Br|Pa;Sb;So", "Pa;Sb;Ch"]
+ancestors = ["Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Pa;Sb;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "female cousin"
+definition = "a daughter of one's parent's sibling (a cousin)"
+hypernyms = ["Pa;Sb;Ch", "Pa;Sb;Da|Ss"]
+ancestors = ["Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["x;Pa;Sb;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "male cousin (male anchor)"
+definition = "a son of a man's parent's sibling (a cousin)"
+hypernyms = ["Pa;Sb;So"]
+ancestors = ["Pa;Sb;So", "Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["o;Pa;Sb;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "male cousin (female anchor)"
+definition = "a son of a woman's parent's sibling (a cousin)"
+hypernyms = ["Pa;Sb;So", "o;Br|o;Pa;Sb;So", "o;Pa;Sb;Ch"]
+ancestors = ["Pa;Sb;So", "o;Br|o;Pa;Sb;So", "o;Pa;Sb;Ch", "Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["x;Pa;Sb;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "female cousin (male anchor)"
+definition = "a daughter of a man's parent's sibling (a cousin)"
+hypernyms = ["Pa;Sb;Da", "x;Pa;Sb;Da|x;Ss"]
+ancestors = ["Pa;Sb;Da", "x;Pa;Sb;Da|x;Ss", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["El;Pa;Sb;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "elder cousin"
+definition = "a child of one's parent's sibling, who is older than oneself (a cousin)"
+hypernyms = ["Pa;Sb;Ch"]
+ancestors = ["Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Yn;Pa;Sb;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "younger cousin"
+definition = "a child of one's parent's sibling, who is younger than oneself (a cousin)"
+hypernyms = ["Pa;Sb;Ch"]
+ancestors = ["Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["El;Pa;Sb;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "elder male cousin"
+definition = "a son of one's parent's sibling, who is older than oneself (a cousin)"
+hypernyms = ["El;Br|El;Pa;Sb;So", "El;Pa;Sb;Ch", "Pa;Sb;So"]
+ancestors = ["El;Br|El;Pa;Sb;So", "El;Pa;Sb;Ch", "Pa;Sb;So", "Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["El;Pa;Sb;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "elder female cousin"
+definition = "a daughter of one's parent's sibling, who is older than oneself (a cousin)"
+hypernyms = ["El;Pa;Sb;Ch", "Pa;Sb;Da"]
+ancestors = ["El;Pa;Sb;Ch", "Pa;Sb;Da", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Yn;Pa;Sb;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "younger male cousin"
+definition = "a son of one's parent's sibling, who is younger than oneself (a cousin)"
+hypernyms = ["Pa;Sb;So", "Yn;Pa;Sb;Ch"]
+ancestors = ["Pa;Sb;So", "Yn;Pa;Sb;Ch", "Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Yn;Pa;Sb;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "younger female cousin"
+definition = "a daughter of one's parent's sibling, who is younger than oneself (a cousin)"
+hypernyms = ["Pa;Sb;Da", "Yn;Pa;Sb;Ch"]
+ancestors = ["Pa;Sb;Da", "Yn;Pa;Sb;Ch", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["x;El;Pa;Sb;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "elder male cousin (male anchor)"
+definition = "a son of a man's parent's sibling, who is older than him (a cousin)"
+hypernyms = ["El;Pa;Sb;So", "x;Pa;Sb;So"]
+ancestors = ["El;Pa;Sb;So", "x;Pa;Sb;So", "El;Br|El;Pa;Sb;So", "El;Pa;Sb;Ch", "Pa;Sb;So", "Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["o;El;Pa;Sb;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "elder female cousin (female anchor)"
+definition = "a daughter of a woman's parent's sibling, who is older than her (a cousin)"
+hypernyms = ["El;Pa;Sb;Da"]
+ancestors = ["El;Pa;Sb;Da", "El;Pa;Sb;Ch", "Pa;Sb;Da", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["x;Yn;Pa;Sb;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "younger male cousin (male anchor)"
+definition = "a son of a man's parent's sibling, who is younger than him (a cousin)"
+hypernyms = ["Yn;Pa;Sb;So", "x;Pa;Sb;So"]
+ancestors = ["Yn;Pa;Sb;So", "x;Pa;Sb;So", "Pa;Sb;So", "Yn;Pa;Sb;Ch", "Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["o;Yn;Pa;Sb;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "younger female cousin (female anchor)"
+definition = "a daughter of a woman's parent's sibling, who is younger than her (a cousin)"
+hypernyms = ["Yn;Pa;Sb;Da"]
+ancestors = ["Yn;Pa;Sb;Da", "Pa;Sb;Da", "Yn;Pa;Sb;Ch", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Fa;Sb;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "child of father's sibling"
+definition = "a child of one's father's sibling (a cousin)"
+hypernyms = ["Pa;Sb;Ch"]
+ancestors = ["Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Mo;Sb;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "child of mother's sibling"
+definition = "a child of one's mother's sibling (a cousin)"
+hypernyms = ["Pa;Sb;Ch"]
+ancestors = ["Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Pa;Br;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "child of parent's brother"
+definition = "a child of one's parent's brother (a cousin)"
+hypernyms = ["Pa;Sb;Ch"]
+ancestors = ["Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Pa;Ss;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "child of parent's sister"
+definition = "a child of one's parent's sister (a cousin)"
+hypernyms = ["Pa;Sb;Ch"]
+ancestors = ["Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Fa;Br;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "child of father's brother"
+definition = "a child of one's father's brother (a cousin)"
+hypernyms = ["Fa;Sb;Ch", "Pa;Br;Ch"]
+ancestors = ["Fa;Sb;Ch", "Pa;Br;Ch", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Fa;Ss;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "child of father's sister"
+definition = "a child of one's father's sister (a cousin)"
+hypernyms = ["Fa;Sb;Ch", "Fa;Ss;Ch|Mo;Br;Ch", "Pa;Ss;Ch"]
+ancestors = ["Fa;Sb;Ch", "Fa;Ss;Ch|Mo;Br;Ch", "Pa;Ss;Ch", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Mo;Br;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "child of mother's brother"
+definition = "a child of one's mother's brother (a cousin)"
+hypernyms = ["Fa;Ss;Ch|Mo;Br;Ch", "Mo;Sb;Ch", "Pa;Br;Ch"]
+ancestors = ["Fa;Ss;Ch|Mo;Br;Ch", "Mo;Sb;Ch", "Pa;Br;Ch", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Mo;Ss;Ch"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "child of mother's sister"
+definition = "a child of one's mother's sister (a cousin)"
+hypernyms = ["Mo;Sb;Ch", "Pa;Ss;Ch"]
+ancestors = ["Mo;Sb;Ch", "Pa;Ss;Ch", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Pa;Br;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son of parent's brother"
+definition = "a son of one's parent's brother (a cousin)"
+hypernyms = ["Pa;Br;Ch", "Pa;Sb;So"]
+ancestors = ["Pa;Br;Ch", "Pa;Sb;So", "Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Pa;Br;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter of parent's brother"
+definition = "a daughter of one's parent's brother (a cousin)"
+hypernyms = ["Pa;Br;Ch", "Pa;Sb;Da"]
+ancestors = ["Pa;Br;Ch", "Pa;Sb;Da", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Pa;Ss;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son of parent's sister"
+definition = "a son of one's parent's sister (a cousin)"
+hypernyms = ["Pa;Sb;So", "Pa;Ss;Ch"]
+ancestors = ["Pa;Sb;So", "Pa;Ss;Ch", "Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Pa;Ss;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter of parent's sister"
+definition = "a daughter of one's parent's sister (a cousin)"
+hypernyms = ["Pa;Sb;Da", "Pa;Ss;Ch"]
+ancestors = ["Pa;Sb;Da", "Pa;Ss;Ch", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Fa;Sb;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son of father's sibling"
+definition = "a son of one's father's sibling (a cousin)"
+hypernyms = ["Fa;Sb;Ch", "Pa;Sb;So"]
+ancestors = ["Fa;Sb;Ch", "Pa;Sb;So", "Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Fa;Sb;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter of father's sibling"
+definition = "a daughter of one's father's sibling (a cousin)"
+hypernyms = ["Fa;Sb;Ch", "Pa;Sb;Da"]
+ancestors = ["Fa;Sb;Ch", "Pa;Sb;Da", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Mo;Sb;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son of mother's sibling"
+definition = "a son of one's mother's sibling (a cousin)"
+hypernyms = ["Mo;Sb;Ch", "Pa;Sb;So"]
+ancestors = ["Mo;Sb;Ch", "Pa;Sb;So", "Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Mo;Sb;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter of mother's sibling"
+definition = "a daughter of one's mother's sibling (a cousin)"
+hypernyms = ["Mo;Sb;Ch", "Pa;Sb;Da"]
+ancestors = ["Mo;Sb;Ch", "Pa;Sb;Da", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Fa;Br;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son of father's brother"
+definition = "a son of one's father's brother (a cousin)"
+hypernyms = ["Fa;Br;Ch", "Fa;Sb;So", "Pa;Br;So"]
+ancestors = ["Fa;Br;Ch", "Fa;Sb;So", "Pa;Br;So", "Fa;Sb;Ch", "Pa;Br;Ch", "Pa;Sb;So", "Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Fa;Br;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter of father's brother"
+definition = "a daughter of one's father's brother (a cousin)"
+hypernyms = ["Fa;Br;Ch", "Fa;Sb;Da", "Pa;Br;Da"]
+ancestors = ["Fa;Br;Ch", "Fa;Sb;Da", "Pa;Br;Da", "Fa;Sb;Ch", "Pa;Br;Ch", "Pa;Sb;Da", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Fa;Ss;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son of father's sister"
+definition = "a son of one's father's sister (a cousin)"
+hypernyms = ["Fa;Sb;So", "Fa;Ss;Ch", "Fa;Ss;So|Mo;Br;So", "Pa;Ss;So"]
+ancestors = ["Fa;Sb;So", "Fa;Ss;Ch", "Fa;Ss;So|Mo;Br;So", "Pa;Ss;So", "Fa;Sb;Ch", "Fa;Ss;Ch|Mo;Br;Ch", "Pa;Sb;So", "Pa;Ss;Ch", "Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Fa;Ss;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter of father's sister"
+definition = "a daughter of one's father's sister (a cousin)"
+hypernyms = ["Fa;Sb;Da", "Fa;Ss;Ch", "Fa;Ss;Da|Mo;Br;Da", "Pa;Ss;Da"]
+ancestors = ["Fa;Sb;Da", "Fa;Ss;Ch", "Fa;Ss;Da|Mo;Br;Da", "Pa;Ss;Da", "Fa;Sb;Ch", "Fa;Ss;Ch|Mo;Br;Ch", "Pa;Sb;Da", "Pa;Ss;Ch", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Mo;Br;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son of mother's brother"
+definition = "a son of one's mother's brother (a cousin)"
+hypernyms = ["Fa;Ss;So|Mo;Br;So", "Mo;Br;Ch", "Mo;Br|Mo;Br;So", "Mo;Sb;So", "Pa;Br;So"]
+ancestors = ["Fa;Ss;So|Mo;Br;So", "Mo;Br;Ch", "Mo;Br|Mo;Br;So", "Mo;Sb;So", "Pa;Br;So", "Fa;Ss;Ch|Mo;Br;Ch", "Mo;Sb;Ch", "Pa;Br;Ch", "Pa;Sb;So", "Rel", "Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb"]
+comment = ""
+
+["Mo;Br;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter of mother's brother"
+definition = "a daughter of one's mother's brother (a cousin)"
+hypernyms = ["Fa;Ss;Da|Mo;Br;Da", "Mo;Br;Ch", "Mo;Sb;Da", "Pa;Br;Da"]
+ancestors = ["Fa;Ss;Da|Mo;Br;Da", "Mo;Br;Ch", "Mo;Sb;Da", "Pa;Br;Da", "Fa;Ss;Ch|Mo;Br;Ch", "Mo;Sb;Ch", "Pa;Br;Ch", "Pa;Sb;Da", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Mo;Ss;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son of mother's sister"
+definition = "a son of one's mother's sister (a cousin)"
+hypernyms = ["Mo;Sb;So", "Mo;Ss;Ch", "Pa;Ss;So"]
+ancestors = ["Mo;Sb;So", "Mo;Ss;Ch", "Pa;Ss;So", "Mo;Sb;Ch", "Pa;Sb;So", "Pa;Ss;Ch", "Br|Pa;Sb;So", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["Mo;Ss;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter of mother's sister"
+definition = "a daughter of one's mother's sister (a cousin)"
+hypernyms = ["Mo;Sb;Da", "Mo;Ss;Ch", "Pa;Ss;Da"]
+ancestors = ["Mo;Sb;Da", "Mo;Ss;Ch", "Pa;Ss;Da", "Mo;Sb;Ch", "Pa;Sb;Da", "Pa;Ss;Ch", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["x;Fa;Br;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son of father's brother (male anchor)"
+definition = "a son of a man's father's brother (a cousin)"
+hypernyms = ["Fa;Br;So", "x;Pa;Sb;So"]
+ancestors = ["Fa;Br;So", "x;Pa;Sb;So", "Fa;Br;Ch", "Fa;Sb;So", "Pa;Br;So", "Pa;Sb;So", "Br|Pa;Sb;So", "Fa;Sb;Ch", "Pa;Br;Ch", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["o;Fa;Br;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son of father's brother (female anchor)"
+definition = "a son of a woman's father's brother (a cousin)"
+hypernyms = ["Fa;Br;So", "o;Pa;Sb;So"]
+ancestors = ["Fa;Br;So", "o;Pa;Sb;So", "Fa;Br;Ch", "Fa;Sb;So", "Pa;Br;So", "Pa;Sb;So", "o;Br|o;Pa;Sb;So", "o;Pa;Sb;Ch", "Br|Pa;Sb;So", "Fa;Sb;Ch", "Pa;Br;Ch", "Pa;Sb;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["x;Fa;Br;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter of father's brother (male anchor)"
+definition = "a daughter of a man's father's brother (a cousin)"
+hypernyms = ["Fa;Br;Da", "x;Pa;Sb;Da"]
+ancestors = ["Fa;Br;Da", "x;Pa;Sb;Da", "Fa;Br;Ch", "Fa;Sb;Da", "Pa;Br;Da", "Pa;Sb;Da", "x;Pa;Sb;Da|x;Ss", "Fa;Sb;Ch", "Pa;Br;Ch", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["o;Fa;Br;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter of father's brother (female anchor)"
+definition = "a daughter of a woman's father's brother (a cousin)"
+hypernyms = ["Fa;Br;Da"]
+ancestors = ["Fa;Br;Da", "Fa;Br;Ch", "Fa;Sb;Da", "Pa;Br;Da", "Fa;Sb;Ch", "Pa;Br;Ch", "Pa;Sb;Da", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["x;Mo;Ss;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son of mother's sister (male anchor)"
+definition = "a son of a man's mother's sister (a cousin)"
+hypernyms = ["Mo;Ss;So", "x;Pa;Sb;So"]
+ancestors = ["Mo;Ss;So", "x;Pa;Sb;So", "Mo;Sb;So", "Mo;Ss;Ch", "Pa;Sb;So", "Pa;Ss;So", "Br|Pa;Sb;So", "Mo;Sb;Ch", "Pa;Sb;Ch", "Pa;Ss;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["o;Mo;Ss;So"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "son of mother's sister (female anchor)"
+definition = "a son of a woman's mother's sister (a cousin)"
+hypernyms = ["Mo;Ss;So", "o;Pa;Sb;So"]
+ancestors = ["Mo;Ss;So", "o;Pa;Sb;So", "Mo;Sb;So", "Mo;Ss;Ch", "Pa;Sb;So", "Pa;Ss;So", "o;Br|o;Pa;Sb;So", "o;Pa;Sb;Ch", "Br|Pa;Sb;So", "Mo;Sb;Ch", "Pa;Sb;Ch", "Pa;Ss;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["x;Mo;Ss;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter of mother's sister (male anchor)"
+definition = "a daughter of a man's mother's sister (a cousin)"
+hypernyms = ["Mo;Ss;Da", "x;Pa;Sb;Da"]
+ancestors = ["Mo;Ss;Da", "x;Pa;Sb;Da", "Mo;Sb;Da", "Mo;Ss;Ch", "Pa;Sb;Da", "Pa;Ss;Da", "x;Pa;Sb;Da|x;Ss", "Mo;Sb;Ch", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Ss;Ch", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
+
+["o;Mo;Ss;Da"]
+lemmas = []
+status = "recorded gap (KinDiv): no word for this"
+label = "daughter of mother's sister (female anchor)"
+definition = "a daughter of a woman's mother's sister (a cousin)"
+hypernyms = ["Mo;Ss;Da"]
+ancestors = ["Mo;Ss;Da", "Mo;Sb;Da", "Mo;Ss;Ch", "Pa;Ss;Da", "Mo;Sb;Ch", "Pa;Sb;Da", "Pa;Ss;Ch", "Pa;Sb;Ch", "Pa;Sb;Da|Ss", "Pa;Sb;Ch|Sb", "Rel"]
+comment = ""
