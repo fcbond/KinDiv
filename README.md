@@ -1,4 +1,10 @@
 # KinDiv
+
+> **Archived.** This fork is no longer maintained. The kinship wordnet built from it
+> (the `wordnet` branch) continues, with its history, in
+> [omwn/omw-kinship](https://github.com/omwn/omw-kinship). The original KinDiv is
+> [kbatsuren/KinDiv](https://github.com/kbatsuren/KinDiv).
+
 Database of Lexical Diversity in Kinship Domain
 
 This resource currently contains 198 concepts, 1911 words in 168 languages, and 37370 gaps in 699 languages. 
